@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ribbon Flow v2 — visibly dynamic loop (6s)</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #04060d; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script>
+// Ribbon Flow v2 — 6s seamless loop with PERCEPTIBLE motion:
+// rotating aurora swirls + traveling ribbon bulges + full-range hue cycling + zoom pulse.
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, T = 6;
+
+// pre-rendered rotating aurora texture (drawn once, rotated per frame -> always visible motion)
+const swirl = document.createElement('canvas'); swirl.width = 360; swirl.height = 360;
+{
+  const sx = swirl.getContext('2d');
+  let s = 7;  // seeded RNG -> asymmetric texture, no rotational symmetry
+  const rnd = () => (s = (s * 1103515245 + 12345) % 2147483648) / 2147483648;
+  for (let band = 0; band < 9; band++) {
+    const a0 = band / 9 * Math.PI * 2;
+    const arc = Math.PI / 2.4 * (0.7 + rnd() * 0.6);
+    const alpha = 0.18 + rnd() * 0.30;
+    const g = sx.createRadialGradient(180, 180, 20 + band * 6, 180, 180, 178);
+    g.addColorStop(0, `hsla(${170 + band * 22}, 95%, 62%, ${alpha.toFixed(2)})`);
+    g.addColorStop(1, `hsla(${170 + band * 22}, 95%, 55%, 0)`);
+    sx.fillStyle = g;
+    sx.beginPath(); sx.moveTo(180, 180);
+    sx.arc(180, 180, 174, a0, a0 + arc); sx.closePath(); sx.fill();
+  }
+}
+
+const vig = document.createElement('canvas'); vig.width = W; vig.height = H;
+{
+  const vx = vig.getContext('2d');
+  const v = vx.createRadialGradient(W/2, H/2, H*0.22, W/2, H/2, H*0.72);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.5)');
+  vx.fillStyle = v; vx.fillRect(0, 0, W, H);
+}
+const grain = [];
+for (let g = 0; g < 2; g++) {
+  const gc = document.createElement('canvas'); gc.width = 128; gc.height = 128;
+  const gx = gc.getContext('2d'), img = gx.createImageData(128, 128);
+  for (let i = 0; i < img.data.length; i += 4) {
+    const v = Math.random() * 255;
+    img.data[i] = img.data[i+1] = img.data[i+2] = v; img.data[i+3] = 12;
+  }
+  gx.putImageData(img, 0, 0); grain.push(gc);
+}
+
+const N = 130, dots = [];
+for (let i = 0; i < N; i++) dots.push({
+  x0: Math.random() * W, y0: Math.random() * H,
+  r: 1 + Math.random() * 2.4, a: .2 + Math.random() * .5,
+  p: Math.random() * Math.PI * 2, amp: 12 + Math.random() * 34,
+  hue: 160 + Math.random() * 160 });
+
+const layers = [
+  { amp: 130, k: 3, hue: 185, alpha: .16, lw: 11 },
+  { amp: 90,  k: 5, hue: 305, alpha: .18, lw: 7 },
+  { amp: 50,  k: 8, hue: 25,  alpha: .22, lw: 3.5 },
+];
+
+let last = 0;
+function drawAt(tSec) {
+  const t = ((tSec / T) % 1 + 1) % 1;
+  const cyc = t * Math.PI * 2;
+
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.globalAlpha = 1;
+  const bg = ctx.createLinearGradient(0, 0, 0, H);
+  bg.addColorStop(0, '#04060d'); bg.addColorStop(.45, '#0a1026'); bg.addColorStop(1, '#04060d');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+
+  // zoom pulse 1.00 -> 1.035 -> 1.00 (always perceptible)
+  const zoom = 1 + 0.035 * Math.sin(cyc) + 0.02 * Math.cos(cyc);
+  ctx.translate(W / 2, H / 2); ctx.scale(zoom, zoom); ctx.translate(-W / 2, -H / 2);
+
+  ctx.globalCompositeOperation = 'lighter';
+
+  // two counter-rotating aurora swirls (rotation = unmissable motion)
+  const hueBase = 190 + 45 * Math.sin(cyc) + 55 * Math.cos(cyc) + 30 * Math.sin(2 * cyc + 1.0);
+  ctx.globalAlpha = 0.55;
+  ctx.save(); ctx.translate(W * 0.28 + 26 * Math.sin(cyc), H * 0.30 + 36 * Math.cos(cyc));
+  ctx.rotate(cyc); ctx.drawImage(swirl, -180, -180); ctx.restore();
+  ctx.save(); ctx.translate(W * 0.72 - 26 * Math.sin(cyc), H * 0.62 - 36 * Math.cos(cyc));
+  ctx.rotate(-cyc * 1.5 + Math.PI); ctx.globalAlpha = 0.4; ctx.drawImage(swirl, -180, -180); ctx.restore();
+  ctx.globalAlpha = 1;
+
+  // ribbons with traveling bulge envelopes
+  for (let li = 0; li < layers.length; li++) {
+    const L = layers[li];
+    for (let x = 0; x <= W; x += 6) {
+      const u = x / W;
+      const env = 0.72 + 0.5 * Math.sin(u * Math.PI * 6 - cyc * 2);
+      const y = H * (0.36 + li * 0.14)
+        + L.amp * env * Math.sin(u * Math.PI * 4 + cyc * L.k)
+        + L.amp * 0.55 * Math.sin(u * Math.PI * 9 - cyc * (L.k + 1))
+        + 30 * Math.sin(u * Math.PI * 17 + cyc * 2) + 42 * Math.cos(u * Math.PI * 7 + cyc * 4);
+      const hue = L.hue + 34 * Math.sin(u * Math.PI * 2 + cyc) + 20 * Math.sin(cyc);
+      ctx.strokeStyle = `hsla(${hue}, 95%, 60%, ${L.alpha})`;
+      ctx.lineWidth = L.lw;
+      ctx.beginPath(); ctx.moveTo(x, y - 22); ctx.lineTo(x, y + 22); ctx.stroke();
+      ctx.lineWidth = L.lw * 0.45;
+      ctx.strokeStyle = `hsla(${hue}, 100%, 78%, ${L.alpha * 1.6})`;
+      ctx.beginPath(); ctx.moveTo(x, y - 10); ctx.lineTo(x, y + 10); ctx.stroke();
+    }
+  }
+
+  for (const d of dots) {
+    const y = (d.y0 + t * 4 * (H + 30)) % (H + 30) - 15;   // 4 traverses per loop
+    const x = d.x0 + d.amp * Math.sin(cyc + d.p);
+    const r = d.r * (0.8 + 0.4 * Math.sin(cyc * 2 + d.p));
+    ctx.fillStyle = `hsla(${d.hue + 30 * Math.sin(cyc)}, 90%, 70%, ${d.a})`;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+  }
+
+  // comet: sweeps across once per loop — guarantees a unique frame at every moment
+  const cxp = W * (1.25 - 1.5 * t);
+  const cyp = H * 0.5 + 220 * Math.sin(t * Math.PI * 4 + 0.7);
+  for (let tr = 6; tr >= 0; tr--) {
+    ctx.fillStyle = `hsla(${hueBase + 40}, 100%, 75%, ${0.5 - tr * 0.07})`;
+    ctx.beginPath();
+    ctx.arc(cxp + tr * 14, cyp - 220 * (tr * 0.018) * Math.cos(t * Math.PI * 4 + 0.7), 7 - tr * 0.8, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.globalCompositeOperation = 'source-over';
+  const tile = grain[Math.floor(t * 12) % 2];
+  ctx.globalAlpha = .5;
+  for (let gy = 0; gy < H; gy += 128) for (let gx = 0; gx < W; gx += 128)
+    ctx.drawImage(tile, gx, gy);
+  ctx.globalAlpha = 1;
+  ctx.drawImage(vig, 0, 0);
+}
+window.drawAt = drawAt;
+function frame(now) {
+  requestAnimationFrame(frame);
+  drawAt((now / 1000) % T);
+}
+if (!location.search.includes('static')) requestAnimationFrame(frame);
+</script>
+</body>
+</html>

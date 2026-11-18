@@ -1,0 +1,21 @@
+# Media renders are disposable (re-renderable from code + seed params) — never in git
+*.webm
+*.mp4
+*.mov
+*.png
+!site/**/*.png
+!site/**/*.jpg
+
+# Scratch & heavy state
+*.tmp
+*.part
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+artifacts/
+__pycache__/
+.DS_Store
+
+# Large archives stay out of git too (keep on disk only)
+plan/archive/*.gz
+data/snapshots/

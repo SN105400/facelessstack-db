@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stickman — procedural walk + jump (8s loop)</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0d18; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script>
+// Procedural stickman: walk cycle -> crouch -> jump over box -> land -> walk.
+// All motion from math (sinusoidal rig + phase blending). 8s seamless loop, 24fps.
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, T = 8, FPS = 24;
+const GY = H * 0.72;                       // ground line
+const STEP_HZ = 2.2;                       // steps per second
+const CX = W * 0.42;                       // stickman x (walks in place, world scrolls)
+
+// ---- rig drawing -------------------------------------------------------
+function drawStickman(t) {
+  // pose state machine: walk / crouch / air / land, with smooth blending
+  const jumpIn = 3.0, airIn = 3.8, landIn = 4.6, walkBack = 5.6;
+  let phase = 'walk', jt = 0;
+  if (t >= jumpIn && t < airIn) { phase = 'crouch'; jt = (t - jumpIn) / (airIn - jumpIn); }
+  else if (t >= airIn && t < landIn) { phase = 'air'; jt = (t - airIn) / (landIn - airIn); }
+  else if (t >= landIn && t < walkBack) { phase = 'land'; jt = (t - landIn) / (walkBack - landIn); }
+
+  const wf = t * STEP_HZ * Math.PI * 2;    // walk phase (continuous)
+  const bob = -3 * Math.abs(Math.sin(wf)); // body bob, 2 bobs per stride pair
+  const swing = 0.62 * Math.sin(wf);       // thigh swing amplitude (rad)
+
+  // base walk pose (facing right)
+  let hipY = GY - 58 + bob, lean = 0.10, thighF = swing, thighB = -swing,
+      kneeF = Math.max(0.12, 0.5 * Math.sin(wf + 0.9)), kneeB = Math.max(0.12, 0.5 * Math.sin(wf + 0.9 + Math.PI)),
+      armF = -0.75 * Math.sin(wf), armB = 0.75 * Math.sin(wf),
+      elbowF = 0.55, elbowB = 0.55, headY = 0;
+
+  const ease = x => x * x * (3 - 2 * x);
+  if (phase === 'crouch') {                // anticipation: sink + coil
+    const k = ease(jt);
+    hipY += 16 * k; kneeF = kneeB = 1.15 * k + kneeF * (1 - k);
+    thighF = thighF * (1 - k) + 0.15 * k; thighB = thighB * (1 - k) - 0.15 * k;
+    armF = armF * (1 - k) - 0.9 * k; armB = armB * (1 - k) - 0.7 * k; lean = 0.10 + 0.16 * k;
+  } else if (phase === 'air') {            // parabolic flight, tucked legs, arms raised
+    const p = ease(jt);
+    hipY = GY - 58 - 118 * 4 * p * (1 - p);
+    kneeF = 2.0; kneeB = 1.6; thighF = 0.5; thighB = -0.35;
+    armF = -2.1 + 0.3 * Math.sin(jt * Math.PI * 2); armB = -1.6; lean = 0.10 - 0.06 * Math.sin(jt * Math.PI);
+  } else if (phase === 'land') {           // squash then recover to walk
+    const k = ease(Math.min(1, jt * 1.6)), r = ease(Math.max(0, (jt - 0.35) / 0.65));
+    hipY += 18 * (1 - r) * (k ? 1 : 1); kneeF = 1.0 * (1 - r) + kneeF * r; kneeB = 0.9 * (1 - r) + kneeB * r;
+    thighF = 0.3 * (1 - r) + thighF * r; thighB = -0.3 * (1 - r) + thighB * r;
+    armF = -0.4 * (1 - r) + armF * r; armB = 0.5 * (1 - r) + armB * r;
+  }
+
+  const hipX = CX;
+  const lx = Math.sin(lean), ly = Math.cos(lean);
+  const neckX = hipX + lx * 34, neckY = hipY - ly * 34;
+  const headX = neckX + lx * 14, headYv = neckY - 15;
+
+  ctx.lineCap = 'round';
+  ctx.strokeStyle = '#e8ecff'; ctx.fillStyle = '#e8ecff';
+  const seg = (x1, y1, x2, y2, w) => { ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); };
+
+  // legs (thigh from hip, shin from knee)
+  function leg(thigh, knee) {
+    const kx = hipX + Math.sin(thigh) * 26, ky = hipY + Math.cos(thigh) * 26;
+    const fx = kx + Math.sin(thigh - knee) * 30, fy = ky + Math.cos(thigh - knee) * 30;
+    seg(hipX, hipY, kx, ky, 5); seg(kx, ky, fx, fy, 4);
+  }
+  leg(thighB, kneeB);
+  // torso
+  seg(hipX, hipY, neckX, neckY, 5);
+  // arms from neck
+  function arm(a, e) {
+    const exx = neckX + Math.sin(a) * 22, eyy = neckY + Math.cos(a) * 22;
+    const hx = exx + Math.sin(a + e) * 20, hy = eyy + Math.cos(a + e) * 20;
+    seg(neckX, neckY, exx, eyy, 4); seg(exx, eyy, hx, hy, 3.5);
+  }
+  arm(armB, elbowB);
+  leg(thighF, kneeF);
+  arm(armF, elbowF);
+  // head
+  ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(headX, headYv, 11, 0, Math.PI * 2); ctx.stroke();
+  ctx.beginPath(); ctx.arc(headX + 4, headYv - 2, 1.8, 0, Math.PI * 2); ctx.fill(); // eye
+}
+
+// ---- world -------------------------------------------------------------
+const marks = [];
+function drawWorld(t) {
+  ctx.fillStyle = '#0a0d18'; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, '#0d1226'); g.addColorStop(1, '#04060d');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+
+  // scrolling ground + hash marks (world moves left; stickman walks in place)
+  const speed = 150;
+  ctx.strokeStyle = '#3a4468'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, GY + 1); ctx.lineTo(W, GY + 1); ctx.stroke();
+  const sp = 46, off = (t * speed) % sp;
+  ctx.lineWidth = 2; ctx.strokeStyle = '#26304f';
+  for (let x = -off; x < W; x += sp) { ctx.beginPath(); ctx.moveTo(x, GY + 4); ctx.lineTo(x - 9, GY + 14); ctx.stroke(); }
+
+  // scrolling obstacle box (timed to pass under the jump apex)
+  const bx = CX + (4.2 - t) * speed;   // approaches from right, under stickman at jump apex
+  if (bx > -60 && bx < W + 60) {
+    ctx.fillStyle = '#1a2242'; ctx.strokeStyle = '#4a5a94'; ctx.lineWidth = 2;
+    ctx.fillRect(bx, GY - 34, 46, 34); ctx.strokeRect(bx, GY - 34, 46, 34);
+  }
+
+  // moon + hills for depth
+  ctx.fillStyle = 'rgba(220,228,255,0.85)'; ctx.beginPath(); ctx.arc(W * 0.78, H * 0.14, 22, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#0a0e1f';
+  ctx.beginPath(); ctx.moveTo(0, GY); ctx.quadraticCurveTo(W * 0.25, GY - 46, W * 0.5, GY); ctx.quadraticCurveTo(W * 0.75, GY - 30, W, GY - 8); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+}
+
+const grain = [];
+for (let g = 0; g < 2; g++) {
+  const gc = document.createElement('canvas'); gc.width = 128; gc.height = 128;
+  const gx = gc.getContext('2d'), img = gx.createImageData(128, 128);
+  for (let i = 0; i < img.data.length; i += 4) {
+    const v = Math.random() * 255;
+    img.data[i] = img.data[i+1] = img.data[i+2] = v; img.data[i+3] = 10;
+  }
+  gx.putImageData(img, 0, 0); grain.push(gc);
+}
+
+function drawAt(tSec) {
+  const t = ((tSec / T) % 1 + 1) % 1;
+  const tt = t * T;
+  drawWorld(tt);
+  drawStickman(tt);
+  ctx.globalAlpha = .45;
+  const tile = grain[Math.floor(t * 16) % 2];
+  for (let gy = 0; gy < H; gy += 128) for (let gx = 0; gx < W; gx += 128) ctx.drawImage(tile, gx, gy);
+  ctx.globalAlpha = 1;
+}
+window.drawAt = drawAt;
+let last = 0;
+function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % T); }
+if (!location.search.includes('static')) requestAnimationFrame(frame);
+</script>
+</body>
+</html>

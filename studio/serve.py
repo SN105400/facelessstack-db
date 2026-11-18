@@ -7,13 +7,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*a, directory=ROOT, **kw)
 
     def do_POST(self):
-        if self.path != '/upload':
+        path = self.path.split('?')[0]
+        if path != '/upload':
             self.send_error(404)
             return
+        qs = dict(p.split('=', 1) for p in (self.path.split('?', 1)[1].split('&') if '?' in self.path else []) if '=' in p)
         length = int(self.headers.get('Content-Length', 0))
         data = self.rfile.read(length)
         os.makedirs(os.path.join(ROOT, 'studio'), exist_ok=True)
-        name = time.strftime('studio/demo-loop-%Y%m%d-%H%M%S.webm')
+        name = qs.get('name', '').replace('..', '').strip()
+        if not name or not name.startswith('studio/') or not (name.endswith('.webm') or name.endswith('.mp4')):
+            name = time.strftime('studio/demo-loop-%Y%m%d-%H%M%S.webm')
         with open(os.path.join(ROOT, name), 'wb') as f:
             f.write(data)
         self.send_response(200)

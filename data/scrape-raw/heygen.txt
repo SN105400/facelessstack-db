@@ -1,0 +1,36 @@
+TOOL: HeyGen (heygen)
+SOURCE: https://www.heygen.com/pricing
+FETCHED: 2026-11-18T23:21:27.625Z  HTTP 200  923671 bytes
+PRICE LINES (32):
+  - For Individuals For Businesses Free Creator Pro Monthly Yearly 2 months free Free $0/month To try it out Get started , Free Explore AI video creation 3 videos per month, with
+  - vatar, plus 500+ ready-made presenters 30+ languages Monthly Yearly 2 months free Creator $29 / month For publishing videos Get started , Creator Access to advanced AI video generatio
+  - ialects Credits carry forward for one month Monthly Yearly 2 months free Pro Most Popular $49 / month For high-volume content creation at the highest quality Get started , Pro 1,000 c
+  - lifelike avatar yet 1 Professional Voice Clone Highest-fidelity clone of your own voice, $29/month Free Access to Seedance 2
+  - redits at any time, with unused credits carried forward Monthly Yearly 2 months free Free $0/month To try it out Get started , Free Explore AI video creation 3 videos per month, with
+  - ts at any time, with unused credits carried forward Monthly Yearly 2 months free Business $149 / month Secure, scalable video creation for teams and businesses
+  - and LMS integrations Integrations with n8n, Make, HubSpot and Zapier Add team members at $20 per seat per month Monthly Yearly 2 months free Enterprise Contact Sales Create studio-qu
+  - For individual creators, the Creator plan costs $29/month (or $24/month when billed annually)
+  - For individuals with more advanced needs, Pro starts at $49/month, with higher tiers offering more monthly credits
+  - For teams that want to create and collaborate, the Business plan costs $149/month plus $20/seat/month
+  - Tiers range from 1,000 credits per month at $49 to 100,000 credits per month at $4,300. You can switch tiers at any time
+  - Get started for free at $0/month with unlimited capabilities
+  - 22px]">$0/month</p></div><p class="text-13 sm:text-16 mb-8 leading-[150%] text-heygen-green-dark tr
+  - /span><span class="block text-13 opacity-70">Highest-fidelity clone of your own voice, <s>$29/month</s> Free</span></li><li class="text-14 sm:text-15 leading-[150%] text-heygen-gray-b
+  - -3 bg-current rounded-full mx-8 flex-shrink-0 mt-[11px]"></span><span>Add team members at $20 per seat per month</span></li></ul></div></div></div></div><div class="flex-1 basis-0 max
+  - ndersAs\":\"positioning_line\",\"title\":\"Explore AI video creation\"}],\"headings\":[\"$$0/month\",\"$$0/month\"],\"isImportant\":false,\"isShown\":true},{\"_key\":\"2571bccbd7dd\"
+  - :[{\"_key\":\"2930d4a06697\",\"_type\":\"creditTier\",\"credits\":600,\"priceMonthly\":\"$$29 / month\",\"priceYearly\":\"$$24 / month\",\"priceYearlyOriginal\":\"$$29\",\"yearlyBille
+  - dTotal\":\"$$288 billed annually\"}],\"ctas\":[{\"_key\":\"42476ebb5726\",\"_type\":\"cta2025\",\"buttonSt
+  - ntil your annual plan ends\"}],\"title\":\"Everything in Free, plus:\"}],\"headings\":[\"$$29/mo\",\"$$24/month\"],\"isImportant\":false,\"isShown\":true},{\"_key\":\"067f728b08f7\",\
+  - [{\"_key\":\"73e17842bebf\",\"_type\":\"creditTier\",\"credits\":1000,\"priceMonthly\":\"$$49 / month\",\"priceYearly\":\"$$41 / month\",\"priceYearlyOriginal\":\"$$49\",\"yearlyBille
+  - dTotal\":\"$$488 billed annually\"},{\"_key\":\"2edcc110595d\",\"_type\":\"creditTier\",\"credits\":1500,\
+  - "priceMonthly\":\"$$74 / month\",\"priceYearly\":\"$$62 / month\",\"priceYearlyOriginal\":\"$$74\",\"yearlyBilledTotal\":\"$$738 billed annually\
+  - ,{\"_key\":\"f302dff1389a\",\"_type\":\"creditTier\",\"credits\":2000,\"priceMonthly\":\"$$99 / month\",\"priceYearly\":\"$$82 / month\",\"priceYearlyOriginal\":\"$$99\",\"yearlyBille
+  - dTotal\":\"$$988 billed annually\"},{\"_key\":\"31a9418fc229\",\"_type\":\"creditTier\",\"credits\":3000,\
+  - "priceMonthly\":\"$$149 / month\",\"priceYearly\":\"$$124 / month\",\"priceYearlyOriginal\":\"$$149\",\"yearlyBilledTotal\":\"$$1,488 billed annual
+  - ,{\"_key\":\"7f3b42cdbf3a\",\"_type\":\"creditTier\",\"credits\":5000,\"priceMonthly\":\"$$240 / month\",\"priceYearly\":\"$$200 / month\",\"priceYearlyOriginal\":\"$$240\",\"yearlyBil
+  - ledTotal\":\"$$2,400 billed annually\"},{\"_key\":\"7250ea66753b\",\"_type\":\"creditTier\",\"credits\":7500,\
+  - "priceMonthly\":\"$$360 / month\",\"priceYearly\":\"$$300 / month\",\"priceYearlyOriginal\":\"$$360\",\"yearlyBilledTotal\":\"$$3,600 billed annual
+  - {\"_key\":\"191969b306eb\",\"_type\":\"creditTier\",\"credits\":10000,\"priceMonthly\":\"$$460 / month\",\"priceYearly\":\"$$384 / month\",\"priceYearlyOriginal\":\"$$460\",\"yearlyBil
+  - ledTotal\":\"$$4,612 billed annually\"},{\"_key\":\"04c0f16e373e\",\"_type\":\"creditTier\",\"credits\":20000,
+  - \"priceMonthly\":\"$$900 / month\",\"priceYearly\":\"$$752 / month\",\"priceYearlyOriginal\":\"$$900\",\"yearlyBilledTotal\":\"$$9,018 billed annual
+  - {\"_key\":\"1a8443910f4f\",\"_type\":\"creditTier\",\"credits\":50000,\"priceMonthly\":\"$$2,250 / month\",\"priceYearly\":\"$$1,877 / month\",\"priceYearlyOriginal\":\"$$2,250\",\"yearl

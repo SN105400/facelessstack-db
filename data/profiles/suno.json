@@ -1,0 +1,43 @@
+{
+ "slug": "suno",
+ "name": "Suno",
+ "category": "music-audio",
+ "url": "https://suno.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "annual_monthly_usd": 0,
+    "notes": "50 credits/day? free models"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 10,
+    "annual_monthly_usd": 8,
+    "notes": "$96/yr; 2,500 song credits/mo"
+   },
+   {
+    "name": "Premier",
+    "monthly_usd": 30,
+    "annual_monthly_usd": 24,
+    "notes": "$288/yr"
+   },
+   {
+    "name": "Platinum",
+    "monthly_usd": 120,
+    "annual_monthly_usd": 100,
+    "notes": "$1,200/yr; Suno Studio"
+   }
+  ],
+  "notes": null,
+  "source_url": "https://suno.com/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/suno-20261118.html.gz"
+}

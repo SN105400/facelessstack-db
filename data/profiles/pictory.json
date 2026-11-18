@@ -1,0 +1,37 @@
+{
+ "slug": "pictory",
+ "name": "Pictory",
+ "category": "video-generation",
+ "url": "https://pictory.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Starter",
+    "monthly_usd": 14.5,
+    "annual_monthly_usd": 12.5,
+    "notes": "Black Friday: was $29/mo annual; monthly billed $14.50"
+   },
+   {
+    "name": "Professional",
+    "monthly_usd": 35,
+    "annual_monthly_usd": 17.5,
+    "notes": "BF promo; monthly $35"
+   },
+   {
+    "name": "Teams",
+    "monthly_usd": 99.5,
+    "annual_monthly_usd": 59.5,
+    "notes": "BF promo; was $199 annual"
+   }
+  ],
+  "notes": "Black Friday promo observed. Meta description: \"starts at $25 per month\" (regular).",
+  "source_url": "https://pictory.ai/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "20-50% recurring",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/pictory-20261118.html.gz"
+}

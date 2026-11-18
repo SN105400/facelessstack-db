@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "invideo",
+    "url": "https://invideo.io/pricing",
+    "status": 200,
+    "ms": 1189,
+    "bytes": 305657,
+    "finalUrl": "https://invideo.io/pricing/",
+    "err": null
+  },
+  {
+    "slug": "pictory",
+    "url": "https://pictory.ai/pricing",
+    "status": 200,
+    "ms": 4139,
+    "bytes": 380025,
+    "finalUrl": "https://pictory.ai/pricing/",
+    "err": null
+  },
+  {
+    "slug": "fliki",
+    "url": "https://fliki.ai/pricing",
+    "status": 200,
+    "ms": 491,
+    "bytes": 185483,
+    "finalUrl": "https://fliki.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "heygen",
+    "url": "https://heygen.com/pricing",
+    "status": 200,
+    "ms": 491,
+    "bytes": 923671,
+    "finalUrl": "https://www.heygen.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "elevenlabs",
+    "url": "https://elevenlabs.io/pricing",
+    "status": 200,
+    "ms": 370,
+    "bytes": 676663,
+    "finalUrl": "https://elevenlabs.io/pricing",
+    "err": null
+  },
+  {
+    "slug": "murf-ai",
+    "url": "https://murf.ai/pricing",
+    "status": 200,
+    "ms": 319,
+    "bytes": 6230,
+    "finalUrl": "https://murf.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "playht",
+    "url": "https://play.ht/pricing",
+    "status": 0,
+    "ms": 61,
+    "bytes": 0,
+    "finalUrl": "",
+    "err": "fetch failed"
+  },
+  {
+    "slug": "playht",
+    "url": "https://play.ht/en/pricing",
+    "status": 0,
+    "ms": 3,
+    "bytes": 0,
+    "finalUrl": "",
+    "err": "fetch failed"
+  },
+  {
+    "slug": "playht",
+    "url": "https://play.ht",
+    "status": 0,
+    "ms": 3,
+    "bytes": 0,
+    "finalUrl": "",
+    "err": "fetch failed"
+  },
+  {
+    "slug": "submagic",
+    "url": "https://submagic.co/pricing",
+    "status": 200,
+    "ms": 2126,
+    "bytes": 694313,
+    "finalUrl": "https://www.submagic.co/pricing",
+    "err": null
+  },
+  {
+    "slug": "opusclip",
+    "url": "https://www.opus.pro/pricing",
+    "status": 200,
+    "ms": 156,
+    "bytes": 643430,
+    "finalUrl": "https://www.opus.pro/pricing",
+    "err": null
+  },
+  {
+    "slug": "veed",
+    "url": "https://www.veed.io/pricing",
+    "status": 200,
+    "ms": 122,
+    "bytes": 136313,
+    "finalUrl": "https://www.veed.io/pricing",
+    "err": null
+  },
+  {
+    "slug": "descript",
+    "url": "https://www.descript.com/pricing",
+    "status": 200,
+    "ms": 2104,
+    "bytes": 354329,
+    "finalUrl": "https://www.descript.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "creatify",
+    "url": "https://creatify.ai/pricing",
+    "status": 200,
+    "ms": 160,
+    "bytes": 198571,
+    "finalUrl": "https://creatify.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "klap",
+    "url": "https://klap.app/pricing",
+    "status": 200,
+    "ms": 570,
+    "bytes": 81358,
+    "finalUrl": "https://klap.app/pricing",
+    "err": null
+  },
+  {
+    "slug": "suno",
+    "url": "https://suno.com/pricing",
+    "status": 200,
+    "ms": 613,
+    "bytes": 420786,
+    "finalUrl": "https://suno.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "vidiq",
+    "url": "https://vidiq.com/pricing",
+    "status": 200,
+    "ms": 610,
+    "bytes": 148225,
+    "finalUrl": "https://vidiq.com/plans/",
+    "err": null
+  }
+]

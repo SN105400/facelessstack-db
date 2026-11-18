@@ -1,0 +1,37 @@
+{
+ "slug": "descript",
+ "name": "Descript",
+ "category": "editing-automation",
+ "url": "https://www.descript.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Hobbyist",
+    "monthly_usd": 24,
+    "annual_monthly_usd": 16,
+    "notes": "per person"
+   },
+   {
+    "name": "Creator",
+    "monthly_usd": 35,
+    "annual_monthly_usd": 24,
+    "notes": "per person"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 65,
+    "annual_monthly_usd": 50,
+    "notes": "per person"
+   }
+  ],
+  "notes": "Meta: \"paid plans from $16/month\".",
+  "source_url": "https://www.www.descript.com/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/descript-20261118.html.gz"
+}

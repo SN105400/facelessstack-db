@@ -1,0 +1,42 @@
+{
+ "slug": "submagic",
+ "name": "Submagic",
+ "category": "subtitles-captions",
+ "url": "https://submagic.co",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Starter",
+    "monthly_usd": 19,
+    "annual_monthly_usd": 12,
+    "notes": "$144/yr; 15 captioned videos/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 39,
+    "annual_monthly_usd": 23,
+    "notes": "$276/yr; 40 videos/mo"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 69,
+    "annual_monthly_usd": 41,
+    "notes": "$492/yr; 100 videos/mo"
+   },
+   {
+    "name": "API/min packs",
+    "monthly_usd": null,
+    "notes": "$57/mo per 250 min up to $1000/mo per 10,000 min"
+   }
+  ],
+  "notes": "Yearly billing promo: save up to 41%.",
+  "source_url": "https://www.submagic.co/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/submagic-20261118.html.gz"
+}

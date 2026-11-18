@@ -1,0 +1,41 @@
+{
+ "slug": "opusclip",
+ "name": "OpusClip",
+ "category": "editing-automation",
+ "url": "https://www.opus.pro",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "annual_monthly_usd": 0,
+    "notes": "60 credits/mo"
+   },
+   {
+    "name": "Starter",
+    "monthly_usd": 15,
+    "notes": "monthly only; 150 credits/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 29,
+    "annual_monthly_usd": 14.5,
+    "notes": "$174/yr; 3,600 credits/yr"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": null,
+    "notes": "custom/enterprise"
+   }
+  ],
+  "notes": "Starter plan only available in monthly.",
+  "source_url": "https://www.www.opus.pro/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/opusclip-20261118.html.gz"
+}

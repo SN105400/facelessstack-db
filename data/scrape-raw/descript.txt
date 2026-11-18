@@ -1,0 +1,14 @@
+TOOL: Descript (descript)
+SOURCE: https://www.descript.com/pricing
+FETCHED: 2026-11-18T23:21:53.268Z  HTTP 200  354329 bytes
+PRICE LINES (10):
+  - A plan for whatever you create Monthly Annual Saving up to 35% over monthly plan Hobbyist $ 16 $ 24 per person / month 1 person included Elevate your projects, watermark-free Get start
+  - ps, and more AI Speech with custom voice clones and video regenerate Most Popular Creator $ 24 $ 35 per person / month Scale to a team of 3 (billed separately) Unlock advanced AI-power
+  - y-free stock media library Access to top ups for more media hours and AI credits Business $ 50 $ 65 per person / month Scale to a team of 5 (billed separately) Empower collaboration on
+  - e billing Support: dedicated CSM, onboarding, priority response Trusted by teams at: Free $0 Get started on your creative journey with text-based editing and give our AI tools a spin
+  - itle><meta name="description" content="Descript pricing starts free, with paid plans from $16/month
+  - eta property="og:description" content="Descript pricing starts free, with paid plans from $16/month
+  - ta name="twitter:description" content="Descript pricing starts free, with paid plans from $16/month
+  - \"name\":\"description\",\"content\":\"Descript pricing starts free, with paid plans from $16/month
+  - rty\":\"og:description\",\"content\":\"Descript pricing starts free, with paid plans from $16/month
+  - :\"twitter:description\",\"content\":\"Descript pricing starts free, with paid plans from $16/month

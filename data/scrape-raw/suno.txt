@@ -1,0 +1,11 @@
+TOOL: Suno (suno)
+SOURCE: https://suno.com/pricing
+FETCHED: 2026-11-18T23:22:01.706Z  HTTP 200  420786 bytes
+PRICE LINES (7):
+  - $0 / month Free forever Join Suno for free Included Access to our free models Included 50 so
+  - $10 $8 / month Billed $96/year Get Pro Included Access to our best models Included 2,500 song credits per month Inc
+  - $30 $24 / month Billed $288/year Get Premier Included Access to Suno Studio - now with MIDI, effects, automation, and
+  - $120 $100 / month Billed $1,200/year Get Platinum Included Access to Suno Studio - now with MIDI, effects, automation, an
+  - class="text-xs text-plan-ink/50">Billed $96/year</span></div><div class="relative mt-3 [&amp
+  - class="text-xs text-plan-ink/50">Billed $288/year</span></div><div class="relative mt-3 [&amp
+  - class="text-xs text-plan-ink/50">Billed $1,200/year</span></div><div class="relative mt-3 [&amp

@@ -1,0 +1,37 @@
+{
+ "slug": "klap",
+ "name": "Klap",
+ "category": "editing-automation",
+ "url": "https://klap.app",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Basic",
+    "monthly_usd": 29,
+    "annual_monthly_usd": 14.5,
+    "notes": "$174/yr; 100 clips/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 79,
+    "annual_monthly_usd": 39.5,
+    "notes": "$474/yr; 300 clips/mo"
+   },
+   {
+    "name": "Pro+",
+    "monthly_usd": 189,
+    "annual_monthly_usd": 94.5,
+    "notes": "$1,134/yr; 1,000 clips/mo"
+   }
+  ],
+  "notes": "Prices officially confirmed in on-page FAQ.",
+  "source_url": "https://klap.app/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/klap-20261118.html.gz"
+}

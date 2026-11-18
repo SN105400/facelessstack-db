@@ -1,0 +1,52 @@
+{
+ "slug": "elevenlabs",
+ "name": "ElevenLabs",
+ "category": "tts-voice",
+ "url": "https://elevenlabs.io",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "annual_monthly_usd": 0,
+    "notes": "10K credits/mo"
+   },
+   {
+    "name": "Starter",
+    "monthly_usd": 6,
+    "annual_monthly_usd": 5,
+    "notes": "$1 first month; 30K credits"
+   },
+   {
+    "name": "Creator",
+    "monthly_usd": 22,
+    "annual_monthly_usd": 18.33,
+    "notes": "$11 first month; 121K credits"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 99,
+    "notes": "600K credits"
+   },
+   {
+    "name": "Scale",
+    "monthly_usd": 299,
+    "notes": "3 seats, 8M credits"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 990,
+    "notes": "10 seats, 22M credits"
+   }
+  ],
+  "notes": null,
+  "source_url": "https://elevenlabs.io/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "22% x 12 months",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/elevenlabs-20261118.html.gz"
+}

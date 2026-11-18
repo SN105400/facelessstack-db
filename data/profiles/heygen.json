@@ -1,0 +1,42 @@
+{
+ "slug": "heygen",
+ "name": "HeyGen",
+ "category": "avatars",
+ "url": "https://heygen.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "annual_monthly_usd": 0,
+    "notes": "3 videos/mo"
+   },
+   {
+    "name": "Creator",
+    "monthly_usd": 29,
+    "annual_monthly_usd": 24,
+    "notes": "600 credits/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 49,
+    "annual_monthly_usd": 41,
+    "notes": "1,000 credits/mo; credit tiers up to 50,000 credits at $2,250/mo"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 149,
+    "notes": "+$20/seat/mo"
+   }
+  ],
+  "notes": "Free plan currently bundles Professional Voice Clone ($29 value).",
+  "source_url": "https://heygen.com/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "up to 30% recurring (6mo)",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/heygen-20261118.html.gz"
+}

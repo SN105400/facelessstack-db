@@ -1,0 +1,37 @@
+{
+ "slug": "vidiq",
+ "name": "VidIQ",
+ "category": "analytics-growth",
+ "url": "https://vidiq.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "annual_monthly_usd": 0,
+    "notes": "core tools; VidIQ MCP for AI assistants"
+   },
+   {
+    "name": "Boost",
+    "monthly_usd": 19,
+    "annual_monthly_usd": 16.58,
+    "notes": "$199/yr; 2,500\u20133,000 credits"
+   },
+   {
+    "name": "MAX",
+    "monthly_usd": 49,
+    "annual_monthly_usd": 39,
+    "notes": "$468/yr; up to 10,000 credits; 11h short clipping"
+   }
+  ],
+  "notes": "One-channel US list prices.",
+  "source_url": "https://vidiq.com/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/vidiq-20261118.html.gz"
+}

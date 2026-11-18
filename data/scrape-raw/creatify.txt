@@ -1,0 +1,6 @@
+TOOL: Creatify (creatify)
+SOURCE: https://creatify.ai/pricing
+FETCHED: 2026-11-18T23:21:55.890Z  HTTP 200  198571 bytes
+PRICE LINES (2):
+  - Annual Save 30% Standard $ 15 $ 10 / month 55 credits / month Billed yearly Get Standard Pro Recommended $ 55 $ 38 / month 2
+  - 80 credits / month Billed yearly Get Pro Ultra Best value $ 95 $ 66 / month 730 credits / month Billed yearly Get Ultra Business From $ 195 $ 136 / month 1,5

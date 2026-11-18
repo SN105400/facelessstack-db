@@ -1,0 +1,43 @@
+{
+ "slug": "creatify",
+ "name": "Creatify",
+ "category": "avatars",
+ "url": "https://creatify.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Standard",
+    "monthly_usd": 15,
+    "annual_monthly_usd": 10,
+    "notes": "55 credits/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 55,
+    "annual_monthly_usd": 38,
+    "notes": "280 credits/mo"
+   },
+   {
+    "name": "Ultra",
+    "monthly_usd": 95,
+    "annual_monthly_usd": 66,
+    "notes": "730 credits/mo"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 195,
+    "annual_monthly_usd": 136,
+    "notes": "from; 1,580+ credits/mo"
+   }
+  ],
+  "notes": "Annual saves 30%.",
+  "source_url": "https://creatify.ai/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "25% recurring +5% bonus",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/creatify-20261118.html.gz"
+}

@@ -1,0 +1,44 @@
+TOOL: InVideo (invideo)
+SOURCE: https://invideo.io/pricing/
+FETCHED: 2026-11-18T23:21:14.945Z  HTTP 200  305657 bytes
+PRICE LINES (40):
+  - at/mo = 76 Nano Banana Pro generations ~ 7 Seedance 2 fast videos 190 credits per seat/mo $9 $4 per seat/mo, billed annually $54 today for 1 year
+  - Then $54/year Get Basic Save $54 per seat compared to monthly − 1 seat + No guest seats on Basic Invideo editor ✓ Included
+  - credits per seat/mo = 400 Nano Banana Pro generations ~ 26 Seedance 2 videos 1,000 2,000 $30 $15 per seat/mo, billed annually $180 today for 1 year
+  - Then $180/year Get Pro Save $180 per seat compared to monthly − 1 seat + + 10 guest seats , 190 credits each FREE Invideo
+  - anana Pro generations ~ 157 Seedance 2 videos 3,000 6,000 9,000 Pay for 12 months, get 24 $160 $40 per seat/mo for 2 years $960 today for 2 years
+  - Then $1,920/year Get Ultra 2x Save $2,880 over 2 years − 1 seat + + 20 guest seats , 190 credits each FREE Invideo editor ✓ Include
+  - /mo = 228 Nano Banana Pro generations ~ 21 Seedance 2 fast videos 190 credits per seat/mo $9 $4 per seat/mo, billed annually $162 up front for 3 seats Get Basic Save $162 compared to
+  - ality Monthly Annual Compare features See in detail what each plan gives you Annual Basic $5 per seat/mo, billed annually Get Basic Pro $15 per seat/mo, billed annually Get Pro Ultra
+  - Most popular $80 per seat/mo, billed annually Get Ultra 2x Video Seedance 2
+  - v><div class="pricing-glass-price-block"><div class="pricing-glass-price" aria-label="Was $9. $4 per seat/mo, billed annually
+  - $54 billed annually for 1 seat
+  - Then $54/year"><span class="pricing-glass-price-old" aria-hidden="true">$9<span class="pricing-glass-price-strike"></span></span><span class="pricing-glass-price-cu
+  - rrent" aria-hidden="true">$4</span><span class="pricing-glass-price-period" aria-hidden="true">per seat/mo, billed ann
+  - Then $54/year</p><div class="pricing-glass-cta-wrap"><button type="button" class="pricing-glass-ct
+  - ricing-glass-cta--ghost">Get Basic</button><p class="pricing-glass-cta-note"><strong>Save $54</strong> <!-- -->per seat compared to monthly</p></div><div class="pricing-glass-guest-bo
+  - v><div class="pricing-glass-price-block"><div class="pricing-glass-price" aria-label="Was $30. $15 per seat/mo, billed annually
+  - $180 billed annually for 1 seat
+  - Then $180/year"><span class="pricing-glass-price-old" aria-hidden="true">$30<span class="pricing-glass-price-strike"></span></span><span class="pricing-glass-price-cu
+  - rrent" aria-hidden="true">$15</span><span class="pricing-glass-price-period" aria-hidden="true">per seat/mo, billed ann
+  - Then $180/year</p><div class="pricing-glass-cta-wrap"><button type="button" class="pricing-glass-ct
+  - ricing-glass-cta--primary">Get Pro</button><p class="pricing-glass-cta-note"><strong>Save $180</strong> <!-- -->per seat compared to monthly</p></div><div class="pricing-glass-guest-bo
+  - v><div class="pricing-glass-price-block"><div class="pricing-glass-price" aria-label="Was $160. $40 per seat/mo for 2 years
+  - Then $1,920/year"><span class="pricing-glass-price-old" aria-hidden="true">$160<span class="pricing-glass-price-strike"></span></span><span class="pricing-glass-price-cu
+  - rrent" aria-hidden="true">$40</span><span class="pricing-glass-price-period" aria-hidden="true">per seat/mo for 2 years
+  - Then $1,920/year</p><div class="pricing-glass-cta-wrap"><button type="button" class="pricing-glass-ct
+  - $162 billed annually for 3 seats
+  - Then $162/year"><span class="pricing-glass-price-old" aria-hidden="true">$9<span class="pricing-glass-price-strike"></span></span><span class="pricing-glass-price-cu
+  - cta pricing-glass-cta--ghost">Get Basic</button><p class="pricing-glass-cta-note"><b>Save $162</b> compared to monthly</p></div><div class="pricing-glass-fixed-note pricing-glass-stepp
+  - p><p class="pricing-glass-compare-price"><span class="pricing-glass-compare-price-amount">$5</span> <span class="pricing-glass-compare-price-period">per seat/mo, billed annually</spa
+  - p><p class="pricing-glass-compare-price"><span class="pricing-glass-compare-price-amount">$15</span> <span class="pricing-glass-compare-price-period">per seat/mo, billed annually</spa
+  - p><p class="pricing-glass-compare-price"><span class="pricing-glass-compare-price-amount">$80</span> <span class="pricing-glass-compare-price-period">per seat/mo, billed annually</spa
+  - "id\":\"credit-cost\",\"state\":\"excluded\",\"type\":\"credit-cost\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:basic:usageQuota\",\"yearly\":{\"amount\":108,\
+  - ol\",\"id\":\"educator\",\"state\":\"included\",\"type\":\"educator\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:enterprise:usageQuota\",\"yearly\":{\"amount\":
+  - "id\":\"credit-cost\",\"state\":\"excluded\",\"type\":\"credit-cost\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:pro:usageQuota\",\"yearly\":{\"amount\":360,\"a
+  - "id\":\"credit-cost\",\"state\":\"excluded\",\"type\":\"credit-cost\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:pro_2x:usageQuota\",\"yearly\":{\"amount\":720,
+  - ol\",\"id\":\"educator\",\"state\":\"excluded\",\"type\":\"educator\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:scale:usageQuota\",\"yearly\":{\"amount\":2580,
+  - ol\",\"id\":\"educator\",\"state\":\"excluded\",\"type\":\"educator\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:team:usageQuota\",\"yearly\":{\"amount\":948,\"
+  - "id\":\"credit-cost\",\"state\":\"included\",\"type\":\"credit-cost\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:ultra:usageQuota\",\"yearly\":{\"amount\":960,\
+  - "id\":\"credit-cost\",\"state\":\"included\",\"type\":\"credit-cost\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:ultra_2x:usageQuota\",\"yearly\":{\"amount\":19
+  - "id\":\"credit-cost\",\"state\":\"included\",\"type\":\"credit-cost\"}],\"usage_quota\":\"$31:props:children:0:props:initialPlans:plans:ultra_3x:usageQuota\",\"yearly\":{\"amount\":28

@@ -1,0 +1,19 @@
+TOOL: Klap (klap)
+SOURCE: https://klap.app/pricing
+FETCHED: 2026-11-18T23:21:58.571Z  HTTP 200  81358 bytes
+PRICE LINES (15):
+  - Monthly Yearly Save 50% Basic For individuals 100 clips /mo $14.50 /mo $174 billed yearly Get started Pro Popular For professionals 300 clips /mo $39
+  - 50 /mo $474 billed yearly Get started Pro+ For teams 1000 clips /mo $94.50 /mo $1,134 billed yearly Get started All plans include: AI Clipping Unlimited social acco
+  - M creators Frequently Asked Questions How much does Klap cost? Billed monthly, Klap costs $29, $79 or $189 a month
+  - Billed yearly, it costs $174, $474 or $1,134 a year, which comes to $14.50, $39
+  - Paid plans: Basic is $14.50/month for 100 clips a month, Pro $39
+  - 50/month for 300 clips and Pro+ $94.50/month for 1,000 clips, all billed yearly ($29, $79 and $189 month to month)
+  - Paid plans start at $14.50/month billed yearly ($29 month to month)
+  - ns, Free Trial and Refunds</title><meta name="description" content="Official Klap prices: $29, $79 or $189 a month, or $174, $474 or $1,134 a year, for 100, 300 or 1,000 clips a month
+  - , Free Trial and Refunds"/><meta property="og:description" content="Official Klap prices: $29, $79 or $189 a month, or $174, $474 or $1,134 a year, for 100, 300 or 1,000 clips a month
+  - Free Trial and Refunds"/><meta name="twitter:description" content="Official Klap prices: $29, $79 or $189 a month, or $174, $474 or $1,134 a year, for 100, 300 or 1,000 clips a month
+  - *]:font-normal mt-1 text-slate-500 font-display">$174 billed yearly</p><button class="px-4 py-2
+  - *]:font-normal mt-1 text-slate-500 font-display">$474 billed yearly</p><button class="px-4 py-2
+  - *]:font-normal mt-1 text-slate-500 font-display">$1,134 billed yearly</p><button class="px-4 py-2
+  - ch does Klap cost?","acceptedAnswer":{"@type":"Answer","text":"Billed monthly, Klap costs $29, $79 or $189 a month
+  - *]:font-normal leading-relaxed text-slate-600 font-display">Billed monthly, Klap costs $29, $79 or $189 a month

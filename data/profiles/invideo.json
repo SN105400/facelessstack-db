@@ -1,0 +1,36 @@
+{
+ "slug": "invideo",
+ "name": "InVideo",
+ "category": "video-generation",
+ "url": "https://invideo.io",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Basic",
+    "monthly_usd": 9,
+    "annual_monthly_usd": 4,
+    "notes": "per seat; $54/yr, promo $54 today"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 30,
+    "annual_monthly_usd": 15,
+    "notes": "per seat; $180/yr"
+   },
+   {
+    "name": "Ultra 2x",
+    "monthly_usd": 160,
+    "notes": "2-year deal: $40/mo, $960 upfront"
+   }
+  ],
+  "notes": "Moved to per-seat pricing. Monthly compare prices displayed: $5/$15/$80 (annual basis).",
+  "source_url": "https://invideo.io/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "50% monthly / 25% annual",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/invideo-20261118.html.gz"
+}

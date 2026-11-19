@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Voice A/B — pick the stickman's voice</title>
+<style>
+  body{margin:0;background:#070a16;color:#e8ecff;font-family:system-ui,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:24px 16px 60px}
+  h1{font-size:1.4rem}.meta{color:#8fa0c9;font-size:.85rem}
+  .card{background:#101735;border:1px solid #1c2647;border-radius:10px;padding:14px;margin:12px 0}
+  .who{font-weight:700}.use{color:#8fa0c9;font-size:.85rem}
+  audio{width:100%;margin-top:8px}
+  .tier{color:#ffd76e;font-size:.8rem;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Voice A/B — listen and pick</h1>
+  <p class="meta">Same two lines in each voice. Pick the stickman voice and the agent voice; the skit assembler takes both as parameters.</p>
+  <div class="card"><div class="who">1. Fred — current stickman voice</div>
+    <div class="use">compact macOS voice, robotic</div>
+    <audio controls src="/studio/voice-ab/1-fred-stickman.wav"></audio></div>
+  <div class="card"><div class="who">2. Samantha — current agent voice</div>
+    <div class="use">compact macOS voice</div>
+    <audio controls src="/studio/voice-ab/2-samantha-agent.wav"></audio></div>
+  <div class="card"><div class="who">3. Reed — stickman candidate</div>
+    <div class="use">newer-generation macOS voice, noticeably more natural</div>
+    <audio controls src="/studio/voice-ab/3-reed-stickman.wav"></audio></div>
+  <div class="card"><div class="who">4. Flo — agent candidate</div>
+    <div class="use">newer-generation macOS voice</div>
+    <audio controls src="/studio/voice-ab/4-flo-agent.wav"></audio></div>
+  <div class="card"><div class="who">5. Samantha + prosody tuning</div>
+    <div class="use">rate 168 + embedded pauses — what delivery tuning alone buys</div>
+    <audio controls src="/studio/voice-ab/5-samantha-tuned.wav"></audio>
+    <div class="tier">next tiers: macOS Premium voices (free download in System Settings → Spoken Content → Manage Voices) → local neural TTS (Kokoro, installing) → ElevenLabs free tier for hero lines</div></div>
+</div>
+</body>
+</html>

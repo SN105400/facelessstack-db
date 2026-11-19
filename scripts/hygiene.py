@@ -2,13 +2,13 @@
 """Storage hygiene for the FacelessStack workspace.
 
 Retention policy (enforced by this script, checked nightly by the automation):
-  - studio/*.webm: keep newest 5 + anything newer than 14 days; older renders are
-    disposable (deterministically re-renderable from code + seed params).
-  - plan/nightly-*.md older than 45 days: gzip into plan/archive/ (monthly digests
-    are what matter long-term).
-  - data/snapshots/*.gz older than 180 days: delete (keep monthly snapshots).
-  - Scratch files (*.tmp, *.part) older than 1 day: delete.
-  - Hard cap: if workspace exceeds 1.5 GB, print a warning line for the report.
+  - studio/*.webm|mp4: keep newest 5 + anything newer than 14 days (re-renderable).
+  - *.aiff (TTS intermediates) older than 1 day: delete (wav copies retained).
+  - studio/voice-ab/*.wav: keep newest 10 A/B samples.
+  - logs/claim.log|claim.err.log >5MB: truncate to last 200 lines.
+  - plan/nightly-*.md older than 45 days: gzip into plan/archive/.
+  - data/snapshots/*.gz older than 180 days: delete. Scratch (*.tmp/*.part/*.bak) >1d: delete.
+  - Hard cap: workspace >1.5 GB prints a warning line for the report.
 
 Usage: python3 scripts/hygiene.py [--apply]     (default is dry-run)
 """
@@ -57,6 +57,41 @@ if os.path.isdir(studio):
         age = NOW - mt
         if i >= 5 and age > 14 * DAY:
             remove(p, "render older than 14d, outside newest 5")
+
+# --- rule: TTS .aiff intermediates >1d (converted .wav copies are the kept source) ---
+for dirpath, dirnames, filenames in os.walk(ROOT):
+    dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules")]
+    for f in filenames:
+        if f.endswith(".aiff"):
+            p = os.path.join(dirpath, f)
+            if NOW - os.path.getmtime(p) > DAY:
+                remove(p, "TTS intermediate >1d (wav copy retained)")
+
+# --- rule: voice-ab A/B samples, keep newest 10 ---
+vab = os.path.join(ROOT, "studio", "voice-ab")
+if os.path.isdir(vab):
+    samples = []
+    for f in os.listdir(vab):
+        p = os.path.join(vab, f)
+        if f.endswith(".wav") and os.path.isfile(p):
+            samples.append((os.path.getmtime(p), p))
+    samples.sort(reverse=True)
+    for i, (mt, p) in enumerate(samples):
+        if i >= 10:
+            remove(p, "A/B sample outside newest 10")
+
+# --- rule: claim logs >5MB -> truncate to last 200 lines ---
+logs = os.path.join(ROOT, "logs")
+if os.path.isdir(logs):
+    for f in ("claim.log", "claim.err.log"):
+        p = os.path.join(logs, f)
+        if os.path.isfile(p) and os.path.getsize(p) > 5 * 1024 * 1024:
+            with open(p, "r", errors="replace") as fin:
+                tail = fin.readlines()[-200:]
+            if APPLY:
+                with open(p, "w") as fout: fout.writelines(tail)
+            freed += os.path.getsize(p) - sum(len(l) for l in tail)
+            actions.append(f"{'TRUNC' if APPLY else 'TRUNC(dry)'} logs/{f} — kept last 200 lines")
 
 # --- rule: nightly reports older than 45 days -> archive ---
 plan = os.path.join(ROOT, "plan")

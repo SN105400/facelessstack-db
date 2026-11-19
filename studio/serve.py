@@ -23,6 +23,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             allowed = True
         if not allowed or not name:
             name = time.strftime('studio/demo-loop-%Y%m%d-%H%M%S.webm')
+        os.makedirs(os.path.join(ROOT, os.path.dirname(name)), exist_ok=True)
         with open(os.path.join(ROOT, name), 'wb') as f:
             f.write(data)
         self.send_response(200)

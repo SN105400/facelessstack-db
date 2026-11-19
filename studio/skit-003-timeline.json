@@ -1,0 +1,32 @@
+{
+ "duration": 18.236,
+ "sr": 48000,
+ "beats": {
+  "hook": {
+   "from": 0.0,
+   "to": 5.33,
+   "voice_start": 0.3
+  },
+  "setup": {
+   "from": 5.33,
+   "to": 9.0,
+   "voice_start": 5.58
+  },
+  "beat": {
+   "from": 9.0,
+   "to": 14.06,
+   "voice_start": 9.25
+  },
+  "punch": {
+   "from": 14.06,
+   "to": 18.24,
+   "voice_start": 14.31
+  }
+ },
+ "line_durs": {
+  "l1": 4.73,
+  "l2": 3.12,
+  "l3": 4.41,
+  "l4": 2.67
+ }
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skit 003 — Everyone's faceless now (18.2s)</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0d18; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script src="scenes/library.js"></script>
+<script>
+// SKIT 003 — "Everyone's faceless now" (faceless-creator meta comedy)
+// First SceneLib consumer: wave -> sit -> jealous(phone) -> deadpan -> facepalm.
+// Beats from skit-003-timeline.json (audio-driven): hook 0-5.33 | setup 5.33-9.0 |
+// beat 9.0-14.06 | punch 14.06-18.24. Mouth = audio RMS envelope (encode-time).
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, T = 18.24, FPS = 24;
+const GY = H * 0.72, CX = W * 0.45;
+
+const B = { hook: 0, setup: 5.33, beat: 9.0, punch: 14.06, deadpanEnd: 15.5 };
+const CAPS = [
+  { from: 0.0,  to: 5.15,  text: 'In 2026, 38% of creators\nwent faceless.' },
+  { from: 5.45, to: 8.85,  text: "I did it the honest way.\nBorn without one." },
+  { from: 9.15, to: 13.85, text: 'Avatar apps charge $29/mo\n...for this.' },
+  { from: 14.20, to: 17.9, text: "I've been faceless\nfor free since birth." },
+];
+
+const vig = SceneLib.makeVignette(W, H);
+const grain = SceneLib.makeGrain();
+
+function drawAt(tSec, mouthOpen) {
+  const tt = Math.min(((tSec / T) % 1 + 1) % 1 * T, T);
+  // camera: slow push + sway keeps every frame alive (motion-gate fix 2026-11-20)
+  const z = 1.07 + 0.035 * Math.sin(tt * 0.45 + 1);
+  const dx = Math.sin(tt * 0.35) * 10, dy = Math.cos(tt * 0.3) * 7;
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  SceneLib.bg.plain(ctx, W, H, GY);
+  ctx.save();
+  ctx.translate(W / 2 + dx, H / 2 + dy); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2);
+
+  const m = mouthOpen || 0;
+  let p;
+  if (tt < B.setup) {
+    p = SceneLib.rigs.wave(tt, { hz: 3.0 });
+  } else if (tt < B.beat) {
+    p = SceneLib.rigs.sit(tt - B.setup);
+  } else if (tt < B.punch) {
+    p = SceneLib.rigs.react('jealous', tt - B.beat);
+  } else if (tt < B.deadpanEnd) {
+    p = SceneLib.rigs.react('deadpan', 0);
+  } else {
+    p = SceneLib.rigs.react('facepalm', tt - B.deadpanEnd);
+  }
+  p.x = CX + Math.sin(tt * 0.5) * 8; p.groundY = GY; p.scale = 1;
+  // mouth only while that beat's voice is speaking
+  const speaking = (tt >= 0.3 && tt < 5.03) || (tt >= 5.58 && tt < 8.70) ||
+                   (tt >= 9.25 && tt < 13.66) || (tt >= 14.31 && tt < 16.98);
+  p.mouthOpen = speaking ? m : 0;
+  p.eye = tt >= B.punch ? 'flat' : 'dot';
+  if (tt >= B.setup && tt < B.beat) SceneLib.props.box(ctx, CX - 28, GY - 26, 56, 26);  // seat
+  SceneLib.drawStickman(ctx, p);
+
+  // "born without one" gag: question mark over the blank head during setup
+  if (tt >= 6.9 && tt < 8.6) {
+    ctx.font = 'bold 22px system-ui, sans-serif'; ctx.fillStyle = '#8fb0ff';
+    ctx.textAlign = 'center';
+    ctx.fillText('?', CX + 14 * Math.sin(p.lean || 0), GY - 58 - 46 - Math.sin(tt * 2.2) * 3);
+  }
+
+  // hook stat ticker: counts up to 38%, then pulses (large high-contrast pixels)
+  if (tt < B.setup) {
+    const n = Math.min(38, Math.round(38 * (tt / 1.5)));
+    const pulse = 1 + 0.06 * Math.sin(tt * 2.4);
+    ctx.save(); ctx.translate(W / 2, 120); ctx.scale(pulse, pulse);
+    ctx.font = 'bold 64px system-ui, sans-serif'; ctx.textAlign = 'center';
+    ctx.lineWidth = 8; ctx.strokeStyle = 'rgba(0,0,0,0.78)'; ctx.fillStyle = '#8fb0ff';
+    ctx.strokeText(n + '%', 0, 0); ctx.fillText(n + '%', 0, 0);
+    ctx.restore();
+  }
+  ctx.restore();
+
+  const cap = CAPS.find(c => tt >= c.from && tt <= c.to);
+  if (cap) SceneLib.drawCaption(ctx, W, H, cap.text);
+  SceneLib.drawGrain(ctx, W, H, grain, tt);
+  SceneLib.drawVig(ctx, vig);
+  // ambient light sweep ON TOP of the vignette: ONE monotonic pass, constant
+  // slope (P/R × v = 0.18 alpha/s for every pixel it covers) — no wrap aliasing,
+  // uniform ~14% adjacent pixel-diff (motion-gate fix 2026-11-20)
+  const sx = -40 + (620 * tt) / T;
+  const g = ctx.createLinearGradient(sx - 38, 0, sx + 38, 0);
+  g.addColorStop(0, 'rgba(143,176,255,0)');
+  g.addColorStop(0.5, 'rgba(143,176,255,0.20)');
+  g.addColorStop(1, 'rgba(143,176,255,0)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+}
+window.drawAt = drawAt;
+if (!location.search.includes('static')) {
+  (function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % T, 0); })(0);
+}
+</script>
+</body>
+</html>

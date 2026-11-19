@@ -18,7 +18,7 @@ This file is the self-contained brief the nightly automation follows (it runs in
 
 ## Phase: EXECUTION — nightly loop
 1. Read `ROADMAP.md` current week → pick the next unfinished milestone item (work top-down; check `CHANGELOG.md` and the latest `plan/nightly-*.md` for state).
-2. Execute via 3 lanes: Lane 1 = flagship build (scraping/enrichment per ROADMAP), Lane 2 = site code/content fixes, Lane 3 = long batch (comparison-page generation).
+2. Execute via 3 lanes: Lane 1 = flagship build (scraping/enrichment per ROADMAP), Lane 2 = site code/content fixes, Lane 3 = **skit production line per `plan/SKIT-PIPELINE.md`** once its prerequisites exist (SFX/music synthesis demo + scene library v1 in `studio/scenes/`); until then Lane 3 builds those prerequisites. DB core work always has priority if the night is short.
 3. Data rules: one JSON/MD record per tool in `data/` following `data/tools-seed.json` schema; every row gets `source_url`, `scraped_at`, `verified` fields. Pricing pages change often — re-verify flagged-stale rows before adding new ones.
 4. Commit everything (git init the workspace if no repo exists; conventional commits).
 5. Append `CHANGELOG.md` + write `plan/nightly-YYYYMMDD.md` (what was produced, blockers, tomorrow's queue).

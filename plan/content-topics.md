@@ -28,3 +28,16 @@ What actually earns views on Facebook, matched against what our text→code→an
 
 ## First production batch (when green-lit)
 10 seed-varied satisfying loops (different palettes/motions) + 5 kinetic-typography quotes + 2 animated finance facts. All 1080×1920 export (render at 810×1440 internal for crisper upscale), 7–15s seamless loops, VP9 WebM → H.264 MP4 conversion step needed for FB upload (FB accepts WebM, but MP4 is safest — add ffmpeg or in-page WebCodecs avc1 encode to the pipeline when we get there).
+
+## Genre decision framework (2026-11-19, user asked: political / trivial / what-if / history?)
+
+Policy anchor: Meta's Content Monetization Policies put **controversial political/social content in restricted inventory = little/no payout**; faceless operators must run a **Page or professional-mode profile** (personal profiles are ineligible). Source: facebook.com/business/help/1348682518563619.
+
+| Genre | Monetization | Views fit | Token fit | Asset synergy | Verdict |
+|---|---|---|---|---|---|
+| **Political** | ❌ restricted inventory | divisive spikes, unstable | cheap | none | **NEVER on the money track** |
+| **Trivial / everyday comedy** | ✅ safe | ✅ top views niche | cheap | weak-direct | **Page-1 core** (stickman skits: work, gym, family, "POV" formats) |
+| **What-if** (science/tech/counterfactual) | ✅ safe if de-politicized | evergreen, high shares | **high — research-heavy** | medium | **Page-2 experiment** |
+| **History** ("on this day", forgotten stories) | ✅ safe (educational framing) | older FB demo loves it | **high — fact-check burden** | medium | **Page-2 experiment** |
+
+Rules: one lane per page (consistency compounds reach); fleet drafts 10 skits/night → user curates 2–3 at the morning gate; history content gets a mandatory fact-check pass (hallucinated history = reputation death); what-if frames science/tech/economics, never contested modern politics. AI/tech satire sits safely between comedy and the asset — vendors are an industry, not an electorate.

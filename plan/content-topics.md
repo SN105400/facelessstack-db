@@ -41,3 +41,11 @@ Policy anchor: Meta's Content Monetization Policies put **controversial politica
 | **History** ("on this day", forgotten stories) | ✅ safe (educational framing) | older FB demo loves it | **high — fact-check burden** | medium | **Page-2 experiment** |
 
 Rules: one lane per page (consistency compounds reach); fleet drafts 10 skits/night → user curates 2–3 at the morning gate; history content gets a mandatory fact-check pass (hallucinated history = reputation death); what-if frames science/tech/economics, never contested modern politics. AI/tech satire sits safely between comedy and the asset — vendors are an industry, not an electorate.
+
+### Lane addition — "Civics by the numbers" (2026-11-19, user asked about factual election explainers)
+**Verdict: viable as a SEPARATE educational lane with guardrails — not on Page 1, and never framed as "implications/commentary."**
+- The line inside the user's own example: "who won, by how many %" = facts (safe-ish); **"implications and etc" = commentary — that is where inventory filters bite.** Rule: numbers and mechanisms yes; implications, predictions, opinion no.
+- Risk gradient by recency: historical elections (pre-2000 landslides, turnout history, how the Electoral College converts votes) = safest; the most recent election = hottest classifiers + maximum misinformation strictness. Start deep history, approach recent only as neutral data-viz.
+- Fleet guardrails: official sources only (FEC/state SOS certified results), mandatory fact-check pass, neutral data-viz framing (maps/margins/turnout curves — Tier-1 pipeline strength), no debate-bait captions, no candidate advocacy/predictions anywhere.
+- Expect occasional automated false positives ("restricted inventory") on election-adjacent posts even when neutral — appeal via Meta Business Help Center. This is why the lane is Page-2/3: even when allowed, political-adjacent inventory pays less than comedy/data lanes.
+- Token fit: excellent (research-heavy + data-viz rendering = nightly fleet work). Sources: facebook.com/business/help/1348682518563619; creator reports of false positives via automated review.

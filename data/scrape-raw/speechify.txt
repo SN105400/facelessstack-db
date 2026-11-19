@@ -1,0 +1,9 @@
+TOOL: Speechify (speechify)
+SOURCE: https://speechify.com/pricing/
+FETCHED: 2026-11-19T15:40:57.049Z  HTTP 200  430866 bytes
+PRICE LINES (5):
+  - 10 robotic sounding voices Text to speech features only Select Plan Premium MOST POPULAR $29 /Month or $139 billed yearly 400+ high quality, natural voices 60+ different languages Li
+  - justify-between gap-2 md:flex-row"><div class="flex items-baseline gap-1 text-heading-3">$29<!-- --> <span class="text-sub-heading-caps-2">/Month</span></div><div class="text-gray-50
+  - text-sub-heading-caps-2 normal-case!">or $139 billed yearly</div></div></div><div class="mt-8 flex flex-col gap-12 lg:mt-6 lg:flex-col-
+  - 85686df92bc5420a48add\"},{\"planSlug\":\"tts-premium\",\"priceData\":{\"priceMonthly\":\"$$29\",\"priceYearly\":\"$$139\",\"subscriptMonthly\":\"/Month\",\"subscriptYearly\":\"/Year\"
+  - ,\"subtitleMonthly\":\"or $139 billed yearly\",\"subtitleYearly\":\"\"},\"content\":{\"title\":\"Premium\",\"highlightTe

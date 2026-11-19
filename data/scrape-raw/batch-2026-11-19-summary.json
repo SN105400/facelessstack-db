@@ -3,79 +3,88 @@
     "slug": "zebracat",
     "url": "https://zebracat.ai/pricing",
     "status": 200,
-    "ms": 587,
+    "ms": 827,
     "bytes": 311191,
     "finalUrl": "https://www.zebracat.ai/pricing",
     "err": null
   },
   {
-    "slug": "runway",
-    "url": "https://runwayml.com/pricing",
+    "slug": "pika",
+    "url": "https://pika.art/pricing",
     "status": 200,
-    "ms": 641,
-    "bytes": 1276784,
-    "finalUrl": "https://runway.com/pricing",
+    "ms": 724,
+    "bytes": 374594,
+    "finalUrl": "https://pika.art/pricing",
     "err": null
   },
   {
-    "slug": "kling-ai",
-    "url": "https://klingai.com/pricing",
+    "slug": "luma-dream-machine",
+    "url": "https://lumalabs.ai/dream-machine/pricing",
     "status": 200,
-    "ms": 921,
-    "bytes": 204362,
-    "finalUrl": "https://klingai.com/pricing",
+    "ms": 1908,
+    "bytes": 574102,
+    "finalUrl": "https://lumalabs.ai/app",
     "err": null
   },
   {
-    "slug": "synthesia",
-    "url": "https://synthesia.io/pricing",
+    "slug": "speechify",
+    "url": "https://speechify.com/pricing",
     "status": 200,
-    "ms": 947,
-    "bytes": 984488,
-    "finalUrl": "https://www.synthesia.io/pricing",
+    "ms": 621,
+    "bytes": 430866,
+    "finalUrl": "https://speechify.com/pricing/",
     "err": null
   },
   {
-    "slug": "d-id",
-    "url": "https://www.d-id.com/pricing",
+    "slug": "wellsaid-labs",
+    "url": "https://wellsaidlabs.com/pricing",
     "status": 200,
-    "ms": 1344,
-    "bytes": 158677,
-    "finalUrl": "https://www.d-id.com/pricing/studio/",
+    "ms": 2256,
+    "bytes": 415964,
+    "finalUrl": "https://www.wellsaid.io/",
     "err": null
   },
   {
-    "slug": "lovo-genny",
-    "url": "https://lovo.ai/pricing",
-    "status": 402,
-    "ms": 336,
-    "bytes": 1592,
-    "finalUrl": "https://lovo.ai/pricing",
+    "slug": "cartesia",
+    "url": "https://cartesia.ai/pricing",
+    "status": 200,
+    "ms": 519,
+    "bytes": 324003,
+    "finalUrl": "https://www.cartesia.ai/pricing",
     "err": null
   },
   {
-    "slug": "lovo-genny",
-    "url": "https://lovo.ai/en/pricing",
-    "status": 402,
-    "ms": 57,
-    "bytes": 1592,
-    "finalUrl": "https://lovo.ai/en/pricing",
+    "slug": "kokoro-oss",
+    "url": "https://huggingface.co/hexgrad/Kokoro-82M/pricing",
+    "status": 404,
+    "ms": 426,
+    "bytes": 53752,
+    "finalUrl": "https://huggingface.co/hexgrad/Kokoro-82M/pricing",
     "err": null
   },
   {
-    "slug": "lovo-genny",
-    "url": "https://lovo.ai",
-    "status": 402,
-    "ms": 73,
-    "bytes": 1592,
-    "finalUrl": "https://lovo.ai/",
+    "slug": "kokoro-oss",
+    "url": "https://huggingface.co/hexgrad/Kokoro-82M/en/pricing",
+    "status": 404,
+    "ms": 542,
+    "bytes": 53758,
+    "finalUrl": "https://huggingface.co/hexgrad/Kokoro-82M/en/pricing",
+    "err": null
+  },
+  {
+    "slug": "kokoro-oss",
+    "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "status": 200,
+    "ms": 673,
+    "bytes": 204808,
+    "finalUrl": "https://huggingface.co/hexgrad/Kokoro-82M",
     "err": null
   },
   {
     "slug": "happyscribe",
     "url": "https://www.happyscribe.com/pricing",
     "status": 200,
-    "ms": 2229,
+    "ms": 1775,
     "bytes": 243735,
     "finalUrl": "https://www.happyscribe.com/pricing",
     "err": null
@@ -84,25 +93,52 @@
     "slug": "zubtitle",
     "url": "https://zubtitle.com/pricing",
     "status": 200,
-    "ms": 272,
+    "ms": 176,
     "bytes": 96867,
     "finalUrl": "https://zubtitle.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "captions-app",
+    "url": "https://www.captions.ai/pricing",
+    "status": 200,
+    "ms": 440,
+    "bytes": 165120,
+    "finalUrl": "https://captions.ai/pricing",
     "err": null
   },
   {
     "slug": "vizard",
     "url": "https://vizard.ai/pricing",
     "status": 200,
-    "ms": 1746,
-    "bytes": 304934,
+    "ms": 1534,
+    "bytes": 307588,
     "finalUrl": "https://vizard.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "munch",
+    "url": "https://www.getmunch.com/pricing",
+    "status": 200,
+    "ms": 710,
+    "bytes": 683574,
+    "finalUrl": "https://www.munchstudio.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "2short",
+    "url": "https://2short.ai/pricing",
+    "status": 200,
+    "ms": 928,
+    "bytes": 32220,
+    "finalUrl": "https://2short.ai/pricing",
     "err": null
   },
   {
     "slug": "kapwing",
     "url": "https://www.kapwing.com/pricing",
     "status": 200,
-    "ms": 908,
+    "ms": 955,
     "bytes": 310194,
     "finalUrl": "https://www.kapwing.com/pricing",
     "err": null
@@ -111,18 +147,198 @@
     "slug": "wisecut",
     "url": "https://www.wisecut.ai/pricing",
     "status": 200,
-    "ms": 4097,
+    "ms": 461,
     "bytes": 184460,
     "finalUrl": "https://wisecut.ai/pricing",
     "err": null
   },
   {
-    "slug": "udio",
-    "url": "https://www.udio.com/pricing",
+    "slug": "chatgpt",
+    "url": "https://chatgpt.com/pricing",
     "status": 200,
-    "ms": 676,
-    "bytes": 168525,
-    "finalUrl": "https://www.udio.com/pricing",
+    "ms": 613,
+    "bytes": 1271358,
+    "finalUrl": "https://chatgpt.com/pricing/",
+    "err": null
+  },
+  {
+    "slug": "claude",
+    "url": "https://claude.ai/pricing",
+    "status": 200,
+    "ms": 151,
+    "bytes": 171503,
+    "finalUrl": "https://claude.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "jasper",
+    "url": "https://www.jasper.ai/pricing",
+    "status": 200,
+    "ms": 198,
+    "bytes": 499274,
+    "finalUrl": "https://www.jasper.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "copy-ai",
+    "url": "https://www.copy.ai/pricing",
+    "status": 200,
+    "ms": 561,
+    "bytes": 224554,
+    "finalUrl": "https://www.copy.ai/prices",
+    "err": null
+  },
+  {
+    "slug": "buffer",
+    "url": "https://buffer.com/pricing",
+    "status": 200,
+    "ms": 1456,
+    "bytes": 469360,
+    "finalUrl": "https://buffer.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "publer",
+    "url": "https://publer.io/pricing",
+    "status": 0,
+    "ms": 2844,
+    "bytes": 0,
+    "finalUrl": "",
+    "err": "fetch failed"
+  },
+  {
+    "slug": "publer",
+    "url": "https://publer.io/en/pricing",
+    "status": 0,
+    "ms": 2560,
+    "bytes": 0,
+    "finalUrl": "",
+    "err": "fetch failed"
+  },
+  {
+    "slug": "publer",
+    "url": "https://publer.io",
+    "status": 0,
+    "ms": 880,
+    "bytes": 0,
+    "finalUrl": "",
+    "err": "fetch failed"
+  },
+  {
+    "slug": "metricool",
+    "url": "https://metricool.com/pricing",
+    "status": 200,
+    "ms": 619,
+    "bytes": 1181344,
+    "finalUrl": "https://metricool.com/pricing/",
+    "err": null
+  },
+  {
+    "slug": "blotato",
+    "url": "https://www.blotato.com/pricing",
+    "status": 200,
+    "ms": 482,
+    "bytes": 99026,
+    "finalUrl": "https://www.blotato.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "post-bridge",
+    "url": "https://post-bridge.com/pricing",
+    "status": 200,
+    "ms": 742,
+    "bytes": 97171,
+    "finalUrl": "https://www.post-bridge.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "canva",
+    "url": "https://www.canva.com/pricing",
+    "status": 200,
+    "ms": 998,
+    "bytes": 10555,
+    "finalUrl": "https://www.canva.com/en_ph/pricing/",
+    "err": null
+  },
+  {
+    "slug": "ideogram",
+    "url": "https://ideogram.ai/pricing",
+    "status": 200,
+    "ms": 2263,
+    "bytes": 247242,
+    "finalUrl": "https://ideogram.ai/pricing/",
+    "err": null
+  },
+  {
+    "slug": "midjourney",
+    "url": "https://www.midjourney.com/pricing",
+    "status": 200,
+    "ms": 403,
+    "bytes": 50557,
+    "finalUrl": "https://www.midjourney.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "leonardo-ai",
+    "url": "https://leonardo.ai/pricing",
+    "status": 200,
+    "ms": 694,
+    "bytes": 350203,
+    "finalUrl": "https://leonardo.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "photoroom",
+    "url": "https://www.photoroom.com/pricing",
+    "status": 200,
+    "ms": 1507,
+    "bytes": 996621,
+    "finalUrl": "https://www.photoroom.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "soundraw",
+    "url": "https://soundraw.io/pricing",
+    "status": 200,
+    "ms": 1885,
+    "bytes": 62692,
+    "finalUrl": "https://soundraw.io/pricing",
+    "err": null
+  },
+  {
+    "slug": "epidemic-sound",
+    "url": "https://www.epidemicsound.com/pricing",
+    "status": 200,
+    "ms": 688,
+    "bytes": 345688,
+    "finalUrl": "https://www.epidemicsound.com/pricing/",
+    "err": null
+  },
+  {
+    "slug": "tubebuddy",
+    "url": "https://www.tubebuddy.com/pricing",
+    "status": 200,
+    "ms": 7552,
+    "bytes": 242860,
+    "finalUrl": "https://www.tubebuddy.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "1of10",
+    "url": "https://1of10.com/pricing",
+    "status": 200,
+    "ms": 1003,
+    "bytes": 146160,
+    "finalUrl": "https://1of10.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "outlierkit",
+    "url": "https://outlierkit.com/pricing",
+    "status": 200,
+    "ms": 813,
+    "bytes": 55998,
+    "finalUrl": "https://outlierkit.com/app/pricing",
     "err": null
   }
 ]

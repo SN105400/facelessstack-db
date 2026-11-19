@@ -1,0 +1,8 @@
+TOOL: OutlierKit (outlierkit)
+SOURCE: https://outlierkit.com/app/pricing
+FETCHED: 2026-11-19T15:42:55.196Z  HTTP 200  55998 bytes
+PRICE LINES (4):
+  - 3% Annual Save up to 58% Lifetime 🔥 One-time Hobby Plan Creators getting started Starter $79 $49 /month Save 38% Start Plan Everything one creator needs to stop guessing Everything y
+  - rowing their brand Popular $149 $99 /month Save 34% Start Plan See the whole field, not just your lane Scale your content eng
+  - e) Everything in Hobby, plus the above Max Plan Agencies running client channels Ultimate $399 /month Start Plan Run competitive intelligence at agency scale Everything in Pro, plus 2,
+  - rice-display svelte-1rq8r66"><!--[!--><!--]--> <span class="current-price svelte-1rq8r66">$399</span> <span class="price-period svelte-1rq8r66">/month</span></div> <!--[!--><!--[!--><!

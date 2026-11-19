@@ -1,0 +1,86 @@
+TOOL: Soundraw (soundraw)
+SOURCE: https://soundraw.io/pricing
+FETCHED: 2026-11-19T15:42:35.178Z  HTTP 200  62692 bytes
+PRICE LINES (14):
+  - nnual Monthly Creator For content creators, Individuals & Small companies (<10 employees) $5.99/mo Subscribe Commercial use Use as background music Distribute & monetize songs (Spotify,
+  - tist Starter For music artists / producers, Individuals & Small companies (<10 employees) $10.49/mo Subscribe Commercial use Use as background music Distribute & monetize songs (Spotify,
+  - 3 Artist Pro For music artists / producers, Individuals & Small companies (<10 employees) $12.59/mo Subscribe Everything in Artist Starter, plus: 20 Monthly Track Downloads Download as m
+  - st Unlimited For music artists / producers, Individuals & Small companies (<10 employees) $17.49/mo Subscribe Everything in Artist Pro, plus: Unlimited Monthly Track Downloads Download a
+  - (<10 employees) 10+ employees Content creators Music artists / producers Everyone Pricing $5.99/mo Subscribe $10
+  - 49/mo Subscribe $12.59/mo Subscribe $17
+  - -[150%] font-['Inter']">
+          <span id="mobile-creator-discounted-cost">
+            $5.99/mo
+          </span>
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <button
+  - font-['Inter']">
+          <span id="mobile-artist_starter-discounted-cost">
+            $10.49/mo
+          </span>
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <button
+  - 50%] font-['Inter']">
+          <span id="mobile-artist_pro-discounted-cost">
+            $12.59/mo
+          </span>
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <button
+  - ont-['Inter']">
+          <span id="mobile-artist_unlimited-discounted-cost">
+            $17.49/mo
+          </span>
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <button
+  - y-3 mb-3">
+
+      <span id="creator-discounted-cost" class="text-xl font-bold">
+          $5.99/mo
+      </span>
+    </div>
+
+    <button 
+      id="creator" 
+      class="w-full px-4 py
+  - 3">
+
+      <span id="artist-starter-discounted-cost" class="text-xl font-bold">
+          $10.49/mo
+      </span>
+    </div>
+
+    <button 
+      id="artist_starter" 
+      class="w-full
+  - mb-3">
+
+      <span id="artist-pro-discounted-cost" class="text-xl font-bold">
+          $12.59/mo
+      </span>
+    </div>
+
+    <button 
+      id="artist_pro" 
+      class="w-full px-4
+  - >
+
+      <span id="artist-unlimited-discounted-cost" class="text-xl font-bold">
+          $17.49/mo
+      </span>
+    </div>
+
+    <button 
+      id="artist_unlimited" 
+      class="w-ful

@@ -1,0 +1,38 @@
+{
+ "slug": "cartesia",
+ "name": "Cartesia",
+ "category": "tts-voice",
+ "url": "https://cartesia.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "20K credits/mo + $1 prepaid voice agents"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 5,
+    "notes": "100K credits/mo, commercial license, voice cloning"
+   },
+   {
+    "name": "Startup",
+    "monthly_usd": 49
+   },
+   {
+    "name": "Scale",
+    "monthly_usd": 299,
+    "notes": "8M credits/mo, priority support"
+   }
+  ],
+  "notes": "TTS $0.03/min; telephony $0.014/min; Enterprise custom.",
+  "source_url": "https://www.cartesia.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/cartesia-2026-11-19.html.gz"
+}

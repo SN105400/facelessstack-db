@@ -197,7 +197,8 @@
    "pricing_known": "paid tiers",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing (0 price lines in static HTML) - browser render pass"
   },
   {
    "name": "Cartesia",
@@ -288,7 +289,8 @@
    "pricing_known": "freemium",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "promo-ambiguous static page - browser render pass"
   },
   {
    "name": "Klap",
@@ -304,7 +306,7 @@
    "name": "Munch",
    "slug": "munch",
    "category": "editing-automation",
-   "url": "https://www.getmunch.com",
+   "url": "https://www.munchstudio.com",
    "pricing_known": "paid tiers",
    "affiliate": "unverified",
    "status": "active",
@@ -358,7 +360,8 @@
    "pricing_known": "freemium; Plus $20/mo",
    "affiliate": "none",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "consumer pricing at openai.com/chatgpt/pricing - browser render pass"
   },
   {
    "name": "Claude",
@@ -368,7 +371,8 @@
    "pricing_known": "freemium; Pro $20/mo",
    "affiliate": "none",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "consumer pricing at anthropic.com pricing page - browser render pass"
   },
   {
    "name": "Jasper",
@@ -408,7 +412,8 @@
    "pricing_known": "freemium; paid from ~$12/mo",
    "affiliate": "20-30% (unverified)",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing (0 price lines in static HTML) - browser render pass"
   },
   {
    "name": "Metricool",
@@ -448,7 +453,8 @@
    "pricing_known": "freemium; Pro ~$15/mo",
    "affiliate": "up to $36/referral (unverified)",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing (0 price lines in static HTML) - browser render pass"
   },
   {
    "name": "Ideogram",
@@ -529,7 +535,8 @@
    "pricing_known": "paid from ~$10-15/mo",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing (0 price lines in static HTML) - browser render pass"
   },
   {
    "name": "VidIQ",
@@ -549,7 +556,8 @@
    "pricing_known": "freemium; paid tiers",
    "affiliate": "30% recurring (unverified)",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing (0 price lines in static HTML) - browser render pass"
   },
   {
    "name": "1of10",

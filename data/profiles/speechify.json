@@ -1,0 +1,25 @@
+{
+ "slug": "speechify",
+ "name": "Speechify",
+ "category": "tts-voice",
+ "url": "https://speechify.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Premium (TTS)",
+    "monthly_usd": 29,
+    "annual_monthly_usd": 11.6,
+    "notes": "or $139 billed yearly; 400+ voices, 60+ languages"
+   }
+  ],
+  "notes": "TTS subscription page; other Speechify products priced separately.",
+  "source_url": "https://speechify.com/pricing/",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/speechify-2026-11-19.html.gz"
+}

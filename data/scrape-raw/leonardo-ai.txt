@@ -1,0 +1,8 @@
+TOOL: Leonardo AI (leonardo-ai)
+SOURCE: https://leonardo.ai/pricing
+FETCHED: 2026-11-19T15:42:26.435Z  HTTP 200  350203 bytes
+PRICE LINES (4):
+  - ign, and motion One subscription, all platforms Pay Yearly Up to 20% off Pay Monthly FREE $ 0 /month ex
+  - Creations access Public Presets ✓ Quality settings Basic Personal collections 1 Essential $ 12 /month ex
+  - s Unlimited️ Personal AI models 10 Max Simultaneous Generations 2 Top-up Tokens ✓ Premium $ 30 /month ex
+  - Top-up Tokens ✓ Image Generation for select models at a relaxed pace* Unlimited Ultimate $ 60 /month ex

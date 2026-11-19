@@ -1,0 +1,40 @@
+{
+ "slug": "copy-ai",
+ "name": "Copy.ai",
+ "category": "script-writing",
+ "url": "https://www.copy.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Starter",
+    "monthly_usd": 29,
+    "annual_monthly_usd": 24,
+    "notes": "billed $288/yr"
+   },
+   {
+    "name": "Growth",
+    "monthly_usd": 1000,
+    "notes": "75 seats, 20K workflow credits/mo, billed $12,000/yr"
+   },
+   {
+    "name": "Expansion",
+    "monthly_usd": 2000,
+    "notes": "150 seats, 45K credits/mo, billed $24,000/yr"
+   },
+   {
+    "name": "Scale",
+    "monthly_usd": 3000,
+    "notes": "200 seats, 75K credits/mo, billed $36,000/yr"
+   }
+  ],
+  "notes": "Plan-name-to-price mapping read from layout order; Starter annual is $24/mo.",
+  "source_url": "https://www.copy.ai/prices",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "45% first year (unverified)",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/copy-ai-2026-11-19.html.gz"
+}

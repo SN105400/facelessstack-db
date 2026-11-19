@@ -1,0 +1,25 @@
+{
+ "slug": "jasper",
+ "name": "Jasper",
+ "category": "script-writing",
+ "url": "https://www.jasper.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Pro",
+    "monthly_usd": 69,
+    "annual_monthly_usd": 59,
+    "notes": "per seat/month"
+   }
+  ],
+  "notes": "Only Pro captured in static HTML (yearly save ~20%); Business tier not captured - re-verify.",
+  "source_url": "https://www.jasper.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "25-30% recurring (unverified)",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/jasper-2026-11-19.html.gz"
+}

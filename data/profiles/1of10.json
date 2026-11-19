@@ -1,0 +1,41 @@
+{
+ "slug": "1of10",
+ "name": "1of10",
+ "category": "analytics-growth",
+ "url": "https://1of10.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "60 credits/mo"
+   },
+   {
+    "name": "Paid tier 1",
+    "monthly_usd": 19,
+    "annual_monthly_usd": 15,
+    "notes": "billed $180/yr, save $48/yr"
+   },
+   {
+    "name": "Paid tier 2",
+    "monthly_usd": 89,
+    "annual_monthly_usd": 69,
+    "notes": "billed $828/yr, save $240/yr"
+   },
+   {
+    "name": "Top tier",
+    "monthly_usd": 417,
+    "notes": "about $417/mo, billed $4,999/yr; monthly rate not captured"
+   }
+  ],
+  "notes": "Plan names not captured in static HTML.",
+  "source_url": "https://1of10.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/1of10-2026-11-19.html.gz"
+}

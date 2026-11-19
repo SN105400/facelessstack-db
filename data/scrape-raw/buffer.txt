@@ -1,0 +1,10 @@
+TOOL: Buffer (buffer)
+SOURCE: https://buffer.com/pricing
+FETCHED: 2026-11-19T15:41:52.167Z  HTTP 200  469360 bytes
+PRICE LINES (4):
+  - ld-class customer support World-class customer support description Essentials Recommended $5 /month 1 channel · $ 60 billed yearly (save 2 months) Start 14-day free trial What&#x27
+  - on World-class customer support World-class customer support description Team Placeholder $10 /month 1 channel · $ 120 billed yearly (save 2 months) Start 14-day free trial What&#x27
+  - ng PricingPlanCard_planPrice__Tmpq7"><span class="PricingPlanCard_planPriceAmount__Jmnxy">$5
+            </span><span>/month</span></p><p class="PricingPlanCard_planSupportingText__v
+  - ng PricingPlanCard_planPrice__Tmpq7"><span class="PricingPlanCard_planPriceAmount__Jmnxy">$10
+            </span><span>/month</span></p><p class="PricingPlanCard_planSupportingText__v

@@ -1,0 +1,39 @@
+{
+ "slug": "metricool",
+ "name": "Metricool",
+ "category": "scheduling-publishing",
+ "url": "https://metricool.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "1 brand"
+   },
+   {
+    "name": "Starter",
+    "monthly_usd": 20,
+    "notes": "annual: 5 brands $20, 10 brands $36; monthly $25/$45"
+   },
+   {
+    "name": "Advanced",
+    "monthly_usd": 53,
+    "notes": "annual: 15 brands $53, 25 brands $85, 50 brands $159; monthly $67/$107/$210"
+   },
+   {
+    "name": "Custom",
+    "monthly_usd": null,
+    "notes": "white label, dedicated manager"
+   }
+  ],
+  "notes": "USD view captured (EUR also offered); annual saves up to 24%; add-ons from $12/mo.",
+  "source_url": "https://metricool.com/pricing/",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/metricool-2026-11-19.html.gz"
+}

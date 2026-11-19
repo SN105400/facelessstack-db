@@ -1,0 +1,28 @@
+{
+ "slug": "captions-app",
+ "name": "Captions",
+ "category": "subtitles-captions",
+ "url": "https://www.captions.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Max",
+    "monthly_usd": 24.99
+   },
+   {
+    "name": "Scale",
+    "monthly_usd": 69.99,
+    "notes": "usage variants $69.99/$139.99/$279.99 (1x/2x/4x)"
+   }
+  ],
+  "notes": "No free tier captured on page.",
+  "source_url": "https://captions.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/captions-app-2026-11-19.html.gz"
+}

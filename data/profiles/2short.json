@@ -1,0 +1,38 @@
+{
+ "slug": "2short",
+ "name": "2short",
+ "category": "editing-automation",
+ "url": "https://2short.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Starter",
+    "monthly_usd": 0
+   },
+   {
+    "name": "Lite",
+    "monthly_usd": 9.9,
+    "notes": "5h AI analyzing/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 19.9,
+    "notes": "15h/mo, unlimited exports"
+   },
+   {
+    "name": "Premium",
+    "monthly_usd": 49.9,
+    "notes": "50h/mo, priority support"
+   }
+  ],
+  "notes": "",
+  "source_url": "https://2short.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/2short-2026-11-19.html.gz"
+}

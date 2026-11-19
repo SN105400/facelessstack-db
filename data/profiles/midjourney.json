@@ -1,0 +1,41 @@
+{
+ "slug": "midjourney",
+ "name": "Midjourney",
+ "category": "thumbnails-graphics",
+ "url": "https://www.midjourney.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Basic",
+    "monthly_usd": 10,
+    "annual_monthly_usd": 8
+   },
+   {
+    "name": "Standard",
+    "monthly_usd": 30,
+    "annual_monthly_usd": 24,
+    "notes": "unlimited relax generations"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 60,
+    "annual_monthly_usd": 48,
+    "notes": "stealth mode"
+   },
+   {
+    "name": "Mega",
+    "monthly_usd": 120,
+    "annual_monthly_usd": 96
+   }
+  ],
+  "notes": "Yearly = 20% off.",
+  "source_url": "https://www.midjourney.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "none",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/midjourney-2026-11-19.html.gz"
+}

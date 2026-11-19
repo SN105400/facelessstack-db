@@ -1,6 +1,6 @@
 TOOL: Vizard (vizard)
 SOURCE: https://vizard.ai/pricing
-FETCHED: 2026-11-19T00:34:38.426Z  HTTP 200  304934 bytes
+FETCHED: 2026-11-19T15:41:23.964Z  HTTP 200  307588 bytes
 PRICE LINES (6):
   - & PRICING Choose the perfect plan for you Monthly Yearly 50% OFF Free Try Vizard for free $0 60 credits/month Sign up, it’s free Key features Agent with Flash model AI-generated clip
   - video editor 3-day storage Most Popular Creator Create high quality videos, no watermark $0 $0 50% OFF /month Credits shared between clipping and Agent 7,200 credits/year 12,000 cre

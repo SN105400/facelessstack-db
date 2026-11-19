@@ -1,0 +1,10 @@
+TOOL: 2short (2short)
+SOURCE: https://2short.ai/pricing
+FETCHED: 2026-11-19T15:41:30.530Z  HTTP 200  32220 bytes
+PRICE LINES (6):
+  - Full access to all features Lite An affordable option for all passionate content creators $9.90 /mo Buy Lite Everything in Starter 5 hours of AI video analyzing per month 60 minutes of
+  - public URLs No ads Pro Most popular Tailored for professional creators, aiming for growth $19.90 /mo Buy Pro Everything in Lite 15 hours of AI video analyzing per month Unlimited fast se
+  - rver-side exports Premium For content creators and agencies who demand the best $49.90 /mo Buy Premium Everything in Pro 50 hours of AI video analyzing per month Priority suppo
+  - creators</p><p class="mt-8"><span class="text-4xl font-bold tracking-tight text-gray-900">$9.90</span>   <span class="text-base font-medium text-gray-500">/mo</span></p><a href="https:/
+  - r growth</p><p class="mt-8"><span class="text-4xl font-bold tracking-tight text-gray-900">$19.90</span>   <span class="text-base font-medium text-gray-500">/mo</span></p><a href="https:/
+  - the best</p><p class="mt-8"><span class="text-4xl font-bold tracking-tight text-gray-900">$49.90</span>   <span class="text-base font-medium text-gray-500">/mo</span></p><a href="https:/

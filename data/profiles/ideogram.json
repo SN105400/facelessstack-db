@@ -1,0 +1,35 @@
+{
+ "slug": "ideogram",
+ "name": "Ideogram",
+ "category": "thumbnails-graphics",
+ "url": "https://ideogram.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Plus",
+    "monthly_usd": 20,
+    "annual_monthly_usd": 15
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 60,
+    "annual_monthly_usd": 42
+   },
+   {
+    "name": "Team",
+    "monthly_usd": 30,
+    "annual_monthly_usd": 20,
+    "notes": "per user"
+   }
+  ],
+  "notes": "Annual: Plus $180/yr, Pro $504/yr, Team $240/user/yr; free plan not captured.",
+  "source_url": "https://ideogram.ai/pricing/",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/ideogram-2026-11-19.html.gz"
+}

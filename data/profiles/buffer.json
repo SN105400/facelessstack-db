@@ -1,0 +1,29 @@
+{
+ "slug": "buffer",
+ "name": "Buffer",
+ "category": "scheduling-publishing",
+ "url": "https://buffer.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Essentials",
+    "monthly_usd": 5,
+    "notes": "per channel; $60/channel billed yearly"
+   },
+   {
+    "name": "Team",
+    "monthly_usd": 10,
+    "notes": "per channel; $120/channel billed yearly"
+   }
+  ],
+  "notes": "Captured rates are annual-billing per-channel; free plan not captured in static HTML.",
+  "source_url": "https://buffer.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/buffer-2026-11-19.html.gz"
+}

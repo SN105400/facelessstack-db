@@ -1,0 +1,7 @@
+TOOL: Jasper (jasper)
+SOURCE: https://www.jasper.ai/pricing
+FETCHED: 2026-11-19T15:41:45.540Z  HTTP 200  499274 bytes
+PRICE LINES (3):
+  - plans & pricing are designed to meet your needs as you grow Monthly Yearly Save ~20% Pro $ 69 month/ seat Powerful AI to help you stay on-brand, even at scale
+  - ) Pro: $59/month billed yearly or $69/month billed monthly (cancel anytime)
+  - )</li><li><strong>Pro:</strong> $59/month billed yearly or $69/month billed monthly (cancel anytime)

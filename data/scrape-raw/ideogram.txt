@@ -1,0 +1,24 @@
+TOOL: Ideogram (ideogram)
+SOURCE: https://ideogram.ai/pricing/
+FETCHED: 2026-11-19T15:42:20.978Z  HTTP 200  247242 bytes
+PRICE LINES (20):
+  - its API Monthly Yearly Up to 33% off Plus Best for everyday creative projects Recommended $20 We value your privacy We use cookies to keep the site working, understand how it’s used,
+  - early billing?","acceptedAnswer":{"@type":"Answer","text":"On monthly billing, Plus costs $20 per month
+  - On yearly billing, Plus costs $15 per month, $180 billed annually
+  - On monthly billing, Pro costs $60 per month
+  - On yearly billing, Pro costs $42 per month, $504 billed annually
+  - On monthly billing, Team costs $30 per user per month
+  - On yearly billing, Team costs $20 per user per month, $240 per user billed annually
+  - inal-price" data-pricing-copy-animate data-pricing-hide-when-empty data-pricing-annually="$20" data-pricing-monthly> $20 </span> <span class="pricing-platform-plan-price"> <number-flo
+  - py data-pricing-hide-when-empty data-pricing-annually="per month, $180 billed annually" data-pricing-monthly="per month"> per month, $180 billed annually </p> <
+  - inal-price" data-pricing-copy-animate data-pricing-hide-when-empty data-pricing-annually="$60" data-pricing-monthly> $60 </span> <span class="pricing-platform-plan-price"> <number-flo
+  - py data-pricing-hide-when-empty data-pricing-annually="per month, $504 billed annually" data-pricing-monthly="per month"> per month, $504 billed annually </p> <
+  - inal-price" data-pricing-copy-animate data-pricing-hide-when-empty data-pricing-annually="$30" data-pricing-monthly> $30 </span> <span class="pricing-platform-plan-price"> <number-flo
+  - py data-pricing-hide-when-empty data-pricing-annually="per user per month, $240 per user billed annually" data-pricing-monthly="per user per month"> per user per month,
+  - $240 per user billed annually </p> </div> <div class="pricing-platform-plan-primary-feature">
+  - an</span> <span class="pricing-table-plan-price" data-pricing-copy data-pricing-annually="$15/mo" data-pricing-monthly="$20/mo"> $15/mo </span> <a class="brand-shell-pill brand-shell-
+  - an</span> <span class="pricing-table-plan-price" data-pricing-copy data-pricing-annually="$42/mo" data-pricing-monthly="$60/mo"> $42/mo </span> <a class="brand-shell-pill brand-shell-
+  - am</span> <span class="pricing-table-plan-price" data-pricing-copy data-pricing-annually="$20/user/mo" data-pricing-monthly="$30/user/mo"> $20/user/mo </span> <a class="brand-shell-pi
+  - "true"></span> </summary> <div class="brand-faq-answer"><p>On monthly billing, Plus costs $20 per month
+  - </p> <p>On monthly billing, Pro costs $60 per month
+  - </p> <p>On monthly billing, Team costs $30 per user per month

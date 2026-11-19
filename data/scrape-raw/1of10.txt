@@ -1,0 +1,23 @@
+TOOL: 1of10 (1of10)
+SOURCE: https://1of10.com/pricing
+FETCHED: 2026-11-19T15:42:51.608Z  HTTP 200  146160 bytes
+PRICE LINES (19):
+  - $0 /mo Free forever 60 credits a month Start free No card needed Connected YouTube channels
+  - $15 a month, billed $180 yearly, saving $48 a year
+  - $19 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 $15 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 /mo Billed $180 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2
+  - 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 yearly · save $48 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 Billed monthly · Save $48 $ 0 0 1 2 3 4 5 6 7 8
+  - $69 a month, billed $828 yearly, saving $240 a year
+  - $89 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 $69 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 /mo Billed $828 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2
+  - 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 yearly · save $240 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 Billed monthly · Save $24
+  - 0 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 with yearly 1,000 0 0 1 2
+  - About $417 a month, billed $4,999 yearly
+  - $417 $ 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 /mo Billed $4,999 $ 0 0 1 2 3 4 5 6 7 8 9 , 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8 9 0 0 1 2 3 4 5 6 7 8
+  - Start free See plans No card needed Plans from $15 /mo See plans Start free 1of10 Sign up for 1of10 updates Get the latest tips on viral thu
+  - </p><div class="pb-price"><div class="pb-price-row"><span class="pb-roll pb-price-num">$0</span><span class="pb-price-unit">/mo</span></div><div class="pb-billed"><span class="pb-
+  - </p><div class="pb-price"><p class="pb-sr">$15 a month, billed $180 yearly, saving $48 a year
+  - line is-on" aria-hidden="true">Billed <span class="pb-roll" dir="ltr"><span class="pb-sr">$180</span><span class="pb-roll-vis" aria-hidden="true"><span class="pb-roll-sym">$</span><spa
+  - </p><div class="pb-price"><p class="pb-sr">$69 a month, billed $828 yearly, saving $240 a year
+  - line is-on" aria-hidden="true">Billed <span class="pb-roll" dir="ltr"><span class="pb-sr">$828</span><span class="pb-roll-vis" aria-hidden="true"><span class="pb-roll-sym">$</span><spa
+  - </p><div class="pb-price"><p class="pb-sr">About $417 a month, billed $4,999 yearly
+  - n class="pb-billed-line is-on">Billed <span class="pb-roll" dir="ltr"><span class="pb-sr">$4,999</span><span class="pb-roll-vis" aria-hidden="true"><span class="pb-roll-sym">$</span><spa
+  - ldren><div class="pb-bar" aria-hidden="true"><span class="pb-bar-text">Plans from <strong>$15<!-- -->/mo</strong></span><a class="pb-bar-link" href="#pb-pricing" tabindex="-1"><svg xm

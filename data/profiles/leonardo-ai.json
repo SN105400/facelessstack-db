@@ -1,0 +1,35 @@
+{
+ "slug": "leonardo-ai",
+ "name": "Leonardo AI",
+ "category": "thumbnails-graphics",
+ "url": "https://leonardo.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0
+   },
+   {
+    "name": "Essential",
+    "monthly_usd": 12
+   },
+   {
+    "name": "Premium",
+    "monthly_usd": 30
+   },
+   {
+    "name": "Ultimate",
+    "monthly_usd": 60
+   }
+  ],
+  "notes": "Yearly saves up to 20% (annual rates not itemized in static HTML).",
+  "source_url": "https://leonardo.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/leonardo-ai-2026-11-19.html.gz"
+}

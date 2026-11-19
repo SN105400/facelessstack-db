@@ -1,0 +1,33 @@
+{
+ "slug": "wisecut",
+ "name": "Wisecut",
+ "category": "editing-automation",
+ "url": "https://www.wisecut.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "Editor+WISH limited, 30 min/mo, 480p"
+   },
+   {
+    "name": "Starter+",
+    "monthly_usd": 29
+   },
+   {
+    "name": "Professional+",
+    "monthly_usd": 119,
+    "notes": "4K, 90 min/export"
+   }
+  ],
+  "notes": "",
+  "source_url": "https://wisecut.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/wisecut-2026-11-19.html.gz"
+}

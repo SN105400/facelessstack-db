@@ -1,0 +1,8 @@
+TOOL: Epidemic Sound (epidemic-sound)
+SOURCE: https://www.epidemicsound.com/pricing/
+FETCHED: 2026-11-19T15:42:38.382Z  HTTP 200  345688 bytes
+PRICE LINES (4):
+  - On average, our artists earn over $60,000 USD per year, with our top earners making more than $200,000 USD per year
+  - <br/><br/>On average, our artists earn over $60,000 USD per year, with our top earners making more than $200,000 USD per year
+  - \u003cbr/\u003e\u003cbr/\u003eOn average, our artists earn over $60,000 USD per year, with our top earners making more than $200,000 USD per year
+  - \",[\"$\",\"br\",null,{}],[\"$\",\"br\",null,{}],\"On average, our artists earn over $60,000 USD per year, with our top earners making more than $200,000 USD per year

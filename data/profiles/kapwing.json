@@ -1,0 +1,29 @@
+{
+ "slug": "kapwing",
+ "name": "Kapwing",
+ "category": "editing-automation",
+ "url": "https://www.kapwing.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "10 credits, watermark, 720p, 4-min exports"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 16,
+    "notes": "1,000 credits/mo, no watermark"
+   }
+  ],
+  "notes": "Business/Enterprise tiers are JS-carousel-hidden in static HTML - re-verify.",
+  "source_url": "https://www.kapwing.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/kapwing-2026-11-19.html.gz"
+}

@@ -1,0 +1,13 @@
+TOOL: Copy.ai (copy-ai)
+SOURCE: https://www.copy.ai/prices
+FETCHED: 2026-11-19T15:41:48.488Z  HTTP 200  224554 bytes
+PRICE LINES (9):
+  - hat Projects Access to OpenAI, Anthropic, and Gemini models Monthly | Annually 20% Saving $29/mo Billed monthly Get started Get started Monthly | Annually 20% Saving $24/mo Billed $28
+  - essing AI for exponential growth 75 Seats Unlimited Words in Chat 20K Workflow Credits/Mo $1,000/mo Billed $12,000/yr Get started Get started Expansion For enterprises expanding their AI
+  - Automations 150 Seats Unlimited Words in Chat 45K Workflow Credits/Mo $2,000/mo Billed $24,000/yr Contact Accounts Team Contact Accounts Team Scale For organizations ready to deploy Ge
+  - nerative AI at scale 200 Seats Unlimited Words in Chat 75K Workflow Credits/Mo $3,000/mo Billed $36,000/yr Contact Accounts Team Contact Accounts Team Trusted by 17 million us
+  - class="padding-bottom padding-kiwi"></div><div class="heading--h5 text-color-deeppurple">$29/mo</div><div>Billed monthly</div></div><a data-w-id="dd446dff-1550-bcd4-69df-a8959675130f
+  - class="padding-bottom padding-kiwi"></div><div class="heading--h5 text-color-deeppurple">$24/mo</div><div>Billed $288/yr</div></div><a data-w-id="dd446dff-1550-bcd4-69df-a8959675132b
+  - iv><div class="price_card_line"></div><div><div class="heading--h5 text-color-deeppurple">$1,000/mo</div><div>Billed $12,000/yr</div></div><div class="price_card_btn-wr"><a data-w-id="dd
+  - class="price_card_line"></div><div><div class="heading--h5 text-color-deeppurple"><strong>$2,000/mo</strong></div><div>Billed $24,000/yr</div></div><div class="price_card_btn-wr"><a data
+  - iv><div class="price_card_line"></div><div><div class="heading--h5 text-color-deeppurple">$3,000/mo</div><div>Billed $36,000/yr</div></div><div class="price_card_btn-wr"><a data-tippy-co

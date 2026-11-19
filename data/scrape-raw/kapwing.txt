@@ -1,6 +1,6 @@
 TOOL: Kapwing (kapwing)
 SOURCE: https://www.kapwing.com/pricing
-FETCHED: 2026-11-19T00:34:41.993Z  HTTP 200  310194 bytes
+FETCHED: 2026-11-19T15:41:34.075Z  HTTP 200  310194 bytes
 PRICE LINES (2):
   - 33% Free For anyone who wants to get started creating and repurposing content 10 credits $ 0 Get Started Unlimited exports with a watermark Export videos up to 4 minutes long 720p vi
   - iduals and small groups looking to create more content in less time 1,000 credits / month $ 16 Upgrade Everything in Free , plus these features for your team workspace: No Kapwing wate

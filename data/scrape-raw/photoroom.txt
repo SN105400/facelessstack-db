@@ -1,0 +1,9 @@
+TOOL: PhotoRoom (photoroom)
+SOURCE: https://www.photoroom.com/pricing
+FETCHED: 2026-11-19T15:42:30.635Z  HTTP 200  996621 bytes
+PRICE LINES (5):
+  - ng Plans Enterprise Monthly Yearly Save up to 88% Pro Sell more with professional visuals $7.50 Per month, billed yearly 8,000 AI credits • 1,000 exports Start free trial Unlimited core
+  - : 4K images + HD video Most popular Max Win customers with video ads and high-res visuals $20.99 Per month, billed yearly 25,000 AI credits • 3,000 exports Start free trial Unlimited cor
+  - ot included : 4K images + HD video Ultra Made for heavy use: more video ads and 4K images $82.50 Per month, billed yearly 75,000 AI credits • 10,000 exports Get started Unlimited core to
+  - le Early access to new features Trusted by leading brands worldwide Compare our plans Pro $7.50 Per month , billed yearly Start free trial Max $20
+  - 99 Per month , billed yearly Start free trial Ultra $82.50 Per month , billed yearly Get started Credits & limits AI credits Pro : 8,000/month Max :

@@ -1,0 +1,32 @@
+TOOL: Munch (munch)
+SOURCE: https://www.munchstudio.com/pricing
+FETCHED: 2026-11-19T15:41:27.518Z  HTTP 200  683574 bytes
+PRICE LINES (28):
+  - One Brand Multi-Brand Billed Monthly Billed Yearly Essential $38 per month Billed annually · $456 per year Start 7-Day Free Trial Starter package to run y
+  - 00 GB storage 500 min Video Repurposing / mo 10 Generated Videos / mo Pro support Premium $60 per month Billed annually · $720 per year Start 7-Day Free Trial Full kit that always kee
+  - line) Custom plan available One Brand Multi-Brand Billed Monthly Billed Yearly Essential $38 per month Billed annually · $456 per year Start 7-Day Free Trial Starter package to run y
+  - Plans Plans Essential Essential Premium Premium Studio Studio Scale Scale Monthly Monthly $68/mo month to month $68/mo month to month $38/mo billed yearly $85/mo month to month $85/mo
+  - month to month $60/mo billed yearly $148/mo month to month $148/mo month to month $118/mo billed yearly $398/mo month to month $398/mo month to month $318/mo billed yearly Plan
+  - uch does Munch Studio cost?", "acceptedAnswer": {"@type": "Answer", "text": "Essential is $68 a month on a month to month plan or $38 a month billed yearly, and Premium is $85 or $60
+  - 5))">Billed annually · $456 per year</p></div></div><div class="framer-1bp5rse-container"><!--$--><a aria-label="Webs
+  - 5))">Billed annually · $720 per year</p></div></div><div class="framer-1bp5rse-container"><!--$--><a aria-label=" ric
+  - er-text">Monthly</p></div></div></div><div class="framer-lwvvs2" data-framer-name="Cell / $48/mo"><div class="ssr-variant hidden-mixlz8"><div class="framer-z5xvs6" data-framer-name="$
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$68/mo month to month</p></div></div><div class="ssr-variant hidden-1q95elz hidden-16pwyeg"><
+  - div class="framer-z5xvs6" data-framer-name="$48/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$68/mo month to month</p></div></div><div class="framer-y1c9ly" data-framer-name="$48/mo" dat
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$38/mo billed yearly</p></div></div><div class="framer-ruuyus" data-framer-name="Cell / $75/m
+  - o"><div class="ssr-variant hidden-mixlz8"><div class="framer-w1s5s" data-framer-name="$75/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-962c0ec4-2b41-4dae-81f8-13bbc5a68de5, rgb(28, 28, 28))" class="framer-text">$85/mo month to month</p></div></div><div class="ssr-variant hidden-1q95elz hidden-16pwyeg"><
+  - div class="framer-w1s5s" data-framer-name="$75/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-962c0ec4-2b41-4dae-81f8-13bbc5a68de5, rgb(28, 28, 28))" class="framer-text">$85/mo month to month</p></div></div><div class="framer-3mokvk" data-framer-name="$75/mo" dat
+  - r:var(--token-962c0ec4-2b41-4dae-81f8-13bbc5a68de5, rgb(28, 28, 28))" class="framer-text">$60/mo billed yearly</p></div></div><div class="framer-1eao1e9" data-framer-name="Cell / $148
+  - /mo"><div class="ssr-variant hidden-mixlz8"><div class="framer-1d7x8kz" data-framer-name="$148/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$148/mo month to month</p></div></div><div class="ssr-variant hidden-1q95elz hidden-16pwyeg"><
+  - div class="framer-1d7x8kz" data-framer-name="$148/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$148/mo month to month</p></div></div><div class="framer-1pe2vks" data-framer-name="$148/mo" d
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$118/mo billed yearly</p></div></div><div class="framer-fnorcg" data-framer-name="Cell / $398/
+  - mo"><div class="ssr-variant hidden-mixlz8"><div class="framer-1cxf3ku" data-framer-name="$398/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$398/mo month to month</p></div></div><div class="ssr-variant hidden-1q95elz hidden-16pwyeg"><
+  - div class="framer-1cxf3ku" data-framer-name="$398/mo" data-framer-component-type="RichTextContainer" style="transform:none"><p dir="auto" s
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$398/mo month to month</p></div></div><div class="framer-1j91th0" data-framer-name="$398/mo" d
+  - r:var(--token-541df3ff-6bba-48c8-8399-022bb6ed84f7, rgb(69, 69, 69))" class="framer-text">$318/mo billed yearly</p></div></div></div><div class="framer-1iahftb" data-framer-name="Categ

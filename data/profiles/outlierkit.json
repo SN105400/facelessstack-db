@@ -1,0 +1,35 @@
+{
+ "slug": "outlierkit",
+ "name": "OutlierKit",
+ "category": "analytics-growth",
+ "url": "https://outlierkit.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Hobby (Starter)",
+    "monthly_usd": 79,
+    "annual_monthly_usd": 49,
+    "notes": "save 38%"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 149,
+    "annual_monthly_usd": 99,
+    "notes": "save 34%"
+   },
+   {
+    "name": "Max (Ultimate)",
+    "monthly_usd": 399
+   }
+  ],
+  "notes": "Page also advertises a Lifetime one-time option; tier naming partly inferred.",
+  "source_url": "https://outlierkit.com/app/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/outlierkit-2026-11-19.html.gz"
+}

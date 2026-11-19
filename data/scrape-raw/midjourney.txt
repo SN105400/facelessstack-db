@@ -1,0 +1,14 @@
+TOOL: Midjourney (midjourney)
+SOURCE: https://www.midjourney.com/pricing
+FETCHED: 2026-11-19T15:42:23.544Z  HTTP 200  50557 bytes
+PRICE LINES (10):
+  - Basic Plan Regular price $10 With yearly billing $8 / month 20% off billed annually Subscribe View monthly billing One image job has four ima
+  - s 1 simultaneous Fast video job Use Editor on uploaded images Standard Plan Regular price $30 With yearly billing $24 / month 20% off billed annually Subscribe View monthly billing 15
+  - bs Unlimited Relax image generations Use Editor on uploaded images Pro Plan Regular price $60 With yearly billing $48 / month 20% off billed annually Subscribe View monthly billing 30
+  - generations Stealth mode generation Use Editor on uploaded images Mega Plan Regular price $120 With yearly billing $96 / month 20% off billed annually Subscribe View monthly billing 60
+  - ="og:type" content="website"/><meta name="description" content="Midjourney plans start at $10/month
+  - Plans"/><meta property="og:description" content="Midjourney plans start at $10/month
+  - ><span class="sr-only">Regular price<!-- --> </span><s class="notranslate" translate="no">$10</s></span> <span><span class="sr-only">With yearly billing<!-- --> </span><span class="no
+  - ><span class="sr-only">Regular price<!-- --> </span><s class="notranslate" translate="no">$30</s></span> <span><span class="sr-only">With yearly billing<!-- --> </span><span class="no
+  - ><span class="sr-only">Regular price<!-- --> </span><s class="notranslate" translate="no">$60</s></span> <span><span class="sr-only">With yearly billing<!-- --> </span><span class="no
+  - ><span class="sr-only">Regular price<!-- --> </span><s class="notranslate" translate="no">$120</s></span> <span><span class="sr-only">With yearly billing<!-- --> </span><span class="no

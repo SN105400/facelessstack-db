@@ -1,0 +1,32 @@
+{
+ "slug": "blotato",
+ "name": "Blotato",
+ "category": "scheduling-publishing",
+ "url": "https://www.blotato.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Starter",
+    "monthly_usd": 29,
+    "notes": "20 social accounts, 900 TikTok posts/mo"
+   },
+   {
+    "name": "Creator",
+    "monthly_usd": 97
+   },
+   {
+    "name": "Agency",
+    "monthly_usd": 499
+   }
+  ],
+  "notes": "7-day free trial; n8n/Make official nodes.",
+  "source_url": "https://www.blotato.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/blotato-2026-11-19.html.gz"
+}

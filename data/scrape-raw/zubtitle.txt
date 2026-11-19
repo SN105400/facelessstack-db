@@ -1,6 +1,6 @@
 TOOL: Zubtitle (zubtitle)
 SOURCE: https://zubtitle.com/pricing
-FETCHED: 2026-11-19T00:34:34.319Z  HTTP 200  96867 bytes
+FETCHED: 2026-11-19T15:41:17.166Z  HTTP 200  96867 bytes
 PRICE LINES (17):
   - t 2 months FREE with annual billing Bootstrapper For getting started with video marketing $0 /mo free forever Get started All video editor features 2 videos per month Zubtitle waterm
   - ark added Resolutions up to 720p Guru For podcasters, experts, and coaches $19 /mo or $190 yearly Get started All video editor features 10 videos per month Watermark removed Resolu

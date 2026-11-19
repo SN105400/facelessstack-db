@@ -1,0 +1,24 @@
+TOOL: Luma Dream Machine (luma-dream-machine)
+SOURCE: https://lumalabs.ai/app
+FETCHED: 2026-11-19T15:40:54.072Z  HTTP 200  574102 bytes
+PRICE LINES (20):
+  - enLabs v3 Plans & Pricing Save up to 20% with yearly Monthly Yearly Individual plans Plus $30 /month $300 billed yearly Start Now 10,000 credits Luma and third-party image and video m
+  - odels Edit access for guest collaborators Commercial use Pro $90 /month $900 billed yearly Start Now Everything in Plus, with: 40,000 credits 4x usage with the Luma A
+  - gents Ultra $300 /month $3,000 billed yearly Start Now Everything in Pro, with: 150,000 credits 15x usage with the Luma
+  - p class="leading-none"><span class="text-2xl font-semibold tracking-tight md:text-[32px]">$30</span><span class="text-sm font-medium text-secondary md:text-base">/month</span></p><p c
+  - lass="text-xs font-normal text-secondary md:text-sm invisible">$300 billed yearly</p></div><a class="flex items-center justify-center rounded-full border fon
+  - p class="leading-none"><span class="text-2xl font-semibold tracking-tight md:text-[32px]">$90</span><span class="text-sm font-medium text-secondary md:text-base">/month</span></p><p c
+  - lass="text-xs font-normal text-secondary md:text-sm invisible">$900 billed yearly</p></div><a class="flex items-center justify-center rounded-full border fon
+  - p class="leading-none"><span class="text-2xl font-semibold tracking-tight md:text-[32px]">$300</span><span class="text-sm font-medium text-secondary md:text-base">/month</span></p><p c
+  - lass="text-xs font-normal text-secondary md:text-sm invisible">$3,000 billed yearly</p></div><a class="flex items-center justify-center rounded-full border fon
+  - There are three plans to choose from: Luma Plus at $30/month includes 10,000 credits Luma Pro at $90/month includes 40,000 credits Luma Ultra at
+  - $300/month includes 150,000 credits  Your monthly credits reset each billing cycle
+  - \ \ There are three plans to choose from:\ Luma Plus at $30/month includes 10,000 credits\ Luma Pro at $90/month includes 40,000 credits\ Luma Ultra
+  - at $300/month includes 150,000 credits\ \ Your monthly credits reset each billing cycle
+  - for guest collaborators\",\"Commercial use\"],\"isEnterprise\":false,\"monthlyPrice\":\"$$30\",\"name\":\"Plus\",\"variant\":\"light\",\"yearlyBilling\":\"$$300 billed yearly\",\"yea
+  - featuresPrefix\":\"Everything in Plus, with:\",\"isEnterprise\":false,\"monthlyPrice\":\"$$90\",\"name\":\"Pro\",\"variant\":\"dark\",\"yearlyBilling\":\"$$900 billed yearly\",\"yearl
+  - "featuresPrefix\":\"Everything in Pro, with:\",\"isEnterprise\":false,\"monthlyPrice\":\"$$300\",\"name\":\"Ultra\",\"variant\":\"light\",\"yearlyBilling\":\"$$3,000 billed yearly\",\"
+  - yearlyPrice\":\"$$250\"}]},\"utilitiesTable\":{\"title\":\"Utilities\",\"tools\":[{\"_key\":\"row-77\",\"cost\"
+  - ,[\"$\",\"br\",null,{}],\"\",[\"$\",\"strong\",null,{\"children\":[\"Luma Plus \"]}],\"at $30/month includes 10,000 credits\",[\"$\",\"br\",null,{}],\"\",[\"$\",\"strong\",null,{\"chi
+  - ldren\":[\"Luma Pro\"]}],\" at $90/month includes 40,000 credits\",[\"$\",\"br\",null,{}],\"\",[\"$\",\"strong\",null,{\"chi
+  - ldren\":[\"Luma Ultra \"]}],\"at $300/month includes 150,000 credits\"]}],[\"$\",\"p\",null,{\"children\":[\"Your monthly credi

@@ -1,0 +1,18 @@
+{
+ "slug": "vizard",
+ "name": "Vizard",
+ "category": "editing-automation",
+ "url": "https://vizard.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [],
+  "notes": "Promo-ambiguous page (Creator/Business show \"$0 billed yearly\" under 50% OFF) - needs in-app-browser render before verification.",
+  "source_url": "https://vizard.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": false,
+ "scrape_note": "Promo-ambiguous page (Creator/Business show \"$0 billed yearly\" under 50% OFF) - needs in-app-browser render before verification.",
+ "provenance": "data/snapshots/vizard-2026-11-19.html.gz"
+}

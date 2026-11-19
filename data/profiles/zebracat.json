@@ -1,0 +1,44 @@
+{
+ "slug": "zebracat",
+ "name": "Zebracat",
+ "category": "video-generation",
+ "url": "https://zebracat.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "free tier to get started"
+   },
+   {
+    "name": "Cat Mode",
+    "monthly_usd": 39,
+    "annual_monthly_usd": 23
+   },
+   {
+    "name": "Super Cat",
+    "monthly_usd": 99,
+    "annual_monthly_usd": 59
+   },
+   {
+    "name": "Unlimited Cat",
+    "monthly_usd": 199,
+    "annual_monthly_usd": 119
+   },
+   {
+    "name": "Enterprise",
+    "monthly_usd": 599,
+    "notes": "custom pricing, from $599/mo"
+   }
+  ],
+  "notes": "Annual billing saves 40%.",
+  "source_url": "https://www.zebracat.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/zebracat-2026-11-19.html.gz"
+}

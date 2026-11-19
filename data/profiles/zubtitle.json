@@ -1,0 +1,34 @@
+{
+ "slug": "zubtitle",
+ "name": "Zubtitle",
+ "category": "subtitles-captions",
+ "url": "https://zubtitle.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Bootstrapper",
+    "monthly_usd": 0,
+    "notes": "2 videos/mo, watermark, 720p"
+   },
+   {
+    "name": "Guru",
+    "monthly_usd": 19,
+    "notes": "or $190/yr; 10 videos/mo, 4K, no watermark"
+   },
+   {
+    "name": "Agency",
+    "monthly_usd": 49,
+    "notes": "or $490/yr; 30 videos/mo"
+   }
+  ],
+  "notes": "Annual = 2 months free.",
+  "source_url": "https://zubtitle.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/zubtitle-2026-11-19.html.gz"
+}

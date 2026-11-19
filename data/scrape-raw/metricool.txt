@@ -1,0 +1,66 @@
+TOOL: Metricool (metricool)
+SOURCE: https://metricool.com/pricing/
+FETCHED: 2026-11-19T15:42:07.404Z  HTTP 200  1181344 bytes
+PRICE LINES (52):
+  - Annual (save up to 24%) Monthly EUR USD Free €0/month Start now Manage 1 brand Manage all your brands’ social networks (except LinkedIn a
+  - profiles Access 30 days of analytics AI social media assistant Metricool MCP Starter From €16/month Sign up now Includes everything in the FREE plan, plus: Manage up to 10 brands Unli
+  - cess to the Flows add-on Google Drive and Canva integration Tag system Up to 5 brands for €16/month Up to 10 brands for €29/month Advanced From €43/month Sign up now Includes everythi
+  - e report templates Data Studio connector Metricool API (Zapier, Make) Up to 15 brands for €43/month Up to 25 brands for €69/month Manage up to 50 brands for €130 Custom Let’s talk! Co
+  - n in your business White Label Dedicated account manager Custom AI assistant credits Free $0/month Start now Manage 1 brand Manage all your brands’ social networks (except LinkedIn a
+  - profiles Access 30 days of analytics AI social media assistant Metricool MCP Starter From $20/month Sign up now Includes everything in the FREE plan, plus: Manage up to 10 brands Unli
+  - cess to the Flows add-on Google Drive and Canva integration Tag system Up to 5 brands for $20/month Up to 10 brands for $36/month Advanced From $53/month Sign up now Includes everythi
+  - e report templates Data Studio connector Metricool API (Zapier, Make) Up to 15 brands for $53/month Up to 25 brands for $85/month Manage up to 50 brands for $159/month Custom Let’s ta
+  - r business White Label Dedicated account manager Custom AI assistant credits EUR USD Free €0/month Start now Manage 1 brand Manage all your brands’ social networks (except LinkedIn a
+  - profiles Access 30 days of analytics AI social media assistant Metricool MCP Starter From €20/month Sign up now Includes everything in the FREE plan, plus: Manage up to 10 brands Unli
+  - cess to the Flows add-on Google Drive and Canva integration Tag system Up to 5 brands for €20/month Up to 10 brands for €37/month Advanced From €54/month Sign up now Includes everythi
+  - e report templates Data Studio connector Metricool API (Zapier, Make) Up to 15 brands for €54/month Up to 25 brands for €87/month Manage up to 50 brands for €172/month Custom Let’s ta
+  - profiles Access 30 days of analytics AI social media assistant Metricool MCP Starter From $25/month Sign up now Includes everything in the FREE plan, plus: Manage up to 10 brands Unli
+  - cess to the Flows add-on Google Drive and Canva integration Tag system Up to 5 brands for $25/month Up to 10 brands for $45/month Advanced From $67/month Sign up now Includes everythi
+  - e report templates Data Studio connector Metricool API (Zapier, Make) Up to 15 brands for $67/month Up to 25 brands for $107/month Manage up to 50 brands for $210/month Custom Let’s t
+  - Annual (save up to 24%) Monthly Add-ons EUR USD Free €0/month Start now Manage 1 brand Manage all your brands’ social networks (except LinkedIn a
+  - s with unlimited history Google Drive and Canva integration Tag system Up to 5 brands for €16/month Up to 10 brands for €29/month Advanced From €43/month Sign up now Includes everythi
+  - s with unlimited history Google Drive and Canva integration Tag system Up to 5 brands for $20/month Up to 10 brands for $36/month Advanced From $53/month Sign up now Includes everythi
+  - s with unlimited history Google Drive and Canva integration Tag system Up to 5 brands for €20/month Up to 10 brands for €37/month Advanced From €54/month Sign up now Includes everythi
+  - s with unlimited history Google Drive and Canva integration Tag system Up to 5 brands for $25/month Up to 10 brands for $45/month Advanced From $67/month Sign up now Includes everythi
+  - iness White Label Dedicated account manager Custom AI assistant credits EUR USD Twitter/X €10/month per connected account Available from Starter plans Access to Twitter/X analytics Ac
+  - Advanced Analytics From €10/month Available from Starter plans Access to Metricool Studio Unlimited access to Campaig
+  - n Dashboards Advanced analytics with 30 days of historical data Flows From €10/month 2,500 executions Available from Starter plans DM automations for Instagram Comment
+  - with Metricool s planner Schedule your designs in Metricool directly from Canva Twitter/X $12/month per connected account Available from Starter plans Access to Twitter/X analytics Ac
+  - Advanced Analytics From $12/month Available from Starter plans Access to Metricool Studio Unlimited access to Campaig
+  - n Dashboards Advanced analytics with 30 days of historical data Flows From $12/month 2,500 executions Available from Starter plans DM automations for Instagram Comment
+  - 30 days of historical data in Flows From interaction to conversion Turn comments into DMs $12/€10 for 2,500 monthly executions* $12/€10 for 2,500 monthly executions* $12/€10 for 2,500
+  - monthly executions* Reply to DMs with keywords $12/€10 for 2,500 monthly executions* $12/€10 for 2,500 monthly executions* $12/€10 for 2,500 monthly executions* Turn story replies in
+  - ecio"><div class="cabecera-item-tabla-precio"><p class="titulo">Free</p><p class="precio">€0/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - iv class="cabecera-item-tabla-precio"><p class="titulo">Starter</p><p class="precio">From €16/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - png" width="20" height="20" /><p><span data-tooltip="cost: +€10 for 2,500 monthly executions">Access to the Flows add-on</span></p></li><li class="item-c
+  - ool">Tag system</span></p></li></ul></div><div class="notas-footer"><p>Up to 5 brands for €16/month</p><p>Up to 10 brands for €29/month</p></div></div></div></li><li class="item-tabla
+  - v class="cabecera-item-tabla-precio"><p class="titulo">Advanced</p><p class="precio">From €43/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - png" width="20" height="20" /><p><span data-tooltip="Cost: X +€10 per connected account per month">Complete Twitter/X analytics</span></p></li><li class="i
+  - ol API (Zapier, Make)</p></li></ul></div><div class="notas-footer"><p>Up to 15 brands for €43/month</p><p>Up to 25 brands for €69/month</p><p>Manage up to 50 brands for €130</p></div>
+  - ecio"><div class="cabecera-item-tabla-precio"><p class="titulo">Free</p><p class="precio">$0/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - iv class="cabecera-item-tabla-precio"><p class="titulo">Starter</p><p class="precio">From $20/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - ng" width="20" height="20" /><p><span data-tooltip="Cost: Advanced Analytics starting at +$12 per month on Starter, starting at +$36 per month on Advanced">Access to the Advanced Anal
+  - png" width="20" height="20" /><p><span data-tooltip="cost: +$12 for 2,500 monthly executions">Access to the Flows add-on</span></p></li><li class="item-c
+  - t="20" /><p>Tag system</p></li></ul></div><div class="notas-footer"><p>Up to 5 brands for $20/month</p><p>Up to 10 brands for $36/month</p></div></div></div></li><li class="item-tabla
+  - v class="cabecera-item-tabla-precio"><p class="titulo">Advanced</p><p class="precio">From $53/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - png" width="20" height="20" /><p><span data-tooltip="Cost: X +$10 per connected account per month">Complete Twitter/X analytics</span></p></li><li class="i
+  - ol API (Zapier, Make)</p></li></ul></div><div class="notas-footer"><p>Up to 15 brands for $53/month</p><p>Up to 25 brands for $85/month</p><p>Manage up to 50 brands for $159/month</p>
+  - iv class="cabecera-item-tabla-precio"><p class="titulo">Starter</p><p class="precio">From €20/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - ool">Tag system</span></p></li></ul></div><div class="notas-footer"><p>Up to 5 brands for €20/month</p><p>Up to 10 brands for €37/month</p></div></div></div></li><li class="item-tabla
+  - v class="cabecera-item-tabla-precio"><p class="titulo">Advanced</p><p class="precio">From €54/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - ol API (Zapier, Make)</p></li></ul></div><div class="notas-footer"><p>Up to 15 brands for €54/month</p><p>Up to 25 brands for €87/month</p><p>Manage up to 50 brands for €172/month</p>
+  - iv class="cabecera-item-tabla-precio"><p class="titulo">Starter</p><p class="precio">From $25/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - ool">Tag system</span></p></li></ul></div><div class="notas-footer"><p>Up to 5 brands for $25/month</p><p>Up to 10 brands for $45/month</p></div></div></div></li><li class="item-tabla
+  - v class="cabecera-item-tabla-precio"><p class="titulo">Advanced</p><p class="precio">From $67/month</p></div><div class="pie-item-tabla-precio"><div class="botonera">
+<a id="pricing-b
+  - l API (Zapier, Make)</p></li></ul></div><div class="notas-footer"><p> Up to 15 brands for $67/month</p><p>Up to 25 brands for $107/month</p><p>Manage up to 50 brands for $210/month</p
+  - ool">Tag system</span></p></li></ul></div><div class="notas-footer"><p>Up to 5 brands for $20/month</p><p>Up to 10 brands for $36/month</p></div></div></div></li><li class="item-tabla

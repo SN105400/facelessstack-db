@@ -1,0 +1,38 @@
+{
+ "slug": "happyscribe",
+ "name": "HappyScribe",
+ "category": "subtitles-captions",
+ "url": "https://www.happyscribe.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0
+   },
+   {
+    "name": "Basic",
+    "monthly_usd": 17,
+    "annual_monthly_usd": 8.5
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 29,
+    "annual_monthly_usd": 19
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 89,
+    "annual_monthly_usd": 59
+   }
+  ],
+  "notes": "Annual saves 34-50%; extra credits $0.20/min; human proofreading from $2.00/min.",
+  "source_url": "https://www.happyscribe.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/happyscribe-2026-11-19.html.gz"
+}

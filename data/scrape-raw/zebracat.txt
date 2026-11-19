@@ -1,6 +1,6 @@
 TOOL: Zebracat (zebracat)
 SOURCE: https://www.zebracat.ai/pricing
-FETCHED: 2026-11-19T00:34:06.583Z  HTTP 200  311191 bytes
+FETCHED: 2026-11-19T15:40:46.945Z  HTTP 200  311191 bytes
 PRICE LINES (25):
   - Monthly Yearly Save 40% Cat Mode For occasional, hands-on creators $39 /month Billed monthly Get Started Video Generation Create videos from text, links or idea
   - 1 brand MOST POPULAR Super Cat For creators and brands posting daily $99 /month Billed monthly Get Started Most creators start here Video Generation Create videos

@@ -1,0 +1,16 @@
+TOOL: Blotato (blotato)
+SOURCE: https://www.blotato.com/pricing
+FETCHED: 2026-11-19T15:42:10.171Z  HTTP 200  99026 bytes
+PRICE LINES (12):
+  - 6/5 on G2 Starter $29 /mo Solo creators getting started
+  - iting prompts n8n & Make official nodes Up to 900 TikTok posts/month MOST POPULAR Creator $97 /mo Operators scaling to a real audience
+  - e of viral posts for inspiration Support troubleshooting your n8n/Make automations Agency $499 /mo Agencies and teams running multiple brands
+  - How Sandy Lee Built a $48K/Month AI Business With No Tech Background Read the full story &rarr
+  - Starter is $29/month for 20 social media accounts, with no per-post fees, though account and scheduled-p
+  - $29/MONTH · FREE 7-DAY TRIAL · CANCEL ANYTIME Make a week of content in the next 60 seconds
+  - Starter $29/mo, Creator $97/mo, Agency $499/mo
+  - <h3 class="plan-name">Starter</h3> <div class="plan-price"> <span class="plan-price-num">$29</span> <span class="plan-price-period">/mo</span> </div> <p class="plan-sub">Solo creator
+  - <h3 class="plan-name">Creator</h3> <div class="plan-price"> <span class="plan-price-num">$97</span> <span class="plan-price-period">/mo</span> </div> <p class="plan-sub">Operators sc
+  - <h3 class="plan-name">Agency</h3> <div class="plan-price"> <span class="plan-price-num">$499</span> <span class="plan-price-period">/mo</span> </div> <p class="plan-sub">Agencies and
+  - a-astro-cid-xa7rt4gb> <span class="pp-name" data-astro-cid-xa7rt4gb>How Sandy Lee Built a $48K/Month AI Business With No Tech Background</span> <span class="pp-story-cta" data-astro-c
+  - w-primary"></div> <div class="glow glow-secondary"></div> </div> <div class="cta-eyebrow">$29/MONTH · FREE 7-DAY TRIAL · CANCEL ANYTIME</div> <h2 class="cta-h">Make a week of content<

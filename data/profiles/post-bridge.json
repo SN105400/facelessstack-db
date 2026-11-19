@@ -1,0 +1,29 @@
+{
+ "slug": "post-bridge",
+ "name": "Post Bridge",
+ "category": "scheduling-publishing",
+ "url": "https://post-bridge.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Marketer",
+    "monthly_usd": 39,
+    "notes": "15 accounts, billed monthly; yearly = 2 months free"
+   },
+   {
+    "name": "Operator",
+    "monthly_usd": 99,
+    "notes": "99 accounts; $1/account/month after"
+   }
+  ],
+  "notes": "",
+  "source_url": "https://www.post-bridge.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/post-bridge-2026-11-19.html.gz"
+}

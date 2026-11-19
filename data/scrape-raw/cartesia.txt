@@ -1,0 +1,30 @@
+TOOL: Cartesia (cartesia)
+SOURCE: https://www.cartesia.ai/pricing
+FETCHED: 2026-11-19T15:41:04.096Z  HTTP 200  324003 bytes
+PRICE LINES (24):
+  - Free $0 /mo Start free 20K credits / month $1 prepaid agents / month Text to Speech Speech to Text Pro $5 /mo Select Pro 100K credits /
+  - month $5 prepaid agents / month Everything in Free, plus Commercial use license Instant voice clon
+  - ing Startup $49 /mo Select Startup 1
+  - /mo Select Scale 8M credits / month $299 prepaid agents / month Everything in Startup, plus Priority support High concurrency limi
+  - ce Agents + 2 Minutes of generated audio per month 45 min 0 50,000 + Recommended plan Pro $5 /mo Pause or cancel anytime 133 Text to Speech minutes / month Choose Pro Compare plans i
+  - Free $0 /mo Start free Pro $5 /mo Select Pro Startup $49 /mo Select Startup Scale $299 /mo Select Scale Enterprise Custom Contact us Text to Speech Sonic-3
+  - 03 per minute Custom Telephony $0.014 per minute when using a Cartesia-provided phone number LLM usage during calls Billed sepa
+  - tely Evaluations Free of charge for a limited time only Free Pro Startup Scale Enterprise $5 /mo Select Pro Text to Speech Sonic-3
+  - For example, Scale costs $299/month and includes 8M credits plus $299 for voice agents
+  - Free includes $1 for voice agents
+  - How many voice agent minutes do I get per plan? At the standard $0.03/minute rate, each plan s prepaid agent dollars cover about: Free: 33 minutes Pro: 2 hours
+  - Paid plans from $5/month for TTS and STT
+  - \u003c/li> \u003c/ul> \u003cp>For example, Scale costs $299/month and includes 8M credits plus $299 for voice agents
+  - isplay leading-header text-balance min-w-0 max-w-full wrap-anywhere text-3xl md:text-4xl">$0</p><span class="whitespace-nowrap text-sm text-muted-foreground">/mo</span></div></div><a
+  - isplay leading-header text-balance min-w-0 max-w-full wrap-anywhere text-3xl md:text-4xl">$5</p><span class="whitespace-nowrap text-sm text-muted-foreground">/mo</span></div></div><a
+  - isplay leading-header text-balance min-w-0 max-w-full wrap-anywhere text-3xl md:text-4xl">$49</p><span class="whitespace-nowrap text-sm text-muted-foreground">/mo</span></div></div><a
+  - isplay leading-header text-balance min-w-0 max-w-full wrap-anywhere text-3xl md:text-4xl">$299</p><span class="whitespace-nowrap text-sm text-muted-foreground">/mo</span></div></div><a
+  - pt-2"><span class="min-w-0 wrap-anywhere font-display text-2xl font-medium leading-tight">$5</span><span class="whitespace-nowrap leading-tight text-muted-foreground">/mo</span></div
+  - max-w-full wrap-anywhere font-display text-xl font-medium leading-tight text-foreground">$0</span><span class="whitespace-nowrap text-xs text-muted-foreground">/mo</span></div></div
+  - max-w-full wrap-anywhere font-display text-xl font-medium leading-tight text-foreground">$5</span><span class="whitespace-nowrap text-xs text-muted-foreground">/mo</span></div></div
+  - max-w-full wrap-anywhere font-display text-xl font-medium leading-tight text-foreground">$49</span><span class="whitespace-nowrap text-xs text-muted-foreground">/mo</span></div></div
+  - max-w-full wrap-anywhere font-display text-xl font-medium leading-tight text-foreground">$299</span><span class="whitespace-nowrap text-xs text-muted-foreground">/mo</span></div></div
+  - max-w-full wrap-anywhere font-display text-xl font-medium leading-tight text-foreground">$5</span><span class="whitespace-nowrap text-xs text-muted-foreground">/mo</span></div><a hr
+  - </li>
+</ul>
+<p>For example, Scale costs $299/month and includes 8M credits plus $299 for voice agents

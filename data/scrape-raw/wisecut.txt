@@ -1,6 +1,6 @@
 TOOL: Wisecut (wisecut)
 SOURCE: https://wisecut.ai/pricing
-FETCHED: 2026-11-19T00:34:48.543Z  HTTP 200  184460 bytes
+FETCHED: 2026-11-19T15:41:36.876Z  HTTP 200  184460 bytes
 PRICE LINES (6):
   - pular Autopilot + Social Hub + WISH + MCP Starter+ For creators publishing consistently US$ 29 /mo Billed monthly Wisecut Editor + WISH + Autopilot 1080p Full HD · up to 60 min per exp
   - cial Hub + WISH + MCP Professional+ For professional creators and high-volume workflows US$ 119 /mo Billed monthly Everything in Starter+, plus: 4K Ultra HD · up to 90 min per export No

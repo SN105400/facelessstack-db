@@ -1,0 +1,23 @@
+{
+ "slug": "kokoro-oss",
+ "name": "Kokoro (OSS)",
+ "category": "tts-voice",
+ "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Open source",
+    "monthly_usd": 0
+   }
+  ],
+  "notes": "Free/open-source TTS model (82M params); runs locally.",
+  "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "none",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/kokoro-oss-2026-11-19.html.gz"
+}

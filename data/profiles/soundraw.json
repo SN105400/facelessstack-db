@@ -1,0 +1,35 @@
+{
+ "slug": "soundraw",
+ "name": "Soundraw",
+ "category": "music-audio",
+ "url": "https://soundraw.io",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Creator",
+    "monthly_usd": 5.99
+   },
+   {
+    "name": "Artist Starter",
+    "monthly_usd": 10.49
+   },
+   {
+    "name": "Artist Pro",
+    "monthly_usd": 12.59
+   },
+   {
+    "name": "Unlimited",
+    "monthly_usd": 17.49
+   }
+  ],
+  "notes": "Captured rates are annual billing (page annual/monthly toggle); commercial use + distribution included.",
+  "source_url": "https://soundraw.io/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/soundraw-2026-11-19.html.gz"
+}

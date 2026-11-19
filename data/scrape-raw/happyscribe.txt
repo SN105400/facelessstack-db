@@ -1,6 +1,6 @@
 TOOL: HappyScribe (happyscribe)
 SOURCE: https://www.happyscribe.com/pricing
-FETCHED: 2026-11-19T00:34:31.269Z  HTTP 200  243735 bytes
+FETCHED: 2026-11-19T15:41:14.876Z  HTTP 200  243735 bytes
 PRICE LINES (26):
   - termarked) Integrate with Youtube, Vimeo, Drive, Box, and Dropbox Human proofreading From $2.00/min See pricing Basic For individuals with small production needs $17 / month Billed mont
   - hly $8.50 / month Billed annually · Save 50% Get started Recordings Unlimited recordings with Notet

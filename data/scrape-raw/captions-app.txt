@@ -1,0 +1,11 @@
+TOOL: Captions (captions-app)
+SOURCE: https://captions.ai/pricing
+FETCHED: 2026-11-19T15:41:20.332Z  HTTP 200  165120 bytes
+PRICE LINES (7):
+  - cing and plans MOST POPULAR Max Use generative AI to make new footage, AI actors and more $24.99/mo Get started Get started What s included: Access our library of curated AI Edit styles
+  - $69.99/mo $139
+  - 99/mo $279.99/mo Get started Get started 1x usage 2x usage 4x usage Everything in Max, plus: 1,400 cred
+  - to make new footage, AI actors and more</p>  <h2 class="price heading-03 astro-iopn2ilt">$24.99/mo</h2> </div> <div class="plan-cta astro-iopn2ilt"> <a href="https://captions
+  - <h2 class="price heading-03 astro-iopn2ilt" data-variant-price data-variant-for="scale"> $69.99/mo </h2><h2 class="price heading-03 astro-iopn2ilt" data-variant-price data-variant-for="
+  - "> $139.99/mo </h2><h2 class="price heading-03 astro-iopn2ilt" data-variant-price data-variant-for="
+  - "> $279.99/mo </h2>  </div> <div class="plan-cta astro-iopn2ilt"> <a href="https://captions

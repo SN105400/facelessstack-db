@@ -1,0 +1,37 @@
+{
+ "slug": "luma-dream-machine",
+ "name": "Luma Dream Machine",
+ "category": "video-generation",
+ "url": "https://lumalabs.ai/dream-machine",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Plus",
+    "monthly_usd": 30,
+    "annual_monthly_usd": 25,
+    "notes": "10,000 credits/mo ($300 billed yearly)"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 90,
+    "annual_monthly_usd": 75,
+    "notes": "40,000 credits/mo ($900 billed yearly)"
+   },
+   {
+    "name": "Ultra",
+    "monthly_usd": 300,
+    "annual_monthly_usd": 250,
+    "notes": "150,000 credits/mo ($3,000 billed yearly)"
+   }
+  ],
+  "notes": "Pricing fetched from /app (no standalone /pricing page).",
+  "source_url": "https://lumalabs.ai/app",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/snapshots/luma-dream-machine-2026-11-19.html.gz"
+}

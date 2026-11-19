@@ -29,10 +29,19 @@
   <div class="card"><div class="who">4. Flo — agent candidate</div>
     <div class="use">newer-generation macOS voice</div>
     <audio controls src="/studio/voice-ab/4-flo-agent.wav"></audio></div>
-  <div class="card"><div class="who">5. Samantha + prosody tuning</div>
+  <div class="card"><div class="who">5. Samantha + basic prosody</div>
     <div class="use">rate 168 + embedded pauses — what delivery tuning alone buys</div>
-    <audio controls src="/studio/voice-ab/5-samantha-tuned.wav"></audio>
-    <div class="tier">next tiers: macOS Premium voices (free download in System Settings → Spoken Content → Manage Voices) → local neural TTS (Kokoro, installing) → ElevenLabs free tier for hero lines</div></div>
+    <audio controls src="/studio/voice-ab/5-samantha-tuned.wav"></audio></div>
+  <div class="card"><div class="who">6. Samantha + breathing pauses</div>
+    <div class="use">auto silence after sentence ends — Apple's recommended humanizing trick</div>
+    <audio controls src="/studio/voice-ab/6-samantha-breathing.wav"></audio></div>
+  <div class="card"><div class="who">7. Samantha + full prosody stack</div>
+    <div class="use">breathing + rate 168 + pitch modulation 25 — the recommended default</div>
+    <audio controls src="/studio/voice-ab/7-samantha-full-prosody.wav"></audio></div>
+  <div class="card"><div class="who">8. Fred + sentence-stitch timing</div>
+    <div class="use">each sentence recorded separately, stitched with real gaps — comedic rhythm control</div>
+    <audio controls src="/studio/voice-ab/8-fred-sentence-stitch.wav"></audio>
+    <div class="tier">tier ladder: compact say → prosody stack (these) → macOS Premium voices (free download) → Kokoro local neural (needs py3.10) → ElevenLabs hero lines</div></div>
 </div>
 </body>
 </html>

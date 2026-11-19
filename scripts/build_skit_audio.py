@@ -2,7 +2,7 @@
 """Skit audio builder — reads studio/scripts/<name>.json, generates TTS voice lines
 (macOS `say`), synthesizes SFX, mixes at the scripted offsets, writes studio/<name>-mix.wav.
 Usage: python3 scripts/build_skit_audio.py <name>"""
-import json, os, subprocess, wave, math, struct, sys
+import json, os, re, subprocess, wave, math, struct, sys
 
 name = sys.argv[1] if len(sys.argv) > 1 else sys.exit("usage: build_skit_audio.py <name>")
 WS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,7 +64,13 @@ warnings = []
 lines = sorted(script.get("lines", []), key=lambda l: l["t"])
 for i, ln in enumerate(lines):
     voice = ln.get("voice", "Fred")
-    data = say(ln["text"], voice, f"/tmp/{name}_line{i}")
+    text = ln["text"]
+    if ln.get("natural_pauses", False):     # breathing pauses after sentence ends
+        text = re.sub(r"([.!?])\s+", r"\1 [[slnc 220]] ", text)
+    prefix = ""
+    if ln.get("rate"): prefix += f"[[rate {ln['rate']}]] "
+    if ln.get("pmod"): prefix += f"[[pmod {ln['pmod']}]] "
+    data = say(prefix + text, voice, f"/tmp/{name}_line{i}")
     dur = len(data) / SR
     end = ln["t"] + dur
     nxt = lines[i + 1]["t"] if i + 1 < len(lines) else script["duration"]

@@ -11,35 +11,50 @@
    "voice": "Samantha",
    "who": "agent",
    "mouth": false,
-   "text": "Congratulations! Eleven thousand dollars for twelve hours of recording."
+   "text": "Congratulations! Eleven thousand dollars for twelve hours of recording.",
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true
   },
   {
    "t": 4.8,
    "voice": "Fred",
    "who": "stickman",
    "mouth": true,
-   "text": "Eleven grand! Wait... record what, exactly?"
+   "text": "Eleven grand! Wait... record what, exactly?",
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true
   },
   {
    "t": 9.1,
    "voice": "Samantha",
    "who": "agent",
    "mouth": false,
-   "text": "Your voice. To train the AI that replaces you."
+   "text": "Your voice. To train the AI that replaces you.",
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true
   },
   {
    "t": 12.3,
    "voice": "Fred",
    "who": "stickman",
    "mouth": true,
-   "text": "So I'd be funding my own replacement. Cool."
+   "text": "So I'd be funding my own replacement. Cool.",
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true
   },
   {
    "t": 16.0,
    "voice": "Fred",
    "who": "stickman",
    "mouth": true,
-   "text": "Cool cool cool. Where do I NOT sign?"
+   "text": "Cool cool cool. Where do I NOT sign?",
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true
   }
  ],
  "captions": [

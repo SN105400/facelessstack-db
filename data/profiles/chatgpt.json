@@ -1,0 +1,38 @@
+{
+ "slug": "chatgpt",
+ "name": "ChatGPT",
+ "category": "script-writing",
+ "url": "https://chatgpt.com",
+ "pricing": {
+  "currency": "PHP",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0
+   },
+   {
+    "name": "Go",
+    "monthly_usd": 300,
+    "notes": "~USD 5.4/mo"
+   },
+   {
+    "name": "Plus",
+    "monthly_usd": 1100,
+    "notes": "~USD 19.5/mo"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 6490,
+    "notes": "~USD 115/mo"
+   }
+  ],
+  "notes": "Geo-priced PHP (PH IP); USD not displayed from this region. Go is a newer mid tier.",
+  "source_url": "https://openai.com/chatgpt/pricing/",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "none",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/chatgpt-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

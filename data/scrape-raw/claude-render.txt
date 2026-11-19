@@ -1,0 +1,5 @@
+TOOL: Claude (claude) — BROWSER RENDER PASS
+SOURCE: https://www.anthropic.com/pricing
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Team & Enterprise and API tabs priced separately (not captured).

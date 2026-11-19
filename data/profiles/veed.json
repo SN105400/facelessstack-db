@@ -1,0 +1,36 @@
+{
+ "slug": "veed",
+ "name": "VEED",
+ "category": "subtitles-captions",
+ "url": "https://www.veed.io",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Tier 1",
+    "monthly_usd": 20,
+    "annual_monthly_usd": 10,
+    "notes": "500 credits/mo ~125 AI videos, per user; yearly billed rate"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 44,
+    "annual_monthly_usd": 21,
+    "notes": "1,500 credits/mo ~375 AI videos, per user"
+   },
+   {
+    "name": "Enterprise",
+    "monthly_usd": null,
+    "notes": "custom AI credits"
+   }
+  ],
+  "notes": "Monthly $20/$44, yearly $10/$21 per user/mo. First tier name cut off in snapshot (recorded as \"Tier 1\").",
+  "source_url": "https://www.veed.io/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/veed-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

@@ -1,0 +1,6 @@
+TOOL: ChatGPT (chatgpt) — BROWSER RENDER PASS
+SOURCE: https://openai.com/chatgpt/pricing/
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Geo-priced PHP (PH IP); USD not displayed from this region
+  - Go is a newer mid tier.

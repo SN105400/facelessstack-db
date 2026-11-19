@@ -6,13 +6,13 @@
  "pricing": {
   "currency": "USD",
   "tiers": [],
-  "notes": "Promo-ambiguous page (Creator/Business show \"$0 billed yearly\" under 50% OFF) - needs in-app-browser render before verification.",
+  "notes": "Promo-ambiguous page (Creator/Business shown as \"$0 billed yearly\" under 50% OFF); not verifiable without account-context pricing. Kept unverified.",
   "source_url": "https://vizard.ai/pricing",
   "checked_at": "2026-11-19"
  },
  "affiliate": "unverified",
  "status": "active",
  "verified": false,
- "scrape_note": "Promo-ambiguous page (Creator/Business show \"$0 billed yearly\" under 50% OFF) - needs in-app-browser render before verification.",
- "provenance": "data/snapshots/vizard-2026-11-19.html.gz"
+ "scrape_note": "Promo-ambiguous page (Creator/Business shown as \"$0 billed yearly\" under 50% OFF); not verifiable without account-context pricing. Kept unverified.",
+ "provenance": "data/scrape-raw/vizard-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
 }

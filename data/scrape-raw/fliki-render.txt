@@ -1,4 +1,6 @@
-TOOL: fliki (browser-rendered)
+TOOL: Fliki (fliki) — BROWSER RENDER PASS
 SOURCE: https://fliki.ai/pricing
-FETCHED: 2026-11-19T00:50:17.091Z
-PRICE LINES (0):
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Geo-priced PHP (PH IP); FAQ claims USD listing but site renders PHP from this region
+  - Black Friday: 50% off annual Standard & Premium (code FLIKIBFCM50).

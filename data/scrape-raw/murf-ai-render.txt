@@ -1,5 +1,5 @@
-TOOL: murf-ai (browser-rendered+scroll)
+TOOL: Murf AI (murf-ai) — BROWSER RENDER PASS
 SOURCE: https://murf.ai/pricing
-FETCHED: 2026-11-19T00:50:37.136Z
-PRICE LINES (1):
-  - $10 FREE for API calls
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Public page now shows API pricing only; consumer/studio subscription tiers are behind the app (Enterprise section only on page).

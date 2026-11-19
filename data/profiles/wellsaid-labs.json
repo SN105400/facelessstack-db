@@ -1,0 +1,18 @@
+{
+ "slug": "wellsaid-labs",
+ "name": "WellSaid Labs",
+ "category": "tts-voice",
+ "url": "https://wellsaidlabs.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [],
+  "notes": "No public self-serve pricing as of 2026-11-19 \u2014 /pricing redirects to product marketing; platform pivoted to enterprise voiceover production (teams, approvals, MCP/Producer).",
+  "source_url": "https://wellsaidlabs.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/wellsaid-labs-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

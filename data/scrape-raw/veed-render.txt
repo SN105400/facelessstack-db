@@ -1,4 +1,6 @@
-TOOL: veed (browser-rendered+scroll)
+TOOL: VEED (veed) — BROWSER RENDER PASS
 SOURCE: https://www.veed.io/pricing
-FETCHED: 2026-11-19T00:50:45.699Z
-PRICE LINES (0):
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Monthly $20/$44, yearly $10/$21 per user/mo
+  - First tier name cut off in snapshot (recorded as "Tier 1").

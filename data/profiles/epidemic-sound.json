@@ -5,14 +5,30 @@
  "url": "https://www.epidemicsound.com",
  "pricing": {
   "currency": "USD",
-  "tiers": [],
-  "notes": "JS-rendered pricing (static HTML has no price lines) - needs in-app-browser render pass.",
+  "tiers": [
+   {
+    "name": "Personal",
+    "monthly_usd": 5.99,
+    "notes": "billed $71.88 yearly"
+   },
+   {
+    "name": "Commercial",
+    "monthly_usd": 11.99,
+    "notes": "billed $143.88 yearly"
+   },
+   {
+    "name": "Commercial Plus",
+    "monthly_usd": 28.99,
+    "notes": "billed $347.88 yearly"
+   }
+  ],
+  "notes": "Yearly billing (default toggle, save up to 60%); monthly rates not captured. 250,000 monthly credits on all plans; 30-day free trial offer.",
   "source_url": "https://www.epidemicsound.com/pricing/",
   "checked_at": "2026-11-19"
  },
  "affiliate": "unverified",
  "status": "active",
- "verified": false,
- "scrape_note": "JS-rendered pricing (static HTML has no price lines) - needs in-app-browser render pass.",
- "provenance": "data/snapshots/epidemic-sound-2026-11-19.html.gz"
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/epidemic-sound-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
 }

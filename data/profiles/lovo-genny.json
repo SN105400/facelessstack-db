@@ -1,0 +1,18 @@
+{
+ "slug": "lovo-genny",
+ "name": "LOVO/Genny",
+ "category": "tts-voice",
+ "url": "https://lovo.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [],
+  "notes": "SITE DOWN: lovo.ai returns \"This deployment is temporarily paused (sin1::fhpj4-...)\" as of 2026-11-19T16:50Z \u2014 hosting-level outage, pricing unverifiable. Re-check next nightly.",
+  "source_url": "https://lovo.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "site-down",
+ "verified": false,
+ "scrape_note": "SITE DOWN: lovo.ai returns \"This deployment is temporarily paused (sin1::fhpj4-...)\" as of 2026-11-19T16:50Z \u2014 hosting-level outage, pricing unverifiable. Re-check next nightly.",
+ "provenance": "data/scrape-raw/lovo-genny-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

@@ -1,0 +1,39 @@
+{
+ "slug": "publer",
+ "name": "Publer",
+ "category": "scheduling-publishing",
+ "url": "https://publer.io",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "limited scheduling; X/Twitter requires paid plan"
+   },
+   {
+    "name": "Professional",
+    "monthly_usd": 5,
+    "annual_monthly_usd": 4
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 10,
+    "annual_monthly_usd": 8
+   },
+   {
+    "name": "Enterprise",
+    "monthly_usd": null,
+    "notes": "volume discounts"
+   }
+  ],
+  "notes": "Yearly = 20% discount.",
+  "source_url": "https://publer.io/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "20-30% (unverified)",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/publer-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

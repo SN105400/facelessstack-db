@@ -1,0 +1,38 @@
+{
+ "slug": "canva",
+ "name": "Canva",
+ "category": "thumbnails-graphics",
+ "url": "https://www.canva.com",
+ "pricing": {
+  "currency": "PHP",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 300,
+    "notes": "~USD 5.3/mo; \u20b1150 first 3 months (50% off promo)"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 420,
+    "notes": "~USD 7.4/mo; \u20b1210 first 3 months"
+   },
+   {
+    "name": "Enterprise",
+    "monthly_usd": null,
+    "notes": "custom quote"
+   }
+  ],
+  "notes": "Prices rendered as images \u2014 read via screenshot. Geo-priced PHP (PH IP); yearly billing saves from 16%. Seed estimate (~$15 Pro) did not match PH-region display.",
+  "source_url": "https://www.canva.com/pricing/",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "up to $36/referral (unverified)",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/canva-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

@@ -1,0 +1,24 @@
+{
+ "slug": "murf-ai",
+ "name": "Murf AI",
+ "category": "tts-voice",
+ "url": "https://murf.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "API \u2014 pay-as-you-go",
+    "monthly_usd": null,
+    "notes": "TTS $0.01/1k chars (Falcon 2.1), $0.03/1k (studio TTS); STT $0.12/hr; voice changer $0.10/min; translation $0.02/1k chars; $10 free API credits"
+   }
+  ],
+  "notes": "Public page now shows API pricing only; consumer/studio subscription tiers are behind the app (Enterprise section only on page).",
+  "source_url": "https://murf.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/murf-ai-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

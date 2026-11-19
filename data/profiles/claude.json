@@ -1,0 +1,39 @@
+{
+ "slug": "claude",
+ "name": "Claude",
+ "category": "script-writing",
+ "url": "https://claude.ai",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 20,
+    "annual_monthly_usd": 17,
+    "notes": "$200 billed up front annually; $20 monthly"
+   },
+   {
+    "name": "Max 5x",
+    "monthly_usd": 100,
+    "notes": "5x Pro usage + $100/mo API credits"
+   },
+   {
+    "name": "Max 20x",
+    "monthly_usd": 200,
+    "notes": "10x Pro usage + $200/mo API credits"
+   }
+  ],
+  "notes": "Team & Enterprise and API tabs priced separately (not captured).",
+  "source_url": "https://www.anthropic.com/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "none",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/claude-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

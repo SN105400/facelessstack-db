@@ -1,0 +1,39 @@
+{
+ "slug": "fliki",
+ "name": "Fliki",
+ "category": "video-generation",
+ "url": "https://fliki.ai",
+ "pricing": {
+  "currency": "PHP",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "5 min/mo free audio+video generation"
+   },
+   {
+    "name": "Basic",
+    "monthly_usd": 449,
+    "notes": "60 credits/mo; ~USD 7.7"
+   },
+   {
+    "name": "Standard",
+    "monthly_usd": 1669,
+    "notes": "180 credits/mo; ~USD 28.5"
+   },
+   {
+    "name": "Premium",
+    "monthly_usd": 5199,
+    "notes": "600 credits/mo; ~USD 89"
+   }
+  ],
+  "notes": "Geo-priced PHP (PH IP); FAQ claims USD listing but site renders PHP from this region. Black Friday: 50% off annual Standard & Premium (code FLIKIBFCM50).",
+  "source_url": "https://fliki.ai/pricing",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/fliki-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

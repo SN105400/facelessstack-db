@@ -1,0 +1,7 @@
+TOOL: PlayHT (playht) — BROWSER RENDER PASS
+SOURCE: https://play.ht/
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - UNREACHABLE: play.ht fails DNS/network from both node fetch and in-app Chromium (2026-11-19)
+  - playht.com redirects to an affiliate/squatter domain (1xlite-54515.pro...) — do not scrape that host
+  - Remedy: retry from a different network/DNS resolver.

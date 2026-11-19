@@ -1,4 +1,6 @@
-TOOL: kling-ai (browser-rendered)
-SOURCE: https://klingai.com/pricing
-FETCHED: 2026-11-19T00:49:59.275Z
-PRICE LINES (0):
+TOOL: Kling AI (kling-ai) — BROWSER RENDER PASS
+SOURCE: https://kling.ai/app/membership/membership-plan
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Intro-then-regular structure is ambiguously worded on page; recorded as displayed
+  - klingai.com geo-redirects to /cn/; global pricing lives at kling.ai/app membership page.

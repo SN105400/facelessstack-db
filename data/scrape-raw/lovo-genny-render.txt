@@ -1,4 +1,6 @@
-TOOL: lovo-genny (browser-rendered+scroll)
+TOOL: LOVO/Genny (lovo-genny) — BROWSER RENDER PASS
 SOURCE: https://lovo.ai/pricing
-FETCHED: 2026-11-19T00:50:52.567Z
-PRICE LINES (0):
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - SITE DOWN: lovo.ai returns "This deployment is temporarily paused (sin1::fhpj4-...)" as of 2026-11-19T16:50Z — hosting-level outage, pricing unverifiable
+  - Re-check next nightly.

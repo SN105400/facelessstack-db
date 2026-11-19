@@ -1,0 +1,6 @@
+TOOL: TubeBuddy (tubebuddy) — BROWSER RENDER PASS
+SOURCE: https://www.tubebuddy.com/pricing
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Creator-license packages (individuals only, eligibility rules apply)
+  - USD charged; PHP estimates shown from PH IP (Pro ₱286.62/₱229.30, Legend ₱1846/₱1477).

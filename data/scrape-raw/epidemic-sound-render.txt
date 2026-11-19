@@ -1,0 +1,6 @@
+TOOL: Epidemic Sound (epidemic-sound) — BROWSER RENDER PASS
+SOURCE: https://www.epidemicsound.com/pricing/
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Yearly billing (default toggle, save up to 60%); monthly rates not captured
+  - 250,000 monthly credits on all plans; 30-day free trial offer.

@@ -1,0 +1,5 @@
+TOOL: WellSaid Labs (wellsaid-labs) — BROWSER RENDER PASS
+SOURCE: https://wellsaidlabs.com/pricing
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - No public self-serve pricing as of 2026-11-19 — /pricing redirects to product marketing; platform pivoted to enterprise voiceover production (teams, approvals, MCP/Producer).

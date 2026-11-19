@@ -1,0 +1,5 @@
+TOOL: Publer (publer) — BROWSER RENDER PASS
+SOURCE: https://publer.io/pricing
+FETCHED: 2026-11-19T16:00-16:55Z (logged-out in-app Chromium, domSnapshot/screenshot extract)
+LINES:
+  - Yearly = 20% discount.

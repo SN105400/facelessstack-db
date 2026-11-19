@@ -1,0 +1,18 @@
+{
+ "slug": "playht",
+ "name": "PlayHT",
+ "category": "tts-voice",
+ "url": "https://play.ht",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [],
+  "notes": "UNREACHABLE: play.ht fails DNS/network from both node fetch and in-app Chromium (2026-11-19). playht.com redirects to an affiliate/squatter domain (1xlite-54515.pro...) \u2014 do not scrape that host. Remedy: retry from a different network/DNS resolver.",
+  "source_url": "https://play.ht/",
+  "checked_at": "2026-11-19"
+ },
+ "affiliate": "unverified",
+ "status": "unreachable",
+ "verified": false,
+ "scrape_note": "UNREACHABLE: play.ht fails DNS/network from both node fetch and in-app Chromium (2026-11-19). playht.com redirects to an affiliate/squatter domain (1xlite-54515.pro...) \u2014 do not scrape that host. Remedy: retry from a different network/DNS resolver.",
+ "provenance": "data/scrape-raw/playht-render.txt (browser render pass 2026-11-19T16:00-16:55Z)"
+}

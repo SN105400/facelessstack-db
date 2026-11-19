@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Storyboard — human review gate</title>
+<style>
+  body{margin:0;background:#070a16;color:#e8ecff;font-family:system-ui,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:20px 14px 60px}
+  h1{font-size:1.4rem}.meta{color:#8fa0c9;font-size:.85rem}
+  .beat{display:flex;gap:14px;background:#101735;border:1px solid #1c2647;border-radius:10px;padding:12px;margin:12px 0}
+  .beat canvas{width:170px;height:302px;border-radius:8px;flex-shrink:0;border:1px solid #1c2647}
+  .bnum{color:#5a6a95;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+  .pose{font-weight:700;font-size:1.05rem}
+  .time{color:#8fa0c9;font-size:.85rem;font-variant-numeric:tabular-nums}
+  .line{margin:4px 0;padding:5px 10px;border-radius:6px;font-size:.9rem}
+  .line.agent{background:#182142;color:#a9b8e6}
+  .line.stickman{background:#1c2a52;color:#dfe7ff}
+  .who{font-size:.72rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em}
+  .cap{color:#ffd76e;font-size:.88rem;margin-top:4px}
+  .sfx{color:#7fe0a7;font-size:.8rem;margin-top:4px}
+  .warn{color:#ff9f6e;font-size:.85rem}
+  .bar{height:26px;background:#101735;border-radius:6px;position:relative;margin:10px 0;overflow:hidden}
+  .bar .seg{position:absolute;top:0;height:100%;border-right:1px solid #070a16;box-sizing:border-box}
+  .bar .lbl{position:absolute;top:4px;left:6px;font-size:.68rem;color:#c9d6ff;white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 id="title">Storyboard</h1>
+  <p class="meta" id="meta"></p>
+  <div class="bar" id="timeline"></div>
+  <div id="beats"></div>
+  <p class="meta" id="verdict"></p>
+</div>
+<script src="/studio/scenes/stickman-lib.js"></script>
+<script>
+const name = new URLSearchParams(location.search).get('name');
+const SW = 170, SH = 302;   // thumbnail render size (9:16)
+fetch(`/studio/scripts/${name}.json`).then(r => r.json()).then(script => {
+  document.getElementById('title').textContent = 'Storyboard — ' + (script.title || name);
+  document.getElementById('meta').textContent =
+    `${script.duration}s @ ${script.fps}fps · ${script.beats.length} beats · ${script.lines.length} voice lines · ${script.captions.length} captions`;
+
+  // timeline bar (proportional segments)
+  const bar = document.getElementById('timeline');
+  const colors = { 'talk-phone': '#31437e', shock: '#5e2f5e', facepalm: '#5e4a2f', 'walk-away': '#2f5e3c',
+                   think: '#2f4a5e', wave: '#4a5e2f', idle: '#22304f' };
+  for (const b of script.beats) {
+    const seg = document.createElement('div'); seg.className = 'seg';
+    seg.style.left = (b.from / script.duration * 100) + '%';
+    seg.style.width = (((b.to ?? script.duration) - b.from) / script.duration * 100) + '%';
+    seg.style.background = colors[b.pose] || '#333';
+    seg.innerHTML = `<span class="lbl">${b.pose}</span>`;
+    bar.appendChild(seg);
+  }
+
+  // beat cards with pose thumbnails
+  const beatsEl = document.getElementById('beats');
+  script.beats.forEach((b, i) => {
+    const mid = ((b.from ?? 0) + (b.to ?? script.duration)) / 2;
+    const card = document.createElement('div'); card.className = 'beat';
+    const th = document.createElement('canvas'); th.width = SW; th.height = SH;
+    const tctx = th.getContext('2d');
+    tctx.scale(SW / 540, SH / 960);
+    StickmanLib.drawScene(tctx, 540, 960, mid, script, 0);
+    card.appendChild(th);
+    const info = document.createElement('div');
+    const cap = (script.captions || []).find(c => c.from < (b.to ?? script.duration) && (c.to ?? 0) > (b.from ?? 0));
+    const voice = (script.lines || []).filter(l => l.t >= (b.from ?? 0) - 0.01 && l.t < (b.to ?? script.duration));
+    info.innerHTML = `
+      <div class="bnum">Beat ${i + 1}</div>
+      <div class="pose">${b.pose} · ${((b.to ?? script.duration) - (b.from ?? 0)).toFixed(1)}s</div>
+      <div class="time">${(b.from ?? 0).toFixed(2)}s → ${(b.to ?? script.duration).toFixed(2)}s</div>
+      ${voice.map(l => `<div class="line ${l.who === 'stickman' ? 'stickman' : 'agent'}">
+        <div class="who">${l.who === 'stickman' ? 'stickman' : 'phone voice'} · ${l.voice}</div>
+        ${l.text}</div>`).join('')}
+      ${cap ? `<div class="cap">caption: ${cap.text}</div>` : ''}`;
+    card.appendChild(info);
+    beatsEl.appendChild(card);
+  });
+
+  // verdict line: what the QC gate will check
+  const sfxCount = (script.sfx || []).length;
+  document.getElementById('verdict').textContent =
+    `QC gate on encode: motion ≥3% · seamlessness ≤1% · captions synced · voice track present · 9:16 ≤60s. ` +
+    `Approve this storyboard, then: python3 scripts/build_skit_audio.py ${name} && open skit_template.html?name=${name}&encode=1`;
+}).catch(e => {
+  document.getElementById('title').textContent = 'script not found: ' + name;
+  document.getElementById('meta').textContent = String(e);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{
+ "title": "The 3AM brain",
+ "duration": 21.5,
+ "fps": 24,
+ "scene": "bedroom",
+ "lines": [
+  {
+   "t": 2.2,
+   "voice": "Samantha",
+   "who": "brain",
+   "mouth": false,
+   "text": "Remember when you waved back at the wrong person?"
+  },
+  {
+   "t": 6.0,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "That was ELEVEN years ago!"
+  },
+  {
+   "t": 8.5,
+   "voice": "Samantha",
+   "who": "brain",
+   "mouth": false,
+   "text": "They remember. Their dog remembers."
+  },
+  {
+   "t": 11.4,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "I'm moving countries."
+  },
+  {
+   "t": 13.5,
+   "voice": "Samantha",
+   "who": "brain",
+   "mouth": false,
+   "text": "The customs officer will remember too."
+  }
+ ],
+ "captions": [
+  {
+   "from": 0.2,
+   "to": 2.0,
+   "text": "3:00 AM."
+  },
+  {
+   "from": 3.0,
+   "to": 5.9,
+   "text": "Remember when you waved back at the wrong person?",
+   "style": "bubble"
+  },
+  {
+   "from": 6.0,
+   "to": 8.3,
+   "text": "That was ELEVEN years ago!"
+  },
+  {
+   "from": 8.6,
+   "to": 11.2,
+   "text": "They remember. Their dog remembers.",
+   "style": "bubble"
+  },
+  {
+   "from": 11.5,
+   "to": 13.2,
+   "text": "I'm moving countries."
+  },
+  {
+   "from": 13.6,
+   "to": 16.3,
+   "text": "The customs officer will remember too.",
+   "style": "bubble"
+  },
+  {
+   "from": 19.3,
+   "to": 21.5,
+   "text": "Nobody escapes the 3AM brain."
+  }
+ ],
+ "beats": [
+  {
+   "from": 0.0,
+   "to": 5.9,
+   "pose": "lying"
+  },
+  {
+   "from": 5.9,
+   "to": 8.4,
+   "pose": "boltup"
+  },
+  {
+   "from": 8.4,
+   "to": 11.3,
+   "pose": "boltup"
+  },
+  {
+   "from": 11.3,
+   "to": 13.4,
+   "pose": "lying"
+  },
+  {
+   "from": 13.4,
+   "to": 17.2,
+   "pose": "boltup"
+  },
+  {
+   "from": 17.2,
+   "to": 21.5,
+   "pose": "lying"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.4,
+   "type": "tick"
+  },
+  {
+   "t": 1.2,
+   "type": "tick"
+  },
+  {
+   "t": 1.9,
+   "type": "tick"
+  },
+  {
+   "t": 5.95,
+   "type": "whoosh",
+   "text": "*BOLTS UPRIGHT*"
+  },
+  {
+   "t": 10.2,
+   "type": "heartbeat"
+  },
+  {
+   "t": 12.4,
+   "type": "heartbeat"
+  },
+  {
+   "t": 14.6,
+   "type": "heartbeat"
+  }
+ ]
+}

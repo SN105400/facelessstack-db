@@ -13,6 +13,8 @@ window.StickmanLib = (function () {
     think:       { lean: -0.03, armF: 0.5, eF: 1.6, armB: -0.3, eB: 0.5, hipY: -2 },
     wave:        { lean: 0.02, armF: -1.5, eF: 0.25, armB: -0.1, eB: 0.4, waveArm: true },
     sit:         { sit: true, lean: 0.03, armF: 0.3, eF: 0.6, armB: -0.2, eB: 0.5 },
+    lying:       { lean: 0 },
+    boltup:      { lean: 0 },
     crouch:      { lean: 0.24, armF: -0.7, eF: 0.6, armB: -0.55, eB: 0.5, hipY: 16, kneeOverride: 1.15 },
   };
 
@@ -123,6 +125,89 @@ window.StickmanLib = (function () {
 
   function drawScene(ctx, W, H, t, script, rms) {
     const tClamped = Math.min(t, script.duration);
+    // ---------- BEDROOM SCENE (script.scene === 'bedroom') ----------
+    if (script.scene === 'bedroom') {
+      const tt = Math.min(tClamped, script.duration);
+      const bg = ctx.createLinearGradient(0, 0, 0, H);
+      bg.addColorStop(0, '#04060f'); bg.addColorStop(1, '#090b16');
+      ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+      // window + moon
+      ctx.strokeStyle = '#3a4468'; ctx.lineWidth = 3;
+      ctx.strokeRect(W * 0.12, H * 0.08, W * 0.26, H * 0.16);
+      ctx.beginPath(); ctx.moveTo(W * 0.25, H * 0.08); ctx.lineTo(W * 0.25, H * 0.24); ctx.stroke();
+      ctx.fillStyle = 'rgba(220,228,255,0.8)'; ctx.beginPath(); ctx.arc(W * 0.18, H * 0.155, 15, 0, Math.PI*2); ctx.fill();
+      // wall clock at 3:00
+      ctx.strokeStyle = '#8fa0c9'; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(W * 0.62, H * 0.13, 24, 0, Math.PI*2); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(W * 0.62, H * 0.13); ctx.lineTo(W * 0.62, H * 0.13 - 14); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(W * 0.62, H * 0.13); ctx.lineTo(W * 0.62 + 14, H * 0.13); ctx.stroke();
+      // bed
+      const bedTop = H * 0.66;
+      ctx.fillStyle = '#1a2242'; ctx.fillRect(W * 0.08, bedTop, W * 0.84, H * 0.055);
+      ctx.fillStyle = '#26304f'; ctx.fillRect(W * 0.10, bedTop - 13, 88, 25);          // pillow
+      const upBeat = script.beats.find(b => b.pose === 'boltup' && tt >= b.from && tt < (b.to ?? script.duration));
+      if (!upBeat) {
+        // lying: head on pillow, body along the bed, arm over chest
+        const ly = bedTop - 14;
+        ctx.strokeStyle = '#e8ecff'; ctx.fillStyle = '#e8ecff'; ctx.lineCap = 'round';
+        ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(W * 0.15, ly); ctx.lineTo(W * 0.44, ly); ctx.stroke();
+        ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(W * 0.125, ly - 3, 11, 0, Math.PI*2); ctx.stroke();
+        const blink = (tt % 3.1) < 0.11;
+        ctx.beginPath(); ctx.arc(W * 0.128, ly - 4, 1.6, 0, Math.PI*2); ctx.fill();
+        if (blink) { ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(W * 0.121, ly - 4); ctx.lineTo(W * 0.134, ly - 4); ctx.stroke(); }
+        ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(W * 0.26, ly - 1); ctx.lineTo(W * 0.33, ly + 5); ctx.stroke();
+        ctx.fillStyle = '#182044'; ctx.fillRect(W * 0.30, bedTop - 6, W * 0.56, 24);     // blanket over legs
+      } else {
+        // bolt upright: torso from the bed, wide eyes, blanket mound at hips
+        const hipX = W * 0.22, hipY = bedTop - 56;
+        ctx.strokeStyle = '#e8ecff'; ctx.fillStyle = '#e8ecff'; ctx.lineCap = 'round';
+        const seg = (x1,y1,x2,y2,w) => { ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); };
+        seg(hipX, hipY, hipX + 2, hipY - 34, 5);
+        ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(hipX + 3, hipY - 47, 11, 0, Math.PI*2); ctx.stroke();
+        ctx.beginPath(); ctx.arc(hipX + 5, hipY - 49, 2.3, 0, Math.PI*2); ctx.fill();
+        seg(hipX, hipY, hipX - 15, hipY - 25, 4); seg(hipX - 15, hipY - 25, hipX - 22, hipY - 34, 3.5);
+        seg(hipX, hipY, hipX + 17, hipY - 23, 4); seg(hipX + 17, hipY - 23, hipX + 26, hipY - 30, 3.5);
+        ctx.fillStyle = '#182044'; ctx.beginPath(); ctx.ellipse(hipX, bedTop - 4, 84, 16, 0, Math.PI, 0); ctx.fill();
+        if ((rms || 0) * 6 > 0.5) {
+          ctx.beginPath(); ctx.ellipse(hipX + 5, hipY - 43, 3, 1.5 + 3.4 * Math.min(1, rms * 6), 0, 0, Math.PI*2); ctx.fill();
+        }
+      }
+      // captions: 'bubble' style = thought bubble; plain = title/punchline card
+      const cap = (script.captions || []).find(c => tt >= c.from && tt <= c.to);
+      if (cap) {
+        if (cap.style === 'bubble') {
+          const words = cap.text.split(' ');
+          const rows = []; let cur = '';
+          for (const w of words) { if ((cur + ' ' + w).trim().length > 30) { rows.push(cur.trim()); cur = w; } else cur += ' ' + w; }
+          if (cur.trim()) rows.push(cur.trim());
+          const bx = W * 0.56, by = H * 0.27;
+          const wpx = Math.max(230, Math.max(...rows.map(l => l.length)) * 11.5 + 30);
+          const hgt = 40 + rows.length * 26;
+          ctx.fillStyle = 'rgba(234,240,255,0.94)';
+          ctx.beginPath();
+          if (ctx.roundRect) ctx.roundRect(bx - wpx/2, by - hgt/2, wpx, hgt, 16); else ctx.rect(bx - wpx/2, by - hgt/2, wpx, hgt);
+          ctx.fill();
+          ctx.fillStyle = '#0a0d18';
+          for (let k = 0; k < 3; k++) { ctx.beginPath(); ctx.arc(bx - wpx/2 + 12 - k*15, by + hgt/2 + k*13, 6.5 - k*2, 0, Math.PI*2); ctx.fill(); }
+          ctx.font = 'bold 23px system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#0a0d18';
+          rows.forEach((row, ri) => ctx.fillText(row, bx, by - hgt/2 + 30 + ri * 26));
+        } else {
+          ctx.font = 'bold 32px system-ui, sans-serif'; ctx.textAlign = 'center';
+          ctx.lineWidth = 6; ctx.strokeStyle = 'rgba(0,0,0,0.78)';
+          ctx.strokeText(cap.text, W/2, H * 0.45); ctx.fillStyle = '#ffffff';
+          ctx.fillText(cap.text, W/2, H * 0.45);
+        }
+      }
+      const flash = (script.sfx || []).find(s => s.text && tt >= s.t && tt <= s.t + 0.9);
+      if (flash) { ctx.font = 'bold 30px system-ui, sans-serif'; ctx.fillStyle = '#ffd76e'; ctx.fillText(flash.text, W/2, H * 0.6); }
+      ctx.drawImage(vig(W, H), 0, 0);
+      const tile = grainTiles()[Math.floor(tt * 16) % 2];
+      ctx.globalAlpha = 0.4;
+      for (let gy = 0; gy < H; gy += 128) for (let gx = 0; gx < W; gx += 128) ctx.drawImage(tile, gx, gy);
+      ctx.globalAlpha = 1;
+      return { pose: 'bedroom', scrollOff: 0 };
+    }
+    // ---------- generic scene continues ----------
     ctx.fillStyle = '#0a0d18'; ctx.fillRect(0, 0, W, H);
     const g = ctx.createLinearGradient(0, 0, 0, H);
     g.addColorStop(0, '#0d1226'); g.addColorStop(1, '#04060d');

@@ -49,6 +49,17 @@ def sfx(kind, t):
                 p = i / (0.7 * SR); env = math.sin(p * math.pi) ** 2
                 noise = (2 * ((i/SR*47) % 1) - 1)
                 out.append((s0 + i, int(12000 * env * noise * (0.4 + 0.6*math.sin(2*math.pi*(300+2900*p)*i/SR)))))
+    elif kind == "tick":
+        s0 = int(t * SR)
+        for i in range(int(0.05 * SR)):
+            if s0 + i < len(mix):
+                mix[s0 + i] += int(12000 * (1 - i / (0.05 * SR)) * math.sin(2 * math.pi * 1300 * i / SR))
+    elif kind == "heartbeat":
+        for off in [0.0, 0.28]:
+            s0 = int((t + off) * SR)
+            for i in range(int(0.14 * SR)):
+                if s0 + i < len(mix):
+                    mix[s0 + i] += int(16000 * (1 - i / (0.14 * SR)) * math.sin(2 * math.pi * 55 * i / SR))
     elif kind == "splash":
         s0 = int(t * SR)
         for i in range(int(0.25 * SR)):

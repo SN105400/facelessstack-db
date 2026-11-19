@@ -1,0 +1,75 @@
+TOOL: HappyScribe (happyscribe)
+SOURCE: https://www.happyscribe.com/pricing
+FETCHED: 2026-11-19T00:34:31.269Z  HTTP 200  243735 bytes
+PRICE LINES (26):
+  - termarked) Integrate with Youtube, Vimeo, Drive, Box, and Dropbox Human proofreading From $2.00/min See pricing Basic For individuals with small production needs $17 / month Billed mont
+  - hly $8.50 / month Billed annually · Save 50% Get started Recordings Unlimited recordings with Notet
+  - nutes each Uploaded files 1,440 minutes per year for uploaded files Additional credits at $0.20/min 120 minutes per month for uploaded files Additional credits at $0
+  - rts Most Popular Pro For professionals and small teams with medium-sized production needs $29 / month Billed monthly $19 / month Billed annually · Save 34% Get started Recordings Unli
+  - recording Uploaded files 7,200 minutes per year for uploaded files Additional credits at $0.20/min 600 minutes per month for uploaded files Additional credits at $0
+  - 20/min AI & collaboration Unlimited AI Chat 3 user seats included Additional seats at $19/month 3 user seats included Additional seats at $29/month Everything in Basic, plus Custo
+  - Business For teams and agencies with larger production needs $89 / month Billed monthly $59 / month Billed annually · Save 34% Get started Recordings Unlimited recordings with Notet
+  - recording Uploaded files 72,000 minutes per year for uploaded files Additional credits at $0.20/min 6,000 minutes per month for uploaded files Additional credits at $0
+  - 20/min AI & collaboration Unlimited AI Chat 5 user seats included Additional seats at $19/month 5 user seats included Additional seats at $29/month Everything in Pro, plus Manage
+  - eature comparison Free Basic Pro Business Annual save 50% Monthly Free Free Sign up Basic $17 $8
+  - 50 /mo Get started Pro $29 $19 /mo Get started Business $89 $59 /mo Get started Recordings Record with the AI Notetaker, the mobile app or the web record
+  - $29/mo $29 $19/mo $29/mo $29 $19/mo Collaborative real-time editing Comments & highlights Workspace roles & permissions &m
+  - % accuracy Done by professionals Delivery in 4h+ Fastest turnarounds in the industry From $2.00/min Affordable rates Stress-free No transcriber management Flexible Scale and downscale v
+  - annually">
+                  <div class="nb-price-fig">
+  <span class="nb-price-val tnum">$8.50</span>
+    <span class="nb-price-per">/ month</span>
+</div>
+<p class="nb-price-note">
+  - s="text-xs font-semibold text-content-inverted text-left text-wrap">Additional credits at $0.20/min</div>
+</div></div></div></span>
+
+</span>      <span data-price="monthly" class="hidde
+  - annually">
+                  <div class="nb-price-fig">
+  <span class="nb-price-val tnum">$19</span>
+    <span class="nb-price-per">/ month</span>
+</div>
+<p class="nb-price-note">
+  - ass="text-xs font-semibold text-content-inverted text-left text-wrap">Additional seats at $19/month</div>
+</div></div></div></span>
+
+</span>      <span data-price="monthly" class="hid
+  - ass="text-xs font-semibold text-content-inverted text-left text-wrap">Additional seats at $29/month</div>
+</div></div></div></span>
+
+</span></div>
+            <p class="nb-price-card-
+  - annually">
+                  <div class="nb-price-fig">
+  <span class="nb-price-val tnum">$59</span>
+    <span class="nb-price-per">/ month</span>
+</div>
+<p class="nb-price-note">
+  - ass="nb-price-th-val tnum">
+                    <span data-price="monthly" class="hidden">$17</span>
+                    <span data-price="annually">$8
+  - ass="nb-price-th-val tnum">
+                    <span data-price="monthly" class="hidden">$29</span>
+                    <span data-price="annually">$19</span>
+                    <sm
+  - ass="nb-price-th-val tnum">
+                    <span data-price="monthly" class="hidden">$89</span>
+                    <span data-price="annually">$59</span>
+                    <sm
+  - a-col="3" class="is-pop">
+                      <span data-price="monthly" class="hidden">$29/mo</span>
+                      <span data-price="annually">
+                        <s c
+  - lass="nb-price-was">$29</s>$19/mo
+                      </span>
+                  </td>
+                  <td data-col="
+  - 4" class="">
+                      <span data-price="monthly" class="hidden">$29/mo</span>
+                      <span data-price="annually">
+                        <s c
+  - lass="nb-price-was">$29</s>$19/mo
+                      </span>
+                  </td>
+              </tr>

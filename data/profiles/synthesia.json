@@ -1,0 +1,42 @@
+{
+ "slug": "synthesia",
+ "name": "Synthesia",
+ "category": "avatars",
+ "url": "https://synthesia.io",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "500 credits/mo, watermark"
+   },
+   {
+    "name": "Starter",
+    "monthly_usd": 19,
+    "annual_monthly_usd": 14,
+    "notes": "$9 first month; $168/yr, 15,000 credits/yr"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 89,
+    "annual_monthly_usd": 59,
+    "notes": "$49 first month; $708/yr, 72,000 credits/yr"
+   },
+   {
+    "name": "Business",
+    "monthly_usd": 99,
+    "annual_monthly_usd": 79,
+    "notes": "$948/yr; +$20/seat/mo"
+   }
+  ],
+  "notes": "Studio Express avatar add-on $1,000/yr (annual plans).",
+  "source_url": "https://synthesia.io/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/synthesia-20261118.html.gz"
+}

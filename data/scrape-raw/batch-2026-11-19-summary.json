@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "zebracat",
+    "url": "https://zebracat.ai/pricing",
+    "status": 200,
+    "ms": 587,
+    "bytes": 311191,
+    "finalUrl": "https://www.zebracat.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "runway",
+    "url": "https://runwayml.com/pricing",
+    "status": 200,
+    "ms": 641,
+    "bytes": 1276784,
+    "finalUrl": "https://runway.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "kling-ai",
+    "url": "https://klingai.com/pricing",
+    "status": 200,
+    "ms": 921,
+    "bytes": 204362,
+    "finalUrl": "https://klingai.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "synthesia",
+    "url": "https://synthesia.io/pricing",
+    "status": 200,
+    "ms": 947,
+    "bytes": 984488,
+    "finalUrl": "https://www.synthesia.io/pricing",
+    "err": null
+  },
+  {
+    "slug": "d-id",
+    "url": "https://www.d-id.com/pricing",
+    "status": 200,
+    "ms": 1344,
+    "bytes": 158677,
+    "finalUrl": "https://www.d-id.com/pricing/studio/",
+    "err": null
+  },
+  {
+    "slug": "lovo-genny",
+    "url": "https://lovo.ai/pricing",
+    "status": 402,
+    "ms": 336,
+    "bytes": 1592,
+    "finalUrl": "https://lovo.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "lovo-genny",
+    "url": "https://lovo.ai/en/pricing",
+    "status": 402,
+    "ms": 57,
+    "bytes": 1592,
+    "finalUrl": "https://lovo.ai/en/pricing",
+    "err": null
+  },
+  {
+    "slug": "lovo-genny",
+    "url": "https://lovo.ai",
+    "status": 402,
+    "ms": 73,
+    "bytes": 1592,
+    "finalUrl": "https://lovo.ai/",
+    "err": null
+  },
+  {
+    "slug": "happyscribe",
+    "url": "https://www.happyscribe.com/pricing",
+    "status": 200,
+    "ms": 2229,
+    "bytes": 243735,
+    "finalUrl": "https://www.happyscribe.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "zubtitle",
+    "url": "https://zubtitle.com/pricing",
+    "status": 200,
+    "ms": 272,
+    "bytes": 96867,
+    "finalUrl": "https://zubtitle.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "vizard",
+    "url": "https://vizard.ai/pricing",
+    "status": 200,
+    "ms": 1746,
+    "bytes": 304934,
+    "finalUrl": "https://vizard.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "kapwing",
+    "url": "https://www.kapwing.com/pricing",
+    "status": 200,
+    "ms": 908,
+    "bytes": 310194,
+    "finalUrl": "https://www.kapwing.com/pricing",
+    "err": null
+  },
+  {
+    "slug": "wisecut",
+    "url": "https://www.wisecut.ai/pricing",
+    "status": 200,
+    "ms": 4097,
+    "bytes": 184460,
+    "finalUrl": "https://wisecut.ai/pricing",
+    "err": null
+  },
+  {
+    "slug": "udio",
+    "url": "https://www.udio.com/pricing",
+    "status": 200,
+    "ms": 676,
+    "bytes": 168525,
+    "finalUrl": "https://www.udio.com/pricing",
+    "err": null
+  }
+]

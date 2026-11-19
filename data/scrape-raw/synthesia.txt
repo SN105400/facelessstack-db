@@ -1,0 +1,51 @@
+TOOL: Synthesia (synthesia)
+SOURCE: https://www.synthesia.io/pricing
+FETCHED: 2026-11-19T00:34:16.847Z  HTTP 200  984488 bytes
+PRICE LINES (47):
+  - ed by over 90% of Fortune 100 companies For individuals For business Monthly Yearly Basic $0 /month 500 credits / month Get started Get started on desktop Free allowance 1 Syren vide
+  - thesia watermark See all features Monthly Yearly 3 months free mo free month free Starter $19 $9 first month /month then $19 per month 1,250 credits / month Get started $19 $14 /month
+  - $168 billed yearly 15,000 credits / year Get started Try for FREE or Purchase now CREDITS What
+  - support See all features Monthly Yearly 3 months free mo free month free Pro Most popular $89 $49 first month /month then $89 per month 6,000 credits / month Credits per month Price 6
+  - 75% 48,000 $712 $676 Save 5% Get started $89 $59 /month $708 billed yearly 72,000 credits / year Credits per year Price 72,000 $59 144,000 $118 $117 S
+  - 75% 576,000 $472 $448 Save 5% Get started Try for FREE or Purchase now CREDITS What are Credits? Credits are no
+  - t/email support On-brand Avatars See all features Explore API pricing Compare plans Basic $0 /mo try for free Get started Starter $9 /mo first month then $19 /mo billed monthly $14 /
+  - mo $168 /yr, billed yearly Get started Pro $49 /mo first month then $89 /mo billed monthly $59 /mo $708 /yr, billed yearly Get started Workspaces Seats The maxim
+  - rsonal avatars Studio Avatars The creation of a Studio Express-1 avatar is a paid add-on ($1000/year) for annual plan users only
+  - Paid add-on ($1,000/year) Paid add-on ($1,000/year) Dialogue Add two or more avatars in a scene
+  - content moderation time Regular content moderation time Monthly Yearly Save 20 % Business $99 $79 /month $948 billed yearly 1 member members 72,000 credits / year Credits per year Pri
+  - 1% 1,800,000 $1,496 $1,348 Save 10% Get started $99 /month billed monthly 1 member members 6,000 credits / month Credits per month Price 6,00
+  - ted Personal Avatars Live team collaboration Brand Kits SCORM export Add team members for $20 /seat/month Billed monthly or yearly See all features Monthly Yearly Enterprise Let&#x27
+  - mmunity Access to live events See all features Explore API pricing Compare plans Business $99 /mo 1 member members , billed monthly $79 /mo 1 member members , billed yearly Get starte
+  - n and compute) Studio Avatars The creation of a Studio Express-1 avatar is a paid add-on ($1000/year) for annual plan users only
+  - regular text-color-primary"><span yearly-per-month-freemium="" class="text-weight-medium">$0</span><span month="" class="paragraph-xlarge"> /month</span></p><div class="spacer-xxsmal
+  - text-color-tertiary"><span monthly-price-starter="" class="text-decoration-strikethrough">$19</span><span> </span></span><span first-month-price-starter="" class="text-weight-medium">
+  - lass="label-regular text-color-tertiary"><span>then </span><span monthly-price-starter="">$19</span><span> per month</span></p></div><div class="spacer-xxsmall"></div><div class="padd
+  - text-color-tertiary"><span monthly-price-starter="" class="text-decoration-strikethrough">$19</span><span> </span></span><span class="heading-xsmall is-regular text-color-primary"><sp
+  - an yearly-per-month-starter="" class="text-weight-medium">$14</span><span month="" class="paragraph-xlarge"> /month</span></span></div><div class="spac
+  - er-tiny"></div><p class="label-regular text-color-tertiary"><span yearly-price-starter="">$168</span><span class="label-regular text-color-tertiary"> billed yearly</span></p><div class
+  - text-color-tertiary"><span monthly-price-creator="" class="text-decoration-strikethrough">$89</span><span> </span></span><span first-month-price-creator="" class="text-weight-medium">
+  - lass="label-regular text-color-tertiary"><span>then </span><span monthly-price-creator="">$89</span><span> per month</span></p></div><div class="spacer-xxsmall"></div><div data-delay=
+  - text-color-tertiary"><span monthly-price-creator="" class="text-decoration-strikethrough">$89</span><span> </span></span><span class="heading-xsmall is-regular text-color-primary"><sp
+  - an yearly-per-month-creator="" class="text-weight-medium">$59</span><span month="" class="paragraph-xlarge"> /month</span></span></div><div class="spac
+  - er-tiny"></div><p class="label-regular text-color-primary"><span yearly-price-creator="">$708</span><span> billed yearly</span></p><div class="spacer-xxsmall"></div><div data-delay="0
+  - s="paragraph-medium"><span yearly-per-month-freemium="" class="paragraph-large is-medium">$0</span><span month="">/mo</span></p><div class="label-regular text-color-tertiary">try for
+  - s="paragraph-medium"><span first-month-price-starter="" class="paragraph-large is-medium">$9</span><span data-promo-hide="">/mo</span><span data-promo-only=""> first month</span></p>
+  - lass="label-regular text-color-tertiary"><span>then </span><span monthly-price-starter="">$19</span><span>/mo</span></p><div data-promo-hide="" class="label-regular text-color-tertiar
+  - ss="paragraph-medium"><span yearly-per-month-starter="" class="paragraph-large is-medium">$14</span><span month="">/mo</span></p><p class="label-regular text-color-tertiary"><span yea
+  - rly-price-starter="">$168</span><span>/yr, billed yearly</span></p></div><div class="spacer-xxsmall"></div></div><a
+  - s="paragraph-medium"><span first-month-price-creator="" class="paragraph-large is-medium">$49</span><span data-promo-hide="">/mo</span><span data-promo-only=""> first month</span></p>
+  - lass="label-regular text-color-tertiary"><span>then </span><span monthly-price-creator="">$89</span><span>/mo</span></p><div data-promo-hide="" class="label-regular text-color-tertiar
+  - ss="paragraph-medium"><span yearly-per-month-creator="" class="paragraph-large is-medium">$59</span><span month="">/mo</span></p><p class="label-regular text-color-tertiary"><span yea
+  - rly-price-creator="">$708</span><span>/yr, billed yearly</span></p></div><div class="spacer-xxsmall"></div></div><a
+  - ip-video-src="" tooltip-text="The creation of a Studio Express-1 avatar is a paid add-on ($1000/year) for annual plan users only
+  - able"><p class="label-medium">The creation of a Studio Express-1 avatar is a paid add-on ($1000/year) for annual plan users only
+  - yearly" class="display-contents"><div class="rich-text-medium w-richtext"><p>Paid add-on ($1,000/year)</p></div><div class="conditional-visibility-pricing-table w-condition-invisible"><i
+  - ext-color-tertiary"><span monthly-price-business="" class="text-decoration-strikethrough">$99</span><span> </span></span><span yearly-per-month-business="" class="text-weight-medium">
+  - $79</span><span class="paragraph-xlarge"> /month</span></p><div><div class="spacer-tiny"></di
+  - gular text-color-primary"><span yearly-price-business="" class="margin-right margin-tiny">$948</span><span>billed yearly</span></p></div><div class="spacer-xxsmall"></div><div class="p
+  - is-regular text-color-primary"><span monthly-price-business="" class="text-weight-medium">$99</span><span class="paragraph-xlarge"> /month</span></p><div><div class="spacer-tiny"></di
+  - text-color-secondary"><span>Add team members for </span><span data-business-seat-price="">$20</span><span>/seat/month</span></p></div><div><div class="spacer-xxsmall"></div><div data-
+  - lass="paragraph-medium"><span monthly-price-business="" class="paragraph-large is-medium">$99</span><span>/mo</span></p><p class="label-regular text-color-tertiary"><span><span data-c
+  - s="paragraph-medium"><span yearly-per-month-business="" class="paragraph-large is-medium">$79</span><span>/mo</span></p><p class="label-regular text-color-tertiary"><span><span data-c
+  - lass="pricing-col-content"><div class="rich-text-medium w-richtext"><p id="">Paid add-on ($1,000/year)</p></div></div><div id="w-node-a52aaa73-0f2e-74a9-1646-7c2529d03202-64c0df5f" class
+  - ="pricing-col-content"><div class="rich-text-medium w-richtext"><p>Paid add-on ($1,000/year)</p></div><div class="conditional-visibility-pricing-table w-condition-invisible"><i

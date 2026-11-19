@@ -1,0 +1,21 @@
+TOOL: Zubtitle (zubtitle)
+SOURCE: https://zubtitle.com/pricing
+FETCHED: 2026-11-19T00:34:34.319Z  HTTP 200  96867 bytes
+PRICE LINES (17):
+  - t 2 months FREE with annual billing Bootstrapper For getting started with video marketing $0 /mo free forever Get started All video editor features 2 videos per month Zubtitle waterm
+  - ark added Resolutions up to 720p Guru For podcasters, experts, and coaches $19 /mo or $190 yearly Get started All video editor features 10 videos per month Watermark removed Resolu
+  - tions up to 4K Premium support Agency For teams creating content for clients $49 /mo or $490 yearly Get started All video editor features 30 videos per month Watermark removed Resolu
+  - t 2 months FREE with annual billing Bootstrapper For getting started with video marketing $0 /yr free forever Get started All video editor features 2 videos per month 20 min uploads
+  - Guru For podcasters, experts, and coaches $190 /yr save $38 Get started All video editor features 10 videos per month 20 min uploads Premium support
+  - Remove watermarks Agency For teams creating content for clients $490 /yr save $98 Get started All video editor features 30 videos per month 20 min uploads Premium support
+  - free forever Get started Guru $19 per mo
+  - or $90/yr
+  - or $490/yr
+  - eting</div></div><div class="margin-vertical margin-xxsmall"><div class="heading-xxlarge">$0<span class="heading-medium">/mo</span></div></div><div>free forever</div><div class="marg
+  - aches</div></div><div class="margin-vertical margin-xxsmall"><div class="heading-xxlarge">$19<span class="heading-medium">/mo</span></div></div><div>or $190 yearly</div><div class="ma
+  - ients</div></div><div class="margin-vertical margin-xxsmall"><div class="heading-xxlarge">$49<span class="heading-medium">/mo</span></div></div><div>or $490 yearly</div><div class="ma
+  - eting</div></div><div class="margin-vertical margin-xxsmall"><div class="heading-xxlarge">$0<span class="heading-medium-2">/yr</span></div></div><div>free forever</div><div class="ma
+  - aches</div></div><div class="margin-vertical margin-xxsmall"><div class="heading-xxlarge">$190<span class="heading-medium-2">/yr</span></div></div><div>save $38</div><div class="margin
+  - ients</div></div><div class="margin-vertical margin-xxsmall"><div class="heading-xxlarge">$490<span class="heading-medium-2">/yr</span></div></div><div>save $98</div><div class="margin
+  - </div></div><div class="text-color-grey mobile-smaller">or $90/yr
+  - </div></div><div class="text-color-grey mobile-smaller">or $490/yr

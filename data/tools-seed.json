@@ -72,7 +72,8 @@
    "pricing_known": "credit-based",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing \u2014 needs in-app-browser render pass"
   },
   {
    "name": "Pika",
@@ -122,7 +123,8 @@
    "pricing_known": "credit-based",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing \u2014 needs in-app-browser render pass"
   },
   {
    "name": "Creatify",
@@ -184,7 +186,8 @@
    "pricing_known": "paid tiers",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "402 bot-block on fetch \u2014 needs browser render"
   },
   {
    "name": "WellSaid Labs",
@@ -505,7 +508,8 @@
    "pricing_known": "freemium; paid tiers",
    "affiliate": "unverified",
    "status": "active",
-   "verified": false
+   "verified": false,
+   "scrape_note": "JS-rendered pricing \u2014 needs in-app-browser render pass"
   },
   {
    "name": "Soundraw",

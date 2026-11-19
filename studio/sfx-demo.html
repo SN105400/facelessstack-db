@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFX/Music synthesis demo — procedural audio → WebM</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #05070f; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script>
+// Procedural AUDIO synthesis (OfflineAudioContext): lo-fi chord bed + kick + hat,
+// boing SFX @2s, whoosh SFX @5s. Video: beat-reactive bars. 10s @ 24fps, VP9 + Opus.
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, T = 10, FPS = 24, SR = 48000;
+
+async function synthAudio() {
+  const oc = new OfflineAudioContext(2, SR * T, SR);
+  const master = oc.createGain(); master.gain.value = 0.8; master.connect(oc.destination);
+  // lo-fi chord pad: 4 chords, 2.5s each (Am - F - C - G), soft sine stacks
+  const chords = [[220, 261.6, 329.6], [174.6, 220, 261.6], [261.6, 329.6, 392], [196, 246.9, 293.7]];
+  chords.forEach((freqs, ci) => {
+    freqs.forEach((f, vi) => {
+      const o = oc.createOscillator(), g = oc.createGain();
+      o.type = 'sine'; o.frequency.value = f / 2;
+      const t0 = ci * 2.5, t1 = t0 + 2.6;
+      g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(0.10 - vi * 0.02, t0 + 0.6);
+      g.gain.setValueAtTime(0.10 - vi * 0.02, t1 - 0.5);
+      g.gain.exponentialRampToValueAtTime(0.0001, t1);
+      o.connect(g); g.connect(master); o.start(t0); o.stop(t1);
+    });
+  });
+  // kick every 0.5s
+  for (let t = 0; t < T - 0.15; t += 0.5) {
+    const o = oc.createOscillator(), g = oc.createGain();
+    o.type = 'sine'; o.frequency.setValueAtTime(110, t); o.frequency.exponentialRampToValueAtTime(42, t + 0.11);
+    g.gain.setValueAtTime(0.5, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.13);
+    o.connect(g); g.connect(master); o.start(t); o.stop(t + 0.15);
+  }
+  // hat ticks (noise bursts) every 0.25s offset 0.25
+  const nb = oc.createBuffer(1, SR * 0.03, SR), nd = nb.getChannelData(0);
+  for (let i = 0; i < nd.length; i++) nd[i] = (Math.random() * 2 - 1) * (1 - i / nd.length);
+  for (let t = 0.25; t < T - 0.05; t += 0.5) {
+    const s = oc.createBufferSource(); s.buffer = nb;
+    const g = oc.createGain(); g.gain.value = 0.16;
+    const f = oc.createBiquadFilter(); f.type = 'highpass'; f.frequency.value = 6000;
+    s.connect(f); f.connect(g); g.connect(master); s.start(t);
+  }
+  // BOING SFX @2s: descending sine with vibrato
+  {
+    const o = oc.createOscillator(), g = oc.createGain(), v = oc.createOscillator(), vg = oc.createGain();
+    o.type = 'sine'; o.frequency.setValueAtTime(380, 2.0); o.frequency.exponentialRampToValueAtTime(72, 2.55);
+    v.frequency.value = 11; vg.gain.value = 18; v.connect(vg); vg.connect(o.frequency);
+    g.gain.setValueAtTime(0.42, 2.0); g.gain.exponentialRampToValueAtTime(0.001, 2.75);
+    o.connect(g); g.connect(master); o.start(2.0); o.stop(2.8); v.start(2.0); v.stop(2.8);
+  }
+  // WHOOSH SFX @5s: bandpass-swept noise
+  {
+    const s = oc.createBufferSource(); s.buffer = nb; s.loop = true;
+    const f = oc.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = 1.4;
+    f.frequency.setValueAtTime(260, 4.9); f.frequency.exponentialRampToValueAtTime(3200, 5.5);
+    const g = oc.createGain(); g.gain.setValueAtTime(0.001, 4.9);
+    g.gain.exponentialRampToValueAtTime(0.5, 5.25); g.gain.exponentialRampToValueAtTime(0.001, 5.6);
+    s.connect(f); f.connect(g); g.connect(master); s.start(4.9); s.stop(5.7);
+  }
+  return await oc.startRendering();
+}
+
+// visual: beat-reactive bars + SFX flashes (deterministic)
+function drawAt(tSec) {
+  const t = ((tSec / T) % 1 + 1) % 1 * T;
+  ctx.fillStyle = '#05070f'; ctx.fillRect(0, 0, W, H);
+  const beat = Math.exp(-6 * ((t * 2) % 1));
+  ctx.globalCompositeOperation = 'lighter';
+  for (let i = 0; i < 36; i++) {
+    const u = i / 36;
+    const hgt = (H * 0.12) + Math.abs(Math.sin(u * 9 + t * 2.2)) * H * 0.09 * (1 + beat * 0.9);
+    const hue = 190 + 60 * Math.sin(u * Math.PI * 2 + t * 1.2) + 25 * Math.sin(t * 1.7);
+    const bx = 40 + i * ((W - 80) / 36);
+    ctx.fillStyle = `hsla(${hue}, 92%, 62%, 0.8)`;
+    ctx.fillRect(bx, H * 0.62 - hgt, 8, hgt);
+    ctx.fillStyle = `hsla(${hue + 30}, 92%, 70%, 0.5)`;
+    ctx.fillRect(bx, H * 0.62 + 6, 8, hgt * 0.5);
+  }
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.font = 'bold 34px system-ui, sans-serif'; ctx.textAlign = 'center';
+  if (t > 1.9 && t < 2.8) { ctx.fillStyle = '#ffd76e'; ctx.fillText('BOING', W/2, H * 0.2); }
+  if (t > 4.9 && t < 5.7) { ctx.fillStyle = '#9fd7ff'; ctx.fillText('WHOOSH', W/2, H * 0.2); }
+  ctx.font = '600 26px system-ui, sans-serif'; ctx.fillStyle = '#8fa0c9';
+  ctx.fillText('procedural audio — no music library, no license', W/2, H * 0.8);
+  ctx.fillStyle = '#e8ecff';
+  ctx.fillText('synthesized in code', W/2, H * 0.845);
+}
+window.drawAt = drawAt;
+let last = 0;
+function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % T); }
+if (!location.search.includes('static')) requestAnimationFrame(frame);
+</script>
+</body>
+</html>

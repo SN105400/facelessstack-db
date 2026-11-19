@@ -1,0 +1,42 @@
+{
+ "slug": "runway",
+ "name": "Runway",
+ "category": "video-generation",
+ "url": "https://runwayml.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "notes": "125 one-time credits"
+   },
+   {
+    "name": "Standard",
+    "monthly_usd": 15,
+    "annual_monthly_usd": 12,
+    "notes": "625 credits/mo \u2248 52s of Gen-4"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 35,
+    "annual_monthly_usd": 28,
+    "notes": "2,250 credits/mo"
+   },
+   {
+    "name": "Unlimited",
+    "monthly_usd": 95,
+    "annual_monthly_usd": 76,
+    "notes": "9,500 credits/mo"
+   }
+  ],
+  "notes": "Annual saves 20%.",
+  "source_url": "https://runwayml.com/pricing",
+  "checked_at": "2026-11-18"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-18",
+ "provenance": "data/snapshots/runway-20261118.html.gz"
+}

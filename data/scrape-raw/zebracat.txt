@@ -1,0 +1,29 @@
+TOOL: Zebracat (zebracat)
+SOURCE: https://www.zebracat.ai/pricing
+FETCHED: 2026-11-19T00:34:06.583Z  HTTP 200  311191 bytes
+PRICE LINES (25):
+  - Monthly Yearly Save 40% Cat Mode For occasional, hands-on creators $39 /month Billed monthly Get Started Video Generation Create videos from text, links or idea
+  - 1 brand MOST POPULAR Super Cat For creators and brands posting daily $99 /month Billed monthly Get Started Most creators start here Video Generation Create videos
+  - Up to 5 brands Unlimited Cat For scaling brands, niches or clients $199 /month Billed monthly Get Started Video Generation Create videos from text, links or idea
+  - es Unlimited brands and clients Early access to new AI models Priority support Enterprise $599+ /month Custom Pricing Talk to Sales Video Generation Create videos from text, links or i
+  - Cat Mode $39/mo Get Started Super Cat $99/mo Get Started Unlimited Cat $199/mo Get started Enterprise $599+/mo Talk to Sales Core Video Capabilities Videos per Month
+  - ings Legal Commercial Rights Commercial Rights Cat Mode For occasional, hands-on creators $39 $23 /month Billed yearly Get Started Video Generation Create videos from text, links or i
+  - 1 brand MOST POPULAR Super Cat For creators and brands posting daily $99 $59 /month Billed yearly Get Started Most creators start here Video Generation Create videos
+  - Up to 5 brands Unlimited Cat For scaling brands, niches or clients $199 $119 /month Billed yearly Get Started Video Generation Create videos from text, links or ideas
+  - Cat Mode $23/mo Get Started Super Cat $59/mo Get Started Unlimited Cat $119/mo Get started Enterprise $599+/mo Talk to Sales Core Video Capabilities Videos per Month
+  - We offer a free tier to get started, and paid plans at $39/month for Cat Mode, $99/month for Super Cat and $199/month for Unlimited Cat, plus custom Enterprise plans from $
+  - Annual billing saves 40% on every paid plan ($23, $59 and $119 per month)
+  - ><p class="pp-persona">For occasional, hands-on creators</p><div class="pp-price"><strong>$39</strong><span>/month</span></div><p class="pp-billing">Billed monthly</p><a href="https:/
+  - class="pp-persona">For creators and brands posting daily</p><div class="pp-price"><strong>$99</strong><span>/month</span></div><p class="pp-billing">Billed monthly</p><a href="https:/
+  - class="pp-persona">For scaling brands, niches or clients</p><div class="pp-price"><strong>$199</strong><span>/month</span></div><p class="pp-billing">Billed monthly</p><a href="https:/
+  - </p><div class="pp-price"><strong>$599+</strong><span>/month</span></div><p class="pp-billing">Custom Pricing</p><a href="/enter
+  - >Cat Mode</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$39/mo</strong></p></div><a href="https://studio
+  - Super Cat</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$99/mo</strong></p></div><a href="https://studio
+  - mited Cat</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$199/mo</strong></p></div><a href="https://studio
+  - nterprise</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$599+/mo</strong></p></div><a href="/enterprise-form" class="test-tab-content_item-button-buy
+  - /h2><p class="pp-persona">For occasional, hands-on creators</p><div class="pp-price"><del>$39</del><strong>$23</strong><span>/month</span></div><p class="pp-billing">Billed yearly</p>
+  - <p class="pp-persona">For creators and brands posting daily</p><div class="pp-price"><del>$99</del><strong>$59</strong><span>/month</span></div><p class="pp-billing">Billed yearly</p>
+  - <p class="pp-persona">For scaling brands, niches or clients</p><div class="pp-price"><del>$199</del><strong>$119</strong><span>/month</span></div><p class="pp-billing">Billed yearly</p
+  - >Cat Mode</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$23/mo</strong></p></div><a href="https://studio
+  - Super Cat</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$59/mo</strong></p></div><a href="https://studio
+  - mited Cat</p><div><p class="test-black-text test-lg-text test-line-hight-defualt"><strong>$119/mo</strong></p></div><a href="https://studio

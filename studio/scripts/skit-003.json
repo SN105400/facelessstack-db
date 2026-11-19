@@ -1,0 +1,105 @@
+{
+ "title": "The $11,000 voice offer",
+ "duration": 19.3,
+ "fps": 24,
+ "deadpan": {
+  "from": 9.7
+ },
+ "lines": [
+  {
+   "t": 0.3,
+   "voice": "Samantha",
+   "who": "agent",
+   "mouth": false,
+   "text": "Congratulations! Eleven thousand dollars for twelve hours of recording."
+  },
+  {
+   "t": 4.8,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "Eleven grand! Wait... record what, exactly?"
+  },
+  {
+   "t": 9.1,
+   "voice": "Samantha",
+   "who": "agent",
+   "mouth": false,
+   "text": "Your voice. To train the AI that replaces you."
+  },
+  {
+   "t": 12.3,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "So I'd be funding my own replacement. Cool."
+  },
+  {
+   "t": 16.0,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "Cool cool cool. Where do I NOT sign?"
+  }
+ ],
+ "captions": [
+  {
+   "from": 0.3,
+   "to": 4.7,
+   "text": "Agent: $11,000 for 12 hours of recording."
+  },
+  {
+   "from": 4.8,
+   "to": 9.0,
+   "text": "Eleven grand! Record what, exactly?"
+  },
+  {
+   "from": 9.1,
+   "to": 12.2,
+   "text": "Your voice. To train the AI that replaces you."
+  },
+  {
+   "from": 12.3,
+   "to": 15.9,
+   "text": "So I'd be funding my own replacement."
+  },
+  {
+   "from": 16.0,
+   "to": 19.3,
+   "text": "Where do I NOT sign?"
+  }
+ ],
+ "beats": [
+  {
+   "from": 0.0,
+   "to": 4.7,
+   "pose": "talk-phone"
+  },
+  {
+   "from": 4.7,
+   "to": 9.0,
+   "pose": "think"
+  },
+  {
+   "from": 9.0,
+   "to": 12.2,
+   "pose": "shock"
+  },
+  {
+   "from": 12.2,
+   "to": 15.9,
+   "pose": "facepalm"
+  },
+  {
+   "from": 15.9,
+   "to": 19.3,
+   "pose": "walk-away"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 6.9,
+   "type": "whoosh"
+  }
+ ]
+}

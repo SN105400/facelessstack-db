@@ -18,10 +18,11 @@ Nightly content line producing 3 ready-to-post reels. Runs as Lane 3 alongside F
 - Deliverables per script: beat list with timings, caption text (≤2 lines per beat), SFX cues, estimated duration 15–45s.
 - Weak scripts are discarded at this stage (cheaper than animation rework).
 
-**4. GENERATE**
-- Compose skits from the **SCENE LIBRARY** (`studio/scenes/` — reusable rigs: walk, talk, react, jump, sit, wave + props; built once, extended weekly). Never bespoke-animate from scratch when a library piece exists.
-- Voice: `say` → `afconvert` → WebCodecs Opus. SFX: procedural WebAudio. Captions: burned in from script text. Mouth sync: audio RMS envelope.
-- Render offline (WebCodecs, `?static=1`), QC gate per `NIGHTLY-TASK.md` rule 7 (seamlessness ≤1%, motion thresholds, playback check).
+**4. GENERATE (productized 2026-11-20 — one JSON per skit, three commands total)**
+- Write `studio/scripts/<name>.json` (declarative: lines with voice/who/mouth, captions, beats with pose names, sfx cues, duration).
+- `python3 scripts/build_skit_audio.py <name>` — TTS voices (`say`), procedural SFX, mix at scripted offsets, **overflow warnings** (catches timing bugs the hand-built skits never surfaced).
+- Load `studio/skit_template.html?name=<name>&encode=1` — the **self-encoding template** (JSON-driven pose library: talk-phone/shock/facepalm/think/walk-away/wave + captions + RMS mouth sync) renders all frames, encodes VP9 + Opus, uploads to `ready-to-post/` and sets `window.__done`. No manual evaluate steps.
+- QC gate per rule 7 + playback check on `studio/qc.html?src=...`.
 
 **5. QC ALL ANGLES (gate per skit — all six, no skipping)**
 | Angle | Check |

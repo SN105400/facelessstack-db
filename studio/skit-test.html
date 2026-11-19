@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skit test — stickman + voice + captions (6s)</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0d18; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script>
+// SKIT: stickman walks ("Day 47 of my walk."), coils ("Today… I finally learned…"),
+// jumps ("…to JUMP!"), lands. Voice: macOS TTS WAV (fetched). Captions burned in.
+// Mouth openness driven by the audio envelope. 6s @ 24fps.
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, T = 6, FPS = 24;
+const GY = H * 0.72, CX = W * 0.42;
+const CAPTIONS = [
+  { from: 0.30, to: 1.95, text: 'Day 47 of my walk.' },
+  { from: 2.05, to: 3.45, text: 'Today… I finally learned…' },
+  { from: 3.55, to: 5.10, text: '…to JUMP! 🎉' },
+];
+
+const vig = document.createElement('canvas'); vig.width = W; vig.height = H;
+{
+  const vx = vig.getContext('2d');
+  const v = vx.createRadialGradient(W/2, H/2, H*0.25, W/2, H/2, H*0.75);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.45)');
+  vx.fillStyle = v; vx.fillRect(0, 0, W, H);
+}
+
+// ---- stickman (same rig as stickman-walk-jump, timeline shifted) ----
+function drawStickman(tt, mouthOpen) {
+  // walk 0-2.0, crouch 2.1-3.5, air 3.6-4.5, land 4.6-6.0
+  let phase = 'walk', jt = 0;
+  if (tt >= 2.1 && tt < 3.6) { phase = 'crouch'; jt = (tt - 2.1) / 1.5; }
+  else if (tt >= 3.6 && tt < 4.5) { phase = 'air'; jt = (tt - 3.6) / 0.9; }
+  else if (tt >= 4.5) { phase = 'land'; jt = Math.min(1, (tt - 4.5) / 1.0); }
+  const wf = tt * 2.2 * Math.PI * 2;
+  const ease = x => x * x * (3 - 2 * x);
+  const bob = -3 * Math.abs(Math.sin(wf));
+  const swing = 0.62 * Math.sin(wf);
+  let hipY = GY - 58 + bob, lean = 0.10,
+      thighF = swing, thighB = -swing,
+      kneeF = Math.max(0.12, 0.5 * Math.sin(wf + 0.9)),
+      kneeB = Math.max(0.12, 0.5 * Math.sin(wf + 0.9 + Math.PI)),
+      armF = -0.75 * Math.sin(wf), armB = 0.75 * Math.sin(wf);
+  if (phase === 'crouch') {
+    const k = ease(jt);
+    hipY += 16 * k; kneeF = kneeB = 1.15 * k + kneeF * (1 - k);
+    thighF = thighF * (1 - k) + 0.15 * k; thighB = thighB * (1 - k) - 0.15 * k;
+    armF = armF * (1 - k) - 0.9 * k; armB = armB * (1 - k) - 0.7 * k; lean = 0.10 + 0.16 * k;
+  } else if (phase === 'air') {
+    const p = ease(jt);
+    hipY = GY - 58 - 118 * 4 * p * (1 - p);
+    kneeF = 2.0; kneeB = 1.6; thighF = 0.5; thighB = -0.35;
+    armF = -2.1 + 0.3 * Math.sin(jt * Math.PI * 2); armB = -1.6; lean = 0.10 - 0.06 * Math.sin(jt * Math.PI);
+  } else if (phase === 'land') {
+    const r = ease(jt);
+    hipY += 18 * (1 - r); kneeF = 1.0 * (1 - r) + kneeF * r; kneeB = 0.9 * (1 - r) + kneeB * r;
+    thighF = 0.3 * (1 - r) + thighF * r; thighB = -0.3 * (1 - r) + thighB * r;
+    armF = -0.4 * (1 - r) + armF * r; armB = 0.5 * (1 - r) + armB * r;
+  }
+  const hipX = CX;
+  const lx = Math.sin(lean), ly = Math.cos(lean);
+  const neckX = hipX + lx * 34, neckY = hipY - ly * 34;
+  const headX = neckX + lx * 14, headY = neckY - 15;
+  ctx.lineCap = 'round'; ctx.strokeStyle = '#e8ecff'; ctx.fillStyle = '#e8ecff';
+  const seg = (x1,y1,x2,y2,w) => { ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); };
+  function leg(th, kn) {
+    const kx = hipX + Math.sin(th)*26, ky = hipY + Math.cos(th)*26;
+    const fx = kx + Math.sin(th-kn)*30, fy = ky + Math.cos(th-kn)*30;
+    seg(hipX, hipY, kx, ky, 5); seg(kx, ky, fx, fy, 4);
+  }
+  function arm(a, e) {
+    const ex = neckX + Math.sin(a)*22, ey = neckY + Math.cos(a)*22;
+    const hx = ex + Math.sin(a+e)*20, hy = ey + Math.cos(a+e)*20;
+    seg(neckX, neckY, ex, ey, 4); seg(ex, ey, hx, hy, 3.5);
+  }
+  leg(thighB, kneeB);
+  seg(hipX, hipY, neckX, neckY, 5);
+  arm(armB, 0.55);
+  leg(thighF, kneeF);
+  arm(armF, 0.55);
+  ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(headX, headY, 11, 0, Math.PI*2); ctx.stroke();
+  ctx.beginPath(); ctx.arc(headX + 4, headY - 2, 1.8, 0, Math.PI*2); ctx.fill();
+  if (mouthOpen > 0.08) {   // amplitude-driven mouth
+    ctx.beginPath();
+    ctx.ellipse(headX + 6, headY + 4, 2.6, 1.2 + 3.2 * mouthOpen, 0, 0, Math.PI*2);
+    ctx.fill();
+  }
+}
+
+function drawAt(tSec, mouthOpen) {
+  const tt = ((tSec / T) % 1 + 1) % 1 * T;
+  ctx.fillStyle = '#0a0d18'; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, '#0d1226'); g.addColorStop(1, '#04060d');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.strokeStyle = '#3a4468'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, GY + 1); ctx.lineTo(W, GY + 1); ctx.stroke();
+  const sp = 46, off = (tt * 150) % sp;
+  ctx.lineWidth = 2; ctx.strokeStyle = '#26304f';
+  for (let x = -off; x < W; x += sp) { ctx.beginPath(); ctx.moveTo(x, GY + 4); ctx.lineTo(x - 9, GY + 14); ctx.stroke(); }
+  ctx.fillStyle = 'rgba(220,228,255,0.85)'; ctx.beginPath(); ctx.arc(W * 0.78, H * 0.13, 20, 0, Math.PI*2); ctx.fill();
+  drawStickman(tt, mouthOpen);
+  // burned-in caption
+  const cap = CAPTIONS.find(c => tt >= c.from && tt <= c.to);
+  if (cap) {
+    ctx.font = 'bold 30px system-ui, sans-serif'; ctx.textAlign = 'center';
+    ctx.lineWidth = 6; ctx.strokeStyle = 'rgba(0,0,0,0.75)';
+    ctx.strokeText(cap.text, W/2, H * 0.86); ctx.fillStyle = '#ffffff';
+    ctx.fillText(cap.text, W/2, H * 0.86);
+  }
+  ctx.drawImage(vig, 0, 0);
+}
+window.drawAt = drawAt;
+let last = 0;
+function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % T, 0); }
+if (!location.search.includes('static')) requestAnimationFrame(frame);
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SceneLib v1 — rig smoke test</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0d18; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script src="scenes/library.js"></script>
+<script>
+// Smoke test for SceneLib v1: all 8 rig tiles on one deterministic drawAt(t) so the
+// standard QC (drawAt + pixel sampling, playback screenshots) applies unchanged.
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, TW = 270, TH = 240, GYt = TH - 26;
+const vig = SceneLib.makeVignette(W, H), grain = SceneLib.makeGrain();
+
+const TILES = [
+  { label: 'walk',           pose: t => SceneLib.rigs.walk(t) },
+  { label: 'talk',           pose: t => SceneLib.rigs.talk(t) },
+  { label: 'wave',           pose: t => SceneLib.rigs.wave(t) },
+  { label: 'sit',            pose: t => SceneLib.rigs.sit(t), seat: true },
+  { label: 'jump(air)',      pose: t => SceneLib.rigs.jump(t, { jumpIn: 0, airIn: 0.8, landIn: 1.6, walkBack: 2.4 }) },
+  { label: 'react:shock',    pose: t => SceneLib.rigs.react('shock', t) },
+  { label: 'react:jealous',  pose: t => SceneLib.rigs.react('jealous', t) },
+  { label: 'react:facepalm', pose: t => SceneLib.rigs.react('facepalm', t) },
+];
+
+function drawAt(tSec) {
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.fillStyle = '#0a0d18'; ctx.fillRect(0, 0, W, H);
+  TILES.forEach((tl, i) => {
+    const x0 = (i % 2) * TW, y0 = Math.floor(i / 2) * TH;
+    ctx.save(); ctx.beginPath(); ctx.rect(x0, y0, TW, TH); ctx.clip();
+    ctx.translate(x0, y0);
+    SceneLib.bg.plain(ctx, TW, TH, GYt);
+    if (tl.seat) SceneLib.props.box(ctx, TW / 2 - 28, GYt - 26, 56, 26);
+    const t = (tSec + i * 0.37) % 2.6;
+    const p = tl.pose(t);
+    p.x = TW * 0.5; p.groundY = GYt; p.scale = 0.85; p.mouthOpen = 0.25;
+    SceneLib.drawStickman(ctx, p);
+    ctx.fillStyle = '#8fa3d8'; ctx.font = '13px system-ui, sans-serif'; ctx.textAlign = 'left';
+    ctx.fillText(tl.label, 8, 16);
+    ctx.restore();
+  });
+  SceneLib.drawGrain(ctx, W, H, grain, tSec);
+  SceneLib.drawVig(ctx, vig);
+}
+window.drawAt = drawAt;
+if (!location.search.includes('static')) {
+  (function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % 2.6); })(0);
+}
+</script>
+</body>
+</html>

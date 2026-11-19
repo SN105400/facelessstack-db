@@ -40,9 +40,18 @@ Nightly content line producing 3 ready-to-post reels. Runs as Lane 3 alongside F
 - Posting is **manual by the user** in the morning (identity + compliance stay with the human): open `ready-to-post/`, publish as Reel, done (~5 min). The fleet never logs into Facebook.
 
 ## Budget & schedule
-- ≤1.2M tokens/night for the whole 3-skit line (trend sweep ~50K, scripts ~150K, generation/QC ~1M).
-- Prerequisite build nights (before skit night 1): (a) SFX/music synthesis demo, (b) scene library v1 (6 rigs), (c) ready-to-post folder automation.
-- Posting cadence target once running: 3 reels/day from each night's output, 1 lane (comedy) until metrics say otherwise.
+- **Skit line budget: ≤20M tokens/night — user-approved ceiling (2026-11-19). A ceiling, not a target**: typical spend 3–8M; spend beyond that must visibly buy quality, never padding.
+  - Trend sweep ≤300K (deeper source sweep than baseline)
+  - Scripts: 3 skits × **3 draft variants each**, best-of picked (~500K–1M)
+  - Generation + **A/B hook variants** (2 renders per skit where the punchline could land two ways) (~5–10M)
+  - QC: full 6-angle pass + full playback review per skit (~2–5M)
+  - **Redo cap raised: 4 per skit** (from 2), each redo re-runs the full QC gate
+  - Surplus after the line completes → **scene library expansion** (new rigs, props, expressions) — budget flows to capability, never to padding
+- FacelessStack DB core (Lanes 1–2): ≤2M/night typical (scraping is cheap); spend flows to enrichment depth on heavy nights.
+- **Accountability (mandatory):** the nightly report lists actual tokens per skit and which angle the spend improved; the Sunday retrospective correlates spend vs reel views and tunes the budget down if marginal millions stop buying marginal quality.
 
-## Metrics that decide the lane's future (Sundays)
-- Per-reel: views, avg watch %, shares. Lane verdict after 2 weeks: if median reel <200 views and best reel <1,000 → tighten hooks/characters; if a format clearly outperforms → double down on that format family.
+## Prerequisites before skit night 1
+- (a) SFX/music synthesis demo (procedural WebAudio), (b) scene library v1 (6 rigs) in `studio/scenes/`, (c) ready-to-post folder automation, (d) FB Page in professional mode (user).
+
+## Posting cadence target once running
+- 3 reels/day from each night's output, one lane (comedy) until metrics say otherwise.

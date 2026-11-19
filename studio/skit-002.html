@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skit 002 — The fruits got a series (9s)</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0d18; overflow: hidden; height: 100%; }
+  canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="540" height="960"></canvas>
+<script>
+// SKIT 002 — "Day 48. Even the bananas got a series before me." (AI fruit drama meta)
+// Beats: stickman jealous 0.45-3.4 | fruit pun + juice 3.6-6.5 | deadpan 6.9-9.0
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height, T = 9, FPS = 24;
+const GY = H * 0.70, CX = W * 0.38;
+
+const CAPS = [
+  { from: 0.45, to: 3.40, text: 'Day 48. Even the bananas got a series before me.' },
+  { from: 3.60, to: 6.50, text: 'Banana: We\'re produce-ers now! Get it?' },
+  { from: 6.90, to: 9.00, text: 'He\'s been here for 48 days.' },
+];
+
+const vig = document.createElement('canvas'); vig.width = W; vig.height = H;
+{ const vx = vig.getContext('2d');
+  const v = vx.createRadialGradient(W/2, H/2, H*0.25, W/2, H/2, H*0.75);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.45)');
+  vx.fillStyle = v; vx.fillRect(0, 0, W, H); }
+
+function drawStickman(tt, mouthOpen) {
+  let hipY = GY - 58, lean = 0.05, thighF = 0.08, thighB = -0.08,
+      kneeF = 0.10, kneeB = 0.10, armF = 0.15, armB = -0.15, eF = 0.45, eB = 0.45,
+      jealous = 0;
+  if (tt < 3.5) {                                     // staring at phone, jealous lean
+    const k = Math.min(1, tt / 1.2);
+    lean = 0.14 * k; armF = 0.9 * k; eF = 0.5; hipY += -1 * Math.sin(tt * 6) * 0.6;
+  } else if (tt >= 3.5 && tt < 6.5) {                 // flat stare at the fruit
+    lean = -0.04; armF = 0.05; armB = -0.05;
+  } else {                                            // deadpan, arms crossed-ish
+    lean = -0.02; armF = 0.6; eF = 1.4; armB = -0.5; eB = 1.2;
+  }
+  const hipX = CX, lx = Math.sin(lean), ly = Math.cos(lean);
+  const neckX = hipX + lx * 34, neckY = hipY - ly * 34;
+  const headX = neckX + lx * 14, headY = neckY - 15;
+  ctx.lineCap = 'round'; ctx.strokeStyle = '#e8ecff'; ctx.fillStyle = '#e8ecff';
+  const seg = (x1,y1,x2,y2,w) => { ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); };
+  function leg(th, kn) { const kx = hipX + Math.sin(th)*26, ky = hipY + Math.cos(th)*26;
+    const fx = kx + Math.sin(th-kn)*30, fy = ky + Math.cos(th-kn)*30;
+    seg(hipX, hipY, kx, ky, 5); seg(kx, ky, fx, fy, 4); }
+  function arm(a, e) { const ex = neckX + Math.sin(a)*22, ey = neckY + Math.cos(a)*22;
+    const hx = ex + Math.sin(a+e)*20, hy = ey + Math.cos(a+e)*20;
+    seg(neckX, neckY, ex, ey, 4); seg(ex, ey, hx, hy, 3.5); }
+  leg(thighB, kneeB);
+  seg(hipX, hipY, neckX, neckY, 5);
+  arm(armB, eB);
+  leg(thighF, kneeF);
+  arm(armF, eF);
+  ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(headX, headY, 11, 0, Math.PI*2); ctx.stroke();
+  // flat unamused eye (line) when deadpan, dot otherwise
+  if (tt >= 6.9) { ctx.lineWidth = 2.2; ctx.beginPath(); ctx.moveTo(headX + 1, headY - 3); ctx.lineTo(headX + 7, headY - 2); ctx.stroke(); }
+  else { ctx.beginPath(); ctx.arc(headX + 4, headY - 2, 1.8, 0, Math.PI*2); ctx.fill(); }
+  if (mouthOpen > 0.08 && tt < 3.4) {
+    ctx.beginPath(); ctx.ellipse(headX + 6, headY + 4.5, 2.4, 1 + 3 * mouthOpen, 0, 0, Math.PI*2); ctx.fill();
+  }
+  // phone prop (watching)
+  if (tt < 3.5) {
+    ctx.fillStyle = '#4a5a94'; ctx.fillRect(neckX + 26, neckY + 2, 12, 20);
+    ctx.fillStyle = '#8fb0ff'; ctx.fillRect(neckX + 28, neckY + 4, 8, 12);
+  }
+}
+
+function drawFruit(tt, mouthOpen) {
+  // the banana-turned-producer: a smug yellow fruit head on a TV frame
+  const fx = W * 0.70, fy = H * 0.30, r = 46;
+  ctx.strokeStyle = '#4a5a94'; ctx.lineWidth = 5;
+  ctx.strokeRect(fx - r - 26, fy - r - 30, r * 2 + 52, r * 2 + 56);
+  ctx.fillStyle = '#0f1630'; ctx.fillRect(fx - r - 22, fy - r - 26, r * 2 + 44, r * 2 + 48);
+  // fruit body
+  ctx.fillStyle = '#ffd23e'; ctx.strokeStyle = '#c9a216'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.arc(fx, fy, r, 0.3, Math.PI * 2 - 0.3); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.strokeStyle = '#8a6d10'; ctx.lineWidth = 4;                      // stem
+  ctx.beginPath(); ctx.moveTo(fx, fy - r); ctx.quadraticCurveTo(fx + 4, fy - r - 16, fx + 14, fy - r - 20); ctx.stroke();
+  ctx.fillStyle = '#2e7d32'; ctx.beginPath();                          // leaf
+  ctx.ellipse(fx + 22, fy - r - 14, 12, 6, 0.6, 0, Math.PI*2); ctx.fill();
+  // smug eyes + mouth (amplitude-driven)
+  ctx.fillStyle = '#1a1a1a';
+  ctx.beginPath(); ctx.arc(fx - 12, fy - 8, 3.4, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(fx + 12, fy - 8, 3.4, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath();
+  ctx.ellipse(fx, fy + 10, 6 + 4 * mouthOpen, 2 + 6 * mouthOpen, 0, 0, Math.PI*2);
+  ctx.fillStyle = '#5d4037'; ctx.fill();
+  // juice droplets while punning
+  if (tt > 4.3 && tt < 6.3) {
+    ctx.fillStyle = 'rgba(255,210,62,0.5)';
+    for (let i = 0; i < 5; i++) {
+      const dy = ((tt * 90 + i * 37) % 60);
+      ctx.beginPath(); ctx.arc(fx - 30 + i * 15, fy + r + 6 + dy, 3, 0, Math.PI*2); ctx.fill();
+    }
+  }
+}
+
+function drawAt(tSec, mouthOpen) {
+  const tt = Math.min(((tSec / T) % 1 + 1) % 1 * T, T);
+  ctx.fillStyle = '#0a0d18'; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, '#0d1226'); g.addColorStop(1, '#04060d');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.strokeStyle = '#3a4468'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, GY + 1); ctx.lineTo(W, GY + 1); ctx.stroke();
+  drawFruit(tt, tt >= 3.6 && tt < 6.5 ? mouthOpen : 0.05);
+  drawStickman(tt, tt < 3.5 ? mouthOpen : 0);
+  const cap = CAPS.find(c => tt >= c.from && tt <= c.to);
+  if (cap) {
+    ctx.font = 'bold 26px system-ui, sans-serif'; ctx.textAlign = 'center';
+    ctx.lineWidth = 6; ctx.strokeStyle = 'rgba(0,0,0,0.78)';
+    ctx.strokeText(cap.text, W/2, H * 0.88); ctx.fillStyle = '#ffffff';
+    ctx.fillText(cap.text, W/2, H * 0.88);
+  }
+  ctx.drawImage(vig, 0, 0);
+}
+window.drawAt = drawAt;
+let last = 0;
+function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % T, 0); }
+if (!location.search.includes('static')) requestAnimationFrame(frame);
+</script>
+</body>
+</html>

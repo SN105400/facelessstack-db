@@ -16,7 +16,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         data = self.rfile.read(length)
         os.makedirs(os.path.join(ROOT, 'studio'), exist_ok=True)
         name = qs.get('name', '').replace('..', '').strip()
-        if not name or not name.startswith('studio/') or not (name.endswith('.webm') or name.endswith('.mp4')):
+        allowed = False
+        if name.startswith('studio/') and name.endswith(('.webm', '.mp4')):
+            allowed = True
+        if name.startswith('data/scrape-raw/') and name.endswith('.txt'):
+            allowed = True
+        if not allowed or not name:
             name = time.strftime('studio/demo-loop-%Y%m%d-%H%M%S.webm')
         with open(os.path.join(ROOT, name), 'wb') as f:
             f.write(data)

@@ -1,0 +1,5 @@
+TOOL: murf-ai (browser-rendered+scroll)
+SOURCE: https://murf.ai/pricing
+FETCHED: 2026-11-19T00:50:37.136Z
+PRICE LINES (1):
+  - $10 FREE for API calls

@@ -1,0 +1,10 @@
+TOOL: d-id (browser-rendered)
+SOURCE: https://www.d-id.com/pricing
+FETCHED: 2026-11-19T00:50:04.226Z
+PRICE LINES (6):
+  - $4.7/month
+  - $56 billed annually (20% discount)
+  - $16/month
+  - $191 billed annually (45% discount)
+  - $108/month
+  - $1,293 billed annually (45% discount)

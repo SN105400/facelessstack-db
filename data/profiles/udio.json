@@ -1,0 +1,37 @@
+{
+ "slug": "udio",
+ "name": "Udio",
+ "category": "music-audio",
+ "url": "https://www.udio.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Free",
+    "monthly_usd": 0,
+    "annual_monthly_usd": 0
+   },
+   {
+    "name": "Standard",
+    "monthly_usd": 8,
+    "annual_monthly_usd": 8,
+    "notes": "$96/yr billed annually"
+   },
+   {
+    "name": "Pro",
+    "monthly_usd": 24,
+    "annual_monthly_usd": 24,
+    "notes": "$288/yr billed annually"
+   }
+  ],
+  "notes": "Rendered-page extraction; tier names to be confirmed next pass.",
+  "source_url": "https://www.udio.com/pricing",
+  "checked_at": "2026-11-19",
+  "method": "in-app-browser render pass (JS page)"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/udio-render.txt"
+}

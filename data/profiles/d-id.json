@@ -1,0 +1,38 @@
+{
+ "slug": "d-id",
+ "name": "D-ID",
+ "category": "avatars",
+ "url": "https://www.d-id.com",
+ "pricing": {
+  "currency": "USD",
+  "tiers": [
+   {
+    "name": "Lite",
+    "monthly_usd": 4.7,
+    "annual_monthly_usd": 4.7,
+    "notes": "$56/yr billed annually (20% discount)"
+   },
+   {
+    "name": "Build",
+    "monthly_usd": 16,
+    "annual_monthly_usd": 16,
+    "notes": "$191/yr (45% discount)"
+   },
+   {
+    "name": "Scale",
+    "monthly_usd": 108,
+    "annual_monthly_usd": 108,
+    "notes": "$1,293/yr (45% discount)"
+   }
+  ],
+  "notes": "Plan names inferred from tier order on rendered page; entry tier $4.7/mo. Only annual billing shown at these prices.",
+  "source_url": "https://www.d-id.com/pricing",
+  "checked_at": "2026-11-19",
+  "method": "in-app-browser render pass (JS page)"
+ },
+ "affiliate": "unverified",
+ "status": "active",
+ "verified": true,
+ "verified_at": "2026-11-19",
+ "provenance": "data/scrape-raw/d-id-render.txt"
+}

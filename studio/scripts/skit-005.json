@@ -1,0 +1,141 @@
+{
+ "title": "The 3AM brain \u2014 ticket guy",
+ "duration": 32.2,
+ "fps": 24,
+ "scene": "bedroom",
+ "lines": [
+  {
+   "t": 2.2,
+   "voice": "Samantha",
+   "who": "brain",
+   "mouth": false,
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true,
+   "text": "Remember the ticket guy? You said 'you too' when he said 'enjoy the movie'."
+  },
+  {
+   "t": 10.7,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "That was TUESDAY. It's not even a story!"
+  },
+  {
+   "t": 16.3,
+   "voice": "Samantha",
+   "who": "brain",
+   "mouth": false,
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true,
+   "text": "He tells it at parties. You're the punchline."
+  },
+  {
+   "t": 22.5,
+   "voice": "Fred",
+   "who": "stickman",
+   "mouth": true,
+   "text": "I'm never going to the movies again."
+  },
+  {
+   "t": 27.2,
+   "voice": "Samantha",
+   "who": "brain",
+   "mouth": false,
+   "rate": 168,
+   "pmod": 25,
+   "natural_pauses": true,
+   "text": "The popcorn machine will remember."
+  }
+ ],
+ "captions": [
+  {
+   "from": 0.2,
+   "to": 2.0,
+   "text": "3:12 AM."
+  },
+  {
+   "from": 2.2,
+   "to": 10.4,
+   "text": "You said 'you too' when he said 'enjoy the movie'.",
+   "style": "bubble"
+  },
+  {
+   "from": 10.7,
+   "to": 16.0,
+   "text": "That was TUESDAY. It's not even a story!"
+  },
+  {
+   "from": 16.3,
+   "to": 22.2,
+   "text": "You're the punchline.",
+   "style": "bubble"
+  },
+  {
+   "from": 22.5,
+   "to": 26.9,
+   "text": "Never going to the movies again."
+  },
+  {
+   "from": 27.2,
+   "to": 32.2,
+   "text": "The popcorn machine will remember.",
+   "style": "bubble"
+  }
+ ],
+ "beats": [
+  {
+   "from": 0.0,
+   "to": 10.5,
+   "pose": "lying"
+  },
+  {
+   "from": 10.5,
+   "to": 13.1,
+   "pose": "boltup"
+  },
+  {
+   "from": 13.1,
+   "to": 16.2,
+   "pose": "lying"
+  },
+  {
+   "from": 16.2,
+   "to": 18.8,
+   "pose": "boltup"
+  },
+  {
+   "from": 18.8,
+   "to": 32.2,
+   "pose": "lying"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.4,
+   "type": "tick"
+  },
+  {
+   "t": 1.15,
+   "type": "tick"
+  },
+  {
+   "t": 1.9,
+   "type": "tick"
+  },
+  {
+   "t": 10.5,
+   "type": "whoosh",
+   "text": "*BOLTS UPRIGHT*"
+  },
+  {
+   "t": 18.0,
+   "type": "heartbeat"
+  },
+  {
+   "t": 20.0,
+   "type": "heartbeat"
+  }
+ ]
+}

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Stickman — procedural walk + jump (8s loop, lib v2 juice)</title>
+<title>Stickman — procedural walk + jump (8s loop, lib v3.1 juice)</title>
 <style>
   html, body { margin: 0; padding: 0; background: #0a0d18; overflow: hidden; height: 100%; }
   canvas { width: 100vw; height: 100vh; object-fit: contain; display: block; }
@@ -10,28 +10,25 @@
 </head>
 <body>
 <canvas id="c" width="540" height="960"></canvas>
-<script src="/studio/scenes/stickman-lib.js?v=32"></script>
+<script src="/studio/scenes/stickman-lib.js?v=41"></script>
 <script>
-// PORTED TO STICKMANLIB v2 — walk (hip sway + step drop + blinks + breathing),
-// jump beat (anticipation, stretch on rise, squash on land, head follow-through, dust).
+// PORTED TO STICKMANLIB v3.1 — walk (hip sway + step drop + blinks + breathing),
+// jump beat (continuous anticipation, stretch on rise, squash on land, head lag, dust).
 const cv = document.getElementById('c'), ctx = cv.getContext('2d');
 const W = cv.width, H = cv.height, T = 8, FPS = 24;
 const GY = H * 0.70, CX = W * 0.42;
 
 const script = {
   duration: T, fps: FPS,
-  noBlink: false,
   beats: [
     { from: 0.0, to: 2.9, pose: 'walk-away' },
     { from: 2.9, to: 4.6, pose: 'jump', airIn: 3.8, landIn: 4.6, height: 118 },
-    { from: 4.6, to: 6.2, pose: 'walk-away' },
-    { from: 6.2, to: 8.0, pose: 'sit', prop: 'chair' },
+    { from: 4.6, to: 8.0, pose: 'walk-away' },
   ],
   captions: [],
   sfx: [],
 };
 
-let last = 0;
 function drawAt(tSec) {
   const t = Math.min(((tSec / T) % 1 + 1) % 1 * T, T);
   ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -40,16 +37,17 @@ function drawAt(tSec) {
   g.addColorStop(0, '#0d1226'); g.addColorStop(1, '#04060d');
   ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
 
-  StickmanLib.drawScene(ctx, W, H, t, script, 0);
-  const speed = 150, bx = CX + (3.75 - t) * speed;
+  const speed = 150, bx = CX + (4.2 - t) * speed;   // box passes exactly at the jump apex
   if (bx > -60 && bx < W + 60) {
     ctx.fillStyle = '#1a2242'; ctx.strokeStyle = '#4a5a94'; ctx.lineWidth = 2;
     ctx.fillRect(bx, GY - 34, 46, 34); ctx.strokeRect(bx, GY - 34, 46, 34);
   }
+
+  StickmanLib.drawScene(ctx, W, H, t, script, 0);
   ctx.fillStyle = 'rgba(220,228,255,0.85)'; ctx.beginPath(); ctx.arc(W * 0.78, H * 0.13, 20, 0, Math.PI*2); ctx.fill();
 }
 window.drawAt = drawAt;
-function frame(now) { requestAnimationFrame(frame); if (now - last < 41) return; last = now; drawAt((now / 1000) % T); }
+function frame(now) { requestAnimationFrame(frame); drawAt((now / 1000) % T); }
 if (!location.search.includes('static')) requestAnimationFrame(frame);
 </script>
 </body>

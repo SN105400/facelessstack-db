@@ -1,9 +1,9 @@
-// StickmanLib v3.1 — shared scene library (single source of truth).
+// StickmanLib v3.2 — shared scene library (single source of truth).
 // Scenes: generic (walk/jump/sit) + bedroom. Poses: idle, talk-phone, shock, facepalm,
 //   walk-away, think, wave, sit, lying, boltup, crouch.
-// Juice v2/v3: squash & stretch, head follow-through, blinks, breathing, dust,
-//   walk foot-IK (pinned stance, no slide), smear ghosts, camera punch-ins, line boil.
-// API: POSES, poseAt(script,t), drawScene(ctx,W,H,t,script,rms), beat_name, jumpJuice.
+// Juice: squash & stretch, head follow-through, blinks, breathing, dust,
+//   walk foot-IK (pinned stance, no slide), smear ghosts, camera punch-ins, line boil,
+//   jump with CONTINUOUS anticipation (no boundary pop).
 window.StickmanLib = (function () {
   const POSES = {
     idle:        { lean: 0.04, armF: 0.12, armB: -0.12, eF: 0.45, eB: 0.45 },
@@ -46,29 +46,41 @@ window.StickmanLib = (function () {
     return script.beats[script.beats.length - 1]?.pose || 'idle';
   }
 
+  // jump: anticipation ramps from the beat start (no boundary pop), parabolic air, land squash
   function jumpJuice(beat, tt, t0) {
-    const airIn = beat.airIn ?? (t0 + 0.8), landIn = beat.landIn ?? (airIn + 0.8);
+    const airIn = beat.airIn ?? (t0 + 0.9), landIn = beat.landIn ?? (airIn + 0.8);
     const height = beat.height ?? 118;
-    const st = { phase: 'walk', hipDy: 0, squashY: 1, squashX: 1, headLag: 0, dust: 0, kneeF: 0.1, kneeB: 0.1 };
-    if (tt < airIn - 0.55) {
-      const k = Math.min(1, Math.max(0, (tt - (airIn - 1.6)) / 1.05));
-      st.phase = 'approach'; st.hipDy = 16 * k; st.kneeF = st.kneeB = 1.15 * k; st.squashY = 1 - 0.06 * k; st.squashX = 1 + 0.05 * k;
-    } else if (tt < airIn) {
-      st.phase = 'crouch'; st.hipDy = 16; st.kneeF = st.kneeB = 1.15; st.squashY = 0.94; st.squashX = 1.06;
+    const st = { phase: 'walk', hipDy: 0, squashY: 1, squashX: 1, headLag: 0, dust: 0,
+                 kneeF: 0.1, kneeB: 0.1, thighF: 0.08, thighB: -0.08, lean: 0.10,
+                 armF: 0.12, armB: -0.12, eF: 0.45, eB: 0.45, k: 0 };
+    if (tt < airIn) {
+      const k = Math.min(1, (tt - t0) / Math.max(0.25, airIn - t0));
+      const e = k * k * (3 - 2 * k);
+      st.phase = 'crouch'; st.k = k;
+      st.hipDy = 16 * e; st.kneeF = st.kneeB = 1.15 * e;
+      st.squashY = 1 - 0.06 * e; st.squashX = 1 + 0.05 * e;
+      st.lean = 0.10 + 0.14 * e;
+      st.armF = -0.7 * e; st.armB = -0.55 * e;
     } else if (tt < landIn) {
       const p = (tt - airIn) / (landIn - airIn);
-      st.phase = 'air'; st.hipDy = -height * 4 * p * (1 - p);
+      st.phase = 'air';
+      st.hipDy = -height * 4 * p * (1 - p);
       st.squashY = 1 + 0.10 * Math.sin(p * Math.PI); st.squashX = 1 - 0.06 * Math.sin(p * Math.PI);
-      st.kneeF = 2.0; st.kneeB = 1.6;
+      st.kneeF = 2.0; st.kneeB = 1.6; st.thighF = 0.5; st.thighB = -0.35;
+      st.armF = -2.1 + 0.3 * Math.sin(p * Math.PI * 2); st.armB = -1.6; st.eF = 0.3; st.eB = 0.3;
+      st.lean = 0.10 - 0.06 * Math.sin(p * Math.PI);
       st.headLag = -5 * Math.sin(p * Math.PI * 2);
       if (p > 0.92) { st.squashY = 0.97; st.squashX = 1.03; }
-    } else if (tt < landIn + 0.45) {
-      const k = (tt - landIn) / 0.45;
-      st.phase = 'land'; st.hipDy = 14 * (1 - k);
+    } else {
+      const k = Math.min(1, (tt - landIn) / 0.45);
+      st.phase = 'land';
+      st.hipDy = 14 * (1 - k);
       st.squashY = 0.86 + 0.14 * k; st.squashX = 1.12 - 0.12 * k;
       st.kneeF = st.kneeB = 0.9 * (1 - k);
       st.dust = (tt - landIn) < 0.3 ? 1 : 0;
       st.headLag = -6 * Math.sin(Math.min(1, k * 1.4) * Math.PI);
+      st.lean = -0.05 + 0.15 * k;
+      st.armF = -0.4 * (1 - k); st.armB = 0.5 * (1 - k);
     }
     return st;
   }
@@ -171,7 +183,7 @@ window.StickmanLib = (function () {
     hipY += breathing;
     const hop = pose.hop ? pose.hop : 0;
     const hipX = CX, lx = Math.sin(lean), ly = Math.cos(lean);
-    let footA = null, footB = null;
+    let footA = null, footB = null, footAp = null, footBp = null;
 
     function legFK(th, kn) { const kx = hipX + Math.sin(th)*26, ky = hipY + Math.cos(th)*26;
       const fx = kx + Math.sin(th-kn)*30, fy = ky + Math.cos(th-kn)*30;
@@ -186,9 +198,14 @@ window.StickmanLib = (function () {
       ctx.globalAlpha = 1;
     }
 
-    ctx.save();
-    ctx.translate(hipX, hipY); ctx.scale(squashX, squashY); ctx.translate(-hipX, -hipY);
-    if (pose.walk) {
+    if (beat.pose === 'jump') {
+      const j = jumpJuice(beat, tClamped, beat.from ?? 0);
+      hipY += j.hipDy; kneeF = j.kneeF; kneeB = j.kneeB;
+      thighF = j.thighF; thighB = j.thighB;
+      lean = j.lean;
+      if (j.phase === 'air') { armF = j.armF; armB = j.armB; eF = j.eF; eB = j.eB; }
+      legFK(thighB, kneeB); legFK(thighF, kneeF);
+    } else if (pose.walk) {
       const STEP = 2.2, stride = 34, lift = 15, dt = 1 / (script.fps ?? 24);
       const wf = tClamped * STEP * Math.PI * 2, s = 0.55 * Math.sin(wf);
       if ((pose.armF ?? 0) === 0) { armF = -0.7 * Math.sin(wf) + 0.1; armB = 0.7 * Math.sin(wf) - 0.1; }
@@ -221,7 +238,6 @@ window.StickmanLib = (function () {
     const neckY0 = hipY - ly * 34;
     const neckX = hipX + lx * 34, neckY = neckY0 + headLag;
     const headX = neckX + lx * 14, headY = neckY - 15 + headLag * 0.4;
-    ctx.restore();
     seg(hipX, hipY, neckX, neckY, 5);
     armFK(armB, eB);
     armFK(armF, eF);
@@ -283,6 +299,7 @@ window.StickmanLib = (function () {
     return { pose: beat_name(script, tClamped), scrollOff, squashY, phase: beat.pose };
   }
 
+  // bedroom scene
   function drawBedroom(ctx, W, H, tt, script, rms, seg) {
     const bg = ctx.createLinearGradient(0, 0, 0, H);
     bg.addColorStop(0, '#04060f'); bg.addColorStop(1, '#090b16');
